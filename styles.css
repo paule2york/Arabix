@@ -8914,3 +8914,9 @@ html[lang^="ar"] .contact-page .arabix-chat-launcher {
     bottom: 14px;
   }
 }
+/* Hide custom chat launcher while Tawk window is open */
+.arabix-chat-launcher.is-open {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px) scale(0.96);
+}

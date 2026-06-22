@@ -216,8 +216,8 @@ const setupArabixChat = () => {
   const tawkPosition = isArabicPage ? "bl" : "br";
   window.Tawk_API.customStyle = {
     visibility: {
-      desktop: { position: tawkPosition, xOffset: 22, yOffset: 22 },
-      mobile: { position: tawkPosition, xOffset: 14, yOffset: 14 }
+      desktop: { position: tawkPosition, xOffset: 24, yOffset: 24 },
+      mobile: { position: tawkPosition, xOffset: 12, yOffset: 12 }
     }
   };
   window.Tawk_LoadStart = new Date();
@@ -255,15 +255,18 @@ const setupArabixChat = () => {
 
   window.Tawk_API.onChatMaximized = () => {
     launcher.classList.add("is-open");
+    launcher.setAttribute("aria-hidden", "true");
   };
 
   window.Tawk_API.onChatMinimized = () => {
     launcher.classList.remove("is-open");
+    launcher.removeAttribute("aria-hidden");
     window.setTimeout(hideTawkBubble, 350);
   };
 
   window.Tawk_API.onChatHidden = () => {
     launcher.classList.remove("is-open");
+    launcher.removeAttribute("aria-hidden");
   };
 
   launcher.addEventListener("click", () => {
