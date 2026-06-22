@@ -207,3 +207,77 @@ if (projectForm) {
     }
   });
 }
+const setupArabixChat = () => {
+  if (document.querySelector("[data-arabix-chat]")) return;
+
+  window.Tawk_API = window.Tawk_API || {};
+  window.Tawk_LoadStart = new Date();
+
+  const launcher = document.createElement("button");
+  launcher.type = "button";
+  launcher.className = "arabix-chat-launcher";
+  launcher.setAttribute("data-arabix-chat", "");
+  launcher.setAttribute("aria-label", "Open Arabix live chat");
+  launcher.innerHTML = `
+    <span class="arabix-chat-pulse" aria-hidden="true"></span>
+    <span class="arabix-chat-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M5 6.5A3.5 3.5 0 0 1 8.5 3h7A3.5 3.5 0 0 1 19 6.5v4A3.5 3.5 0 0 1 15.5 14H11l-4.5 4v-4A3.5 3.5 0 0 1 3 10.5v-4Z" />
+      </svg>
+    </span>
+    <span class="arabix-chat-copy">
+      <strong>Chat with Arabix</strong>
+      <small>Usually replies fast</small>
+    </span>
+  `;
+
+  document.body.appendChild(launcher);
+
+  const hideTawkBubble = () => {
+    if (window.Tawk_API && typeof window.Tawk_API.hideWidget === "function") {
+      window.Tawk_API.hideWidget();
+    }
+  };
+
+  window.Tawk_API.onLoad = () => {
+    launcher.classList.add("is-ready");
+    window.setTimeout(hideTawkBubble, 500);
+  };
+
+  window.Tawk_API.onChatMaximized = () => {
+    launcher.classList.add("is-open");
+  };
+
+  window.Tawk_API.onChatMinimized = () => {
+    launcher.classList.remove("is-open");
+    window.setTimeout(hideTawkBubble, 350);
+  };
+
+  window.Tawk_API.onChatHidden = () => {
+    launcher.classList.remove("is-open");
+  };
+
+  launcher.addEventListener("click", () => {
+    if (window.Tawk_API && typeof window.Tawk_API.maximize === "function") {
+      if (typeof window.Tawk_API.showWidget === "function") window.Tawk_API.showWidget();
+      window.Tawk_API.maximize();
+      return;
+    }
+
+    launcher.classList.add("is-loading");
+  });
+
+  const tawkScript = document.createElement("script");
+  tawkScript.async = true;
+  tawkScript.src = "https://embed.tawk.to/6a396583dbc2651d48d4bf3a/1jro397sd";
+  tawkScript.charset = "UTF-8";
+  tawkScript.setAttribute("crossorigin", "*");
+  tawkScript.addEventListener("load", () => launcher.classList.remove("is-loading"));
+  document.head.appendChild(tawkScript);
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", setupArabixChat);
+} else {
+  setupArabixChat();
+}
