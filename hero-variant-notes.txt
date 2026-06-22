@@ -1,0 +1,2 @@
+Current space hero variant can be restored from the previous conversation state if needed.
+Variant trial: original cyber-orbit hero with abstract brand beam and floating service nodes.
