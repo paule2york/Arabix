@@ -8740,7 +8740,8 @@ h1 {
 /* Arabix Tawk live chat launcher */
 .arabix-chat-launcher {
   position: fixed;
-  left: 22px;
+  right: 22px;
+  left: auto;
   bottom: 22px;
   z-index: 90;
   display: inline-flex;
@@ -8845,7 +8846,8 @@ h1 {
 
 @media (max-width: 680px) {
   .arabix-chat-launcher {
-    left: 14px;
+    right: 14px;
+    left: auto;
     bottom: 14px;
     min-height: 56px;
     padding: 8px;
@@ -8865,5 +8867,50 @@ h1 {
     width: 40px;
     height: 40px;
     flex-basis: 40px;
+  }
+}
+
+/* Language-aware chat placement */
+html[dir="rtl"] .arabix-chat-launcher,
+html[lang^="ar"] .arabix-chat-launcher {
+  right: auto;
+  left: 22px;
+}
+
+html[dir="rtl"] .arabix-chat-pulse,
+html[lang^="ar"] .arabix-chat-pulse {
+  right: auto;
+  left: 15px;
+}
+
+.contact-page .arabix-chat-launcher {
+  bottom: 154px;
+}
+
+html[dir="rtl"] .contact-page .arabix-chat-launcher,
+html[lang^="ar"] .contact-page .arabix-chat-launcher {
+  bottom: 22px;
+}
+
+@media (max-width: 680px) {
+  html[dir="rtl"] .arabix-chat-launcher,
+  html[lang^="ar"] .arabix-chat-launcher {
+    right: auto;
+    left: 14px;
+  }
+
+  html[dir="rtl"] .arabix-chat-pulse,
+  html[lang^="ar"] .arabix-chat-pulse {
+    right: auto;
+    left: 8px;
+  }
+
+  .contact-page .arabix-chat-launcher {
+    bottom: 134px;
+  }
+
+  html[dir="rtl"] .contact-page .arabix-chat-launcher,
+  html[lang^="ar"] .contact-page .arabix-chat-launcher {
+    bottom: 14px;
   }
 }

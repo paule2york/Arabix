@@ -211,6 +211,15 @@ const setupArabixChat = () => {
   if (document.querySelector("[data-arabix-chat]")) return;
 
   window.Tawk_API = window.Tawk_API || {};
+  const pageLang = document.documentElement.lang || "";
+  const isArabicPage = document.documentElement.dir === "rtl" || pageLang.toLowerCase().startsWith("ar");
+  const tawkPosition = isArabicPage ? "bl" : "br";
+  window.Tawk_API.customStyle = {
+    visibility: {
+      desktop: { position: tawkPosition, xOffset: 22, yOffset: 22 },
+      mobile: { position: tawkPosition, xOffset: 14, yOffset: 14 }
+    }
+  };
   window.Tawk_LoadStart = new Date();
 
   const launcher = document.createElement("button");
