@@ -175,3 +175,35 @@ portfolioImages.forEach((image) => {
   image.addEventListener("error", removeBrokenImage, { once: true });
   if (image.complete && image.naturalWidth === 0) removeBrokenImage();
 });
+const projectForm = document.querySelector(".project-form");
+if (projectForm) {
+  const statusEl = projectForm.querySelector("[data-form-status]");
+  projectForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const submitButton = projectForm.querySelector('button[type="submit"]');
+    const formData = new FormData(projectForm);
+    const action = projectForm.getAttribute("action") || "";
+    const ajaxAction = action.replace("https://formsubmit.co/", "https://formsubmit.co/ajax/");
+
+    if (statusEl) statusEl.textContent = "Sending your brief...";
+    if (submitButton) submitButton.disabled = true;
+
+    try {
+      const response = await fetch(ajaxAction, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" }
+      });
+
+      if (!response.ok) throw new Error("FormSubmit did not accept the message.");
+
+      window.location.href = projectForm.querySelector('input[name="_next"]')?.value || "./thank-you.html";
+    } catch (error) {
+      if (statusEl) {
+        statusEl.textContent = "Message could not be sent. Please email paule2york@gmail.com or message on WhatsApp.";
+      }
+      if (submitButton) submitButton.disabled = false;
+    }
+  });
+}

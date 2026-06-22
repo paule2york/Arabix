@@ -8615,3 +8615,18 @@ h1 {
   .thanks-shell { padding: 92px 18px 28px; }
   .thanks-card { border-radius: 22px; }
 }
+
+/* Contact form submit feedback */
+.form-status {
+  min-height: 1.4em;
+  margin: 14px 0 0;
+  color: #111;
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.form-submit:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
