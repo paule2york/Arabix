@@ -65,7 +65,7 @@ navLinks.forEach((link) => {
 nav.addEventListener("mouseleave", setActiveLink);
 
 if (typedWord && !reduceMotion.matches) {
-  const words = ["websites", "stores", "brands", "funnels", "apps"];
+  const words = typedWord.dataset.typedWords ? typedWord.dataset.typedWords.split("|") : ["websites", "stores", "brands", "funnels", "apps"];
   let wordIndex = 0;
   let letterIndex = words[0].length;
   let deleting = true;
