@@ -8924,7 +8924,7 @@ html[lang^="ar"] .contact-page .arabix-chat-launcher {
 
 /* Arabic localization polish */
 html[lang^="ar"] body {
-  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  font-family: "IBM Plex Sans Arabic", "Tahoma", "Arial", sans-serif;
   letter-spacing: 0;
 }
 
@@ -9045,11 +9045,7 @@ html[lang^="ar"] .ticker-track {
 }
 
 html[lang^="ar"] body {
-  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
-}
-
-html[lang^="ar"] .site-header {
-  direction: ltr;
+  font-family: "IBM Plex Sans Arabic", "Tahoma", "Arial", sans-serif;
 }
 
 html[lang^="ar"] .site-nav,
@@ -9067,7 +9063,7 @@ html[lang^="ar"] .header-cta,
 html[lang^="ar"] .hero-title,
 html[lang^="ar"] .hero-main-btn,
 html[lang^="ar"] .hero-ecommerce-btn {
-  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  font-family: "IBM Plex Sans Arabic", "Tahoma", "Arial", sans-serif;
 }
 
 html[lang^="ar"] .site-nav {
@@ -9099,7 +9095,7 @@ html[lang^="ar"] .ticker-track {
 
 html[lang^="ar"] .logo-strip span {
   direction: rtl;
-  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  font-family: "IBM Plex Sans Arabic", "Tahoma", "Arial", sans-serif;
   font-size: 2.15rem;
   letter-spacing: 0;
 }
@@ -9123,4 +9119,68 @@ html[lang^="ar"] .logo-strip span {
     grid-column: 4;
     grid-row: 1;
   }
+}
+
+
+/* Arabic true RTL navbar and cleaner headline font */
+html[lang^="ar"] .site-header {
+  direction: rtl;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+}
+
+html[lang^="ar"] .brand {
+  padding: 0 14px 0 20px;
+  border-right: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+html[lang^="ar"] .site-nav {
+  justify-self: start;
+  justify-content: flex-start;
+}
+
+html[lang^="ar"] .site-nav > a + a::before,
+html[lang^="ar"] .nav-dropdown + a::before {
+  left: auto;
+  right: 0;
+}
+
+html[lang^="ar"] .nav-dropdown-trigger {
+  flex-direction: row-reverse;
+}
+
+html[lang^="ar"] .nav-menu {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+
+html[lang^="ar"] .nav-menu a:hover {
+  transform: translateX(-4px);
+}
+
+html[lang^="ar"] .lang-switch {
+  justify-self: end;
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+html[lang^="ar"] .header-cta {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+html[lang^="ar"] .hero-title {
+  font-family: "IBM Plex Sans Arabic", "Tahoma", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+html[lang^="ar"] .outline-line {
+  -webkit-text-stroke-width: 1.5px;
+}
+
+html[lang^="ar"] .lime-line,
+html[lang^="ar"] .white-line {
+  font-weight: 800;
 }
