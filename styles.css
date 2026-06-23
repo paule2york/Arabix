@@ -9045,7 +9045,7 @@ html[lang^="ar"] .ticker-track {
 }
 
 html[lang^="ar"] body {
-  font-family: "Noto Sans Arabic", "Segoe UI", "Dubai", "Tahoma", Arial, sans-serif;
+  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
 }
 
 html[lang^="ar"] .site-header {
@@ -9067,7 +9067,7 @@ html[lang^="ar"] .header-cta,
 html[lang^="ar"] .hero-title,
 html[lang^="ar"] .hero-main-btn,
 html[lang^="ar"] .hero-ecommerce-btn {
-  font-family: "Noto Sans Arabic", "Segoe UI", "Dubai", "Tahoma", Arial, sans-serif;
+  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
 }
 
 html[lang^="ar"] .site-nav {
@@ -9099,7 +9099,7 @@ html[lang^="ar"] .ticker-track {
 
 html[lang^="ar"] .logo-strip span {
   direction: rtl;
-  font-family: "Noto Sans Arabic", "Segoe UI", "Dubai", "Tahoma", Arial, sans-serif;
+  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
   font-size: 2.15rem;
   letter-spacing: 0;
 }
