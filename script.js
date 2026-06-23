@@ -222,11 +222,15 @@ const setupArabixChat = () => {
   };
   window.Tawk_LoadStart = new Date();
 
+  const launcherTitle = isArabicPage ? "تحدث مع أرابكس" : "Chat with Arabix";
+  const launcherSubcopy = isArabicPage ? "نرد بسرعة عادة" : "Usually replies fast";
+  const launcherLabel = isArabicPage ? "افتح محادثة أرابكس المباشرة" : "Open Arabix live chat";
+
   const launcher = document.createElement("button");
   launcher.type = "button";
   launcher.className = "arabix-chat-launcher";
   launcher.setAttribute("data-arabix-chat", "");
-  launcher.setAttribute("aria-label", "Open Arabix live chat");
+  launcher.setAttribute("aria-label", launcherLabel);
   launcher.innerHTML = `
     <span class="arabix-chat-pulse" aria-hidden="true"></span>
     <span class="arabix-chat-icon" aria-hidden="true">
@@ -235,8 +239,8 @@ const setupArabixChat = () => {
       </svg>
     </span>
     <span class="arabix-chat-copy">
-      <strong>Chat with Arabix</strong>
-      <small>Usually replies fast</small>
+      <strong>${launcherTitle}</strong>
+      <small>${launcherSubcopy}</small>
     </span>
   `;
 

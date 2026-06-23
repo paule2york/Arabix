@@ -9357,3 +9357,50 @@ html[lang^="ar"] .testimonial-band span {
     font-size: clamp(2.2rem, 10vw, 3.4rem);
   }
 }
+
+
+/* Arabic final visual refinements */
+@keyframes tickerMoveArabic {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+html[lang^="ar"] .ticker-track {
+  animation: tickerMoveArabic 34s linear infinite;
+}
+
+html[lang^="ar"] .logo-strip span {
+  gap: 28px;
+  padding: 0 22px;
+}
+
+html[lang^="ar"] .logo-strip span::after {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+html[lang^="ar"] .split-copy h2 {
+  max-width: 700px;
+  font-size: clamp(2.65rem, 4.8vw, 4.2rem);
+  line-height: 1.2;
+}
+
+html[lang^="ar"] .split-copy > p {
+  max-width: 720px;
+  margin-top: 26px;
+}
+
+html[lang^="ar"] .arabix-chat-launcher {
+  direction: rtl;
+}
+
+html[lang^="ar"] .arabix-chat-copy {
+  text-align: right;
+}
+
+html[lang^="ar"] .vortex-chip,
+html[lang^="ar"] .service-orbit strong {
+  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  letter-spacing: 0;
+}
