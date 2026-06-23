@@ -9268,3 +9268,36 @@ html[lang^="ar"] .white-line,
 html[lang^="ar"] .typed-word {
   font-weight: 900;
 }
+
+
+/* Arabic display headings */
+html[lang^="ar"] .intro h2,
+html[lang^="ar"] .section-heading h2,
+html[lang^="ar"] .split-copy h2,
+html[lang^="ar"] .contact h2,
+html[lang^="ar"] .page-hero h1,
+html[lang^="ar"] .solutions-hero h1,
+html[lang^="ar"] .about-hero h1,
+html[lang^="ar"] .portfolio-hero h1,
+html[lang^="ar"] .contact-hero h1,
+html[lang^="ar"] .study-hero h1,
+html[lang^="ar"] .solution-content h2,
+html[lang^="ar"] .study-overview h2,
+html[lang^="ar"] .study-proof h2,
+html[lang^="ar"] .study-cta h2,
+html[lang^="ar"] .study-pricing h2,
+html[lang^="ar"] .about-story h2,
+html[lang^="ar"] .about-method h2,
+html[lang^="ar"] .portfolio-gallery-head h2,
+html[lang^="ar"] .contact-start-head h2,
+html[lang^="ar"] .page-cta h2 {
+  font-family: "Cairo", "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  font-weight: 900;
+  line-height: 1.12;
+}
+
+html[lang^="ar"] .intro h2,
+html[lang^="ar"] .section-heading h2,
+html[lang^="ar"] .split-copy h2 {
+  letter-spacing: 0;
+}
