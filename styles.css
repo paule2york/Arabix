@@ -9301,3 +9301,59 @@ html[lang^="ar"] .section-heading h2,
 html[lang^="ar"] .split-copy h2 {
   letter-spacing: 0;
 }
+
+
+/* Arabic split section alignment and quote font */
+html[lang^="ar"] .split-copy {
+  text-align: right;
+}
+
+html[lang^="ar"] .split-copy h2 {
+  max-width: 760px;
+  font-size: clamp(3rem, 5.4vw, 4.65rem);
+  line-height: 1.16;
+}
+
+html[lang^="ar"] .split-copy > p {
+  padding: 26px 34px 26px 26px;
+  text-align: right;
+}
+
+html[lang^="ar"] .split-copy > p::before {
+  right: 14px;
+  left: auto;
+}
+
+html[lang^="ar"] .split-copy > p::after {
+  right: auto;
+  left: 18px;
+}
+
+html[lang^="ar"] .check-list li {
+  max-width: 640px;
+  padding: 14px 48px 14px 16px;
+  text-align: right;
+}
+
+html[lang^="ar"] .check-list li::before {
+  right: 14px;
+  left: auto;
+}
+
+html[lang^="ar"] .testimonial-band blockquote {
+  max-width: 940px;
+  font-family: "Cairo", "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  font-size: clamp(1.55rem, 3.35vw, 3rem);
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+html[lang^="ar"] .testimonial-band span {
+  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+}
+
+@media (max-width: 760px) {
+  html[lang^="ar"] .split-copy h2 {
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
+  }
+}
