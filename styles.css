@@ -9184,3 +9184,66 @@ html[lang^="ar"] .lime-line,
 html[lang^="ar"] .white-line {
   font-weight: 800;
 }
+
+
+/* Arabic hero headline polish */
+html[lang^="ar"] .space-title {
+  gap: 0.14em;
+  line-height: 1.02;
+  text-transform: none;
+}
+
+html[lang^="ar"] .hero-title {
+  max-width: min(980px, 92vw);
+  font-weight: 700;
+}
+
+html[lang^="ar"] .outline-line {
+  font-size: clamp(3.9rem, 7.2vw, 6.45rem);
+  font-weight: 600;
+  line-height: 1.12;
+  -webkit-text-stroke: 1.15px rgba(255, 255, 255, 0.72);
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.06);
+}
+
+html[lang^="ar"] .lime-line {
+  font-size: clamp(4.2rem, 8.4vw, 7.35rem);
+  font-weight: 700;
+  line-height: 1.02;
+}
+
+html[lang^="ar"] .typed-word {
+  min-width: 6.2ch;
+  font-weight: 700;
+}
+
+html[lang^="ar"] .white-line {
+  font-size: clamp(3.7rem, 7vw, 6.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+html[lang^="ar"] .typed-word::after {
+  height: 0.74em;
+  margin-right: 0.04em;
+  margin-left: 0;
+  vertical-align: -0.02em;
+}
+
+@media (max-width: 760px) {
+  html[lang^="ar"] .space-title {
+    gap: 0.18em;
+  }
+
+  html[lang^="ar"] .outline-line {
+    font-size: clamp(2.75rem, 15vw, 4.2rem);
+  }
+
+  html[lang^="ar"] .lime-line {
+    font-size: clamp(3.1rem, 17vw, 4.65rem);
+  }
+
+  html[lang^="ar"] .white-line {
+    font-size: clamp(2.8rem, 14vw, 4.15rem);
+  }
+}
