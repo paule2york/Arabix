@@ -9247,3 +9247,24 @@ html[lang^="ar"] .typed-word::after {
     font-size: clamp(2.8rem, 14vw, 4.15rem);
   }
 }
+
+
+/* Arabic hero display font */
+html[lang^="ar"] .hero-title,
+html[lang^="ar"] .outline-line,
+html[lang^="ar"] .lime-line,
+html[lang^="ar"] .white-line,
+html[lang^="ar"] .typed-word {
+  font-family: "Cairo", "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+}
+
+html[lang^="ar"] .outline-line {
+  font-weight: 800;
+  -webkit-text-stroke: 1.05px rgba(255, 255, 255, 0.74);
+}
+
+html[lang^="ar"] .lime-line,
+html[lang^="ar"] .white-line,
+html[lang^="ar"] .typed-word {
+  font-weight: 900;
+}
