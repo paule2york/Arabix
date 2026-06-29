@@ -9654,3 +9654,46 @@ html[lang^="ar"] .hero-actions {
     justify-content: stretch;
   }
 }
+
+/* Arabic ticker and hero action final fix */
+@keyframes arabicTickerSeamless {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+html[lang^="ar"] .capability-ticker .ticker-track {
+  direction: ltr;
+  min-width: max-content;
+  transform: translate3d(0, 0, 0);
+  animation: arabicTickerSeamless 64s linear infinite;
+}
+
+html[lang^="ar"] .capability-ticker .logo-strip span,
+html[lang^="ar"] .capability-ticker span {
+  direction: rtl;
+}
+
+html[lang^="ar"] .capability-ticker span::after {
+  margin-inline-start: 28px;
+  margin-inline-end: 0;
+  align-self: center;
+}
+
+html[lang^="ar"] .hero-actions {
+  justify-content: flex-start;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+html[lang^="ar"] .hero-main-btn,
+html[lang^="ar"] .hero-ecommerce-btn {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 760px) {
+  html[lang^="ar"] .hero-actions {
+    justify-content: stretch;
+    margin-left: 0;
+  }
+}
