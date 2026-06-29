@@ -9404,3 +9404,146 @@ html[lang^="ar"] .service-orbit strong {
   font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
   letter-spacing: 0;
 }
+
+/* Arabic final RTL fixes */
+@keyframes tickerMoveArabicStable {
+  to {
+    transform: translateX(-16.666667%);
+  }
+}
+
+html[lang^="ar"] .ticker-track {
+  animation: tickerMoveArabicStable 46s linear infinite;
+  will-change: transform;
+}
+
+html[lang^="ar"] .logo-strip span::after {
+  align-self: center;
+  transform: none;
+}
+
+html[lang^="ar"] .hero-content {
+  justify-self: end;
+  text-align: right;
+}
+
+html[lang^="ar"] .hero .space-eyebrow,
+html[lang^="ar"] .page-hero .space-eyebrow,
+html[lang^="ar"] .study-hero .space-eyebrow,
+html[lang^="ar"] .space-eyebrow {
+  direction: rtl;
+  flex-direction: row-reverse;
+  align-self: flex-end;
+  justify-content: flex-end;
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+  gap: 14px;
+  font-family: "Noto Kufi Arabic", "Cairo", "Tahoma", "Arial", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-align: right;
+}
+
+html[lang^="ar"] .hero .space-eyebrow span,
+html[lang^="ar"] .page-hero .space-eyebrow span,
+html[lang^="ar"] .study-hero .space-eyebrow span,
+html[lang^="ar"] .space-eyebrow span {
+  flex: 0 0 54px;
+}
+
+html[lang^="ar"] .contact-page .contact-visual {
+  right: auto;
+  left: clamp(42px, 7vw, 128px);
+  width: min(38vw, 560px);
+  opacity: 0.4;
+  transform: none;
+}
+
+html[lang^="ar"] .contact-page .contact-art {
+  right: auto;
+  left: 0;
+  width: 100%;
+  max-width: 560px;
+}
+
+html[lang^="ar"] .contact-dot-field {
+  right: auto;
+  left: 20px;
+}
+
+html[lang^="ar"] .contact-chip-a {
+  right: 18px;
+  left: auto;
+}
+
+html[lang^="ar"] .contact-chip-b {
+  right: auto;
+  left: 18px;
+}
+
+html[lang^="ar"] .study-overview {
+  align-items: end;
+}
+
+html[lang^="ar"] .study-overview > p {
+  margin-top: clamp(36px, 5vw, 84px);
+  border-right-width: 4px;
+  border-left-width: 0;
+  text-align: right;
+  line-height: 1.85;
+}
+
+html[lang^="ar"] .study-overview > p::after {
+  content: "\0645\0628\0646\064a \0639\0644\0649 \0627\0644\0648\0636\0648\062d \0648\0627\0644\062b\0642\0629 \0648\0632\062e\0645 \0627\0644\0625\0637\0644\0627\0642.";
+  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+html[lang^="ar"] .solution-action a::after,
+html[lang^="ar"] .study-cta a::after,
+html[lang^="ar"] .page-cta a::after {
+  content: "\2190";
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 0;
+  font-family: "Space Grotesk", "Arial", sans-serif;
+  direction: ltr;
+  unicode-bidi: isolate;
+  line-height: 1;
+}
+
+html[lang^="ar"] .primary-cta span[aria-hidden="true"],
+html[lang^="ar"] .form-submit span[aria-hidden="true"] {
+  display: inline-block;
+  font-family: "Space Grotesk", "Arial", sans-serif;
+  direction: ltr;
+  unicode-bidi: isolate;
+  line-height: 1;
+}
+
+html[lang^="ar"] .arabix-chat-copy {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  html[lang^="ar"] .hero .space-eyebrow,
+  html[lang^="ar"] .page-hero .space-eyebrow,
+  html[lang^="ar"] .study-hero .space-eyebrow,
+  html[lang^="ar"] .space-eyebrow {
+    align-self: flex-start;
+    margin-inline-start: 0;
+    margin-inline-end: auto;
+  }
+
+  html[lang^="ar"] .contact-page .contact-visual {
+    left: clamp(18px, 5vw, 42px);
+    width: min(82vw, 520px);
+    opacity: 0.32;
+  }
+
+  html[lang^="ar"] .study-overview > p {
+    margin-top: 0;
+  }
+}
