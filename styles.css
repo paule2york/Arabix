@@ -9598,3 +9598,59 @@ html[lang^="ar"] .arabix-chat-copy {
     margin-top: 0;
   }
 }
+
+/* Arabic hero right-column correction */
+html[lang^="ar"] .hero-content {
+  width: min(760px, 48vw);
+  margin-right: clamp(38px, 5vw, 92px);
+  margin-left: auto;
+  justify-self: end;
+  align-self: center;
+  text-align: right;
+}
+
+html[lang^="ar"] .hero-title {
+  width: 100%;
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+  justify-items: end;
+}
+
+html[lang^="ar"] .space-title span {
+  width: fit-content;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+}
+
+html[lang^="ar"] .hero-copy {
+  max-width: 620px;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+}
+
+html[lang^="ar"] .hero-actions {
+  justify-content: flex-end;
+}
+
+@media (max-width: 1100px) {
+  html[lang^="ar"] .hero-content {
+    width: min(820px, 86vw);
+    margin-right: clamp(22px, 4vw, 56px);
+  }
+}
+
+@media (max-width: 760px) {
+  html[lang^="ar"] .hero-content {
+    width: min(100%, 92vw);
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  html[lang^="ar"] .hero-actions {
+    justify-content: stretch;
+  }
+}
