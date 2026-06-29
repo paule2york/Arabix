@@ -9424,7 +9424,58 @@ html[lang^="ar"] .logo-strip span::after {
 
 html[lang^="ar"] .hero-content {
   justify-self: end;
+  position: relative;
+  z-index: 5;
   text-align: right;
+}
+
+
+html[lang^="ar"] .orbit-card-a {
+  right: 22%;
+  top: 14%;
+}
+
+html[lang^="ar"] .orbit-card-b {
+  right: 5%;
+  top: 66%;
+}
+
+html[lang^="ar"] .orbit-card-c {
+  left: 10%;
+  bottom: 14%;
+}
+
+html[lang^="ar"] .orbit-card-d {
+  left: 6%;
+  top: 34%;
+}
+
+html[lang^="ar"] .vortex-chip {
+  opacity: 0.72;
+}
+
+html[lang^="ar"] .chip-one {
+  left: auto;
+  right: 13%;
+  top: 26%;
+}
+
+html[lang^="ar"] .chip-two {
+  right: auto;
+  left: 12%;
+  top: 28%;
+}
+
+html[lang^="ar"] .chip-three {
+  right: auto;
+  left: 18%;
+  bottom: 18%;
+}
+
+html[lang^="ar"] .chip-four {
+  left: auto;
+  right: 18%;
+  bottom: 10%;
 }
 
 html[lang^="ar"] .hero .space-eyebrow,
