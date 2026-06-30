@@ -9697,3 +9697,29 @@ html[lang^="ar"] .hero-ecommerce-btn {
     margin-left: 0;
   }
 }
+
+/* Arabic ticker hard reset */
+html[lang^="ar"] .capability-ticker {
+  direction: ltr;
+}
+
+html[lang^="ar"] .capability-ticker .ticker-track {
+  position: relative;
+  left: 0;
+  right: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  min-width: max-content;
+  margin-right: 0;
+  margin-left: 0;
+  direction: ltr;
+  transform: translate3d(0, 0, 0);
+  animation: tickerMove 34s linear infinite;
+}
+
+html[lang^="ar"] .capability-ticker span {
+  flex: 0 0 auto;
+  direction: rtl;
+  text-align: center;
+}
