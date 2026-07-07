@@ -178,6 +178,26 @@ portfolioImages.forEach((image) => {
 const projectForm = document.querySelector(".project-form");
 if (projectForm) {
   const statusEl = projectForm.querySelector("[data-form-status]");
+  const setupOtherField = (key) => {
+    const toggles = [...projectForm.querySelectorAll(`[data-other-toggle="${key}"]`)];
+    const field = projectForm.querySelector(`[data-other-field="${key}"]`);
+    const input = field?.querySelector("input");
+    if (!toggles.length || !field || !input) return;
+
+    const sync = () => {
+      const isActive = toggles.some((toggle) => toggle.checked);
+      field.classList.toggle("is-visible", isActive);
+      input.disabled = !isActive;
+      input.required = isActive;
+      if (!isActive) input.value = "";
+    };
+
+    toggles.forEach((toggle) => toggle.addEventListener("change", sync));
+    sync();
+  };
+
+  setupOtherField("service");
+  setupOtherField("budget");
   projectForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 

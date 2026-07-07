@@ -9826,3 +9826,29 @@ html[lang^="ar"] .price-badges span {
   font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
   letter-spacing: 0;
 }
+
+/* Contact other field reveal */
+.other-field {
+  display: grid;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition:
+    max-height 220ms ease,
+    margin-top 220ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.other-field.is-visible {
+  max-height: 120px;
+  margin-top: 12px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.other-field input:disabled {
+  cursor: not-allowed;
+}

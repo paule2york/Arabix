@@ -121,7 +121,12 @@
                 <label><input type="checkbox" name="services" value="pr press" /> PR &amp; Press</label>
                 <label><input type="checkbox" name="services" value="maintenance" /> Maintenance</label>
                 <label><input type="checkbox" name="services" value="funnels analytics" /> Funnels / Analytics</label>
+                <label><input type="checkbox" name="services" value="other" data-other-toggle="service" /> Other</label>
               </div>
+              <label class="other-field" data-other-field="service">
+                <span>Other service</span>
+                <input type="text" name="other_service" placeholder="Type the service you need" disabled />
+              </label>
             </fieldset>
             <fieldset>
               <legend>Budget range *</legend>
@@ -130,7 +135,12 @@
                 <label><input type="radio" name="budget" value="2000-5000" /> SAR 2,000 - 5,000</label>
                 <label><input type="radio" name="budget" value="6000-8000" /> SAR 6,000 - 8,000</label>
                 <label><input type="radio" name="budget" value="10000+" /> SAR 10,000+</label>
+                <label><input type="radio" name="budget" value="other" data-other-toggle="budget" /> Other</label>
               </div>
+              <label class="other-field" data-other-field="budget">
+                <span>Other budget</span>
+                <input type="text" name="other_budget" placeholder="Type your budget range" disabled />
+              </label>
             </fieldset>
             <label>
               <span>Tell us about your project *</span>
