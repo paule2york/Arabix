@@ -201,7 +201,7 @@ if (projectForm) {
       window.location.href = projectForm.querySelector('input[name="_next"]')?.value || "./thank-you.html";
     } catch (error) {
       if (statusEl) {
-        statusEl.textContent = "Message could not be sent. Please email paule2york@gmail.com or message on WhatsApp.";
+        statusEl.textContent = "Message could not be sent. Please email hello@arabixweb.com or message on WhatsApp.";
       }
       if (submitButton) submitButton.disabled = false;
     }
