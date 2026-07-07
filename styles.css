@@ -9773,3 +9773,56 @@ html[lang^="ar"] .old-price {
   font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
   letter-spacing: 0;
 }
+
+/* Offer badge styling */
+.price-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.price-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid rgba(182, 255, 0, 0.36);
+  border-radius: 999px;
+  background: rgba(182, 255, 0, 0.14);
+  color: var(--lime);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+  box-shadow: 0 10px 28px rgba(182, 255, 0, 0.12);
+}
+
+.price-badges span:last-child {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+}
+
+.price-card.highlighted .price-badges span,
+.price-card.featured .price-badges span {
+  border-color: rgba(5, 7, 12, 0.24);
+  background: rgba(5, 7, 12, 0.9);
+  color: var(--lime);
+}
+
+.price-card.highlighted .price-badges span:last-child,
+.price-card.featured .price-badges span:last-child {
+  background: rgba(5, 7, 12, 0.12);
+  color: var(--black);
+}
+
+html[lang^="ar"] .price-badges {
+  direction: rtl;
+}
+
+html[lang^="ar"] .price-badges span {
+  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  letter-spacing: 0;
+}
