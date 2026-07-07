@@ -9723,3 +9723,53 @@ html[lang^="ar"] .capability-ticker span {
   direction: rtl;
   text-align: center;
 }
+
+/* Discount price styling */
+.old-price {
+  display: inline-block;
+  width: fit-content;
+  color: rgba(255, 255, 255, 0.46);
+  font-size: 0.92rem;
+  font-weight: 900;
+  line-height: 1;
+  text-decoration-line: line-through;
+  text-decoration-color: var(--lime);
+  text-decoration-thickness: 2px;
+  text-transform: uppercase;
+}
+
+.plan-price .old-price {
+  margin-top: 2px;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.price-card.highlighted .plan-price .old-price {
+  color: rgba(5, 7, 12, 0.48);
+  text-decoration-color: rgba(5, 7, 12, 0.82);
+}
+
+.study-pricing .price-card .old-price {
+  margin: 14px 0 8px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 1rem;
+}
+
+.study-pricing .price-card.featured .old-price {
+  color: rgba(5, 7, 12, 0.52);
+  text-decoration-color: rgba(5, 7, 12, 0.86);
+}
+
+.solution-action .old-price {
+  display: block;
+  margin-bottom: 7px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 0.76rem;
+}
+
+html[lang^="ar"] .old-price {
+  direction: rtl;
+  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  letter-spacing: 0;
+}
