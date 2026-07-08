@@ -9852,3 +9852,92 @@ html[lang^="ar"] .price-badges span {
 .other-field input:disabled {
   cursor: not-allowed;
 }
+
+/* Portfolio gallery project meta */
+.portfolio-image-tile {
+  align-content: stretch;
+}
+
+.portfolio-image-tile:has(.portfolio-project-meta) {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.portfolio-image-tile:has(.portfolio-project-meta):hover {
+  transform: translateY(-5px);
+  border-color: rgba(5, 7, 12, 0.18);
+  box-shadow: 0 30px 80px rgba(5, 7, 12, 0.16);
+}
+
+.portfolio-image-tile:has(.portfolio-project-meta) img {
+  flex: 1 1 220px;
+  min-height: 190px;
+  height: auto;
+}
+
+.portfolio-project-meta {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border-top: 1px solid rgba(5, 7, 12, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(244, 246, 248, 0.98));
+  color: #05070c;
+}
+
+.portfolio-project-meta h3 {
+  margin: 0;
+  color: #05070c;
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+  font-weight: 900;
+  line-height: 1.08;
+}
+
+.portfolio-project-meta dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.portfolio-project-meta div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.portfolio-project-meta dt {
+  color: rgba(5, 7, 12, 0.46);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.portfolio-project-meta dd {
+  margin: 0;
+  color: #05070c;
+  font-size: 0.92rem;
+  font-weight: 900;
+}
+
+html[lang^="ar"] .portfolio-project-meta {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang^="ar"] .portfolio-project-meta h3,
+html[lang^="ar"] .portfolio-project-meta dt,
+html[lang^="ar"] .portfolio-project-meta dd {
+  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  letter-spacing: 0;
+}
+
+@media (max-width: 680px) {
+  .portfolio-project-meta dl {
+    grid-template-columns: 1fr;
+  }
+}
