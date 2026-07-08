@@ -1,115 +1,109 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Arabix CMS</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <script>window.CMS_MANUAL_INIT = true;</script>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    <script>
-      window.addEventListener("load", function () {
-        CMS.init({
-          config: {
-            backend: {
-              name: "github",
-              repo: "paule2york/Arabix",
-              branch: "main"
-            },
-            media_folder: "assets/uploads",
-            public_folder: "/assets/uploads",
-            collections: [
-              {
-                name: "site_data",
-                label: "Site Data",
-                files: [
-                  {
-                    file: "data/portfolio.json",
-                    name: "portfolio",
-                    label: "Portfolio Projects",
-                    fields: [
-                      {
-                        label: "Categories",
-                        name: "categories",
-                        widget: "list",
-                        fields: [
-                          { label: "ID", name: "id", widget: "string" },
-                          { label: "English Label", name: "en", widget: "string" },
-                          { label: "Arabic Label", name: "ar", widget: "string" }
-                        ]
-                      },
-                      {
-                        label: "Projects",
-                        name: "projects",
-                        widget: "list",
-                        fields: [
-                          { label: "Category ID", name: "category", widget: "string" },
-                          { label: "Image", name: "image", widget: "image", required: false },
-                          { label: "Title", name: "title", widget: "object", fields: [
-                            { label: "English", name: "en", widget: "string" },
-                            { label: "Arabic", name: "ar", widget: "string" }
-                          ] },
-                          { label: "Timeframe", name: "timeframe", widget: "object", fields: [
-                            { label: "English", name: "en", widget: "string" },
-                            { label: "Arabic", name: "ar", widget: "string" }
-                          ] },
-                          { label: "Budget", name: "budget", widget: "object", fields: [
-                            { label: "English", name: "en", widget: "string" },
-                            { label: "Arabic", name: "ar", widget: "string" }
-                          ] }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    file: "data/shop.json",
-                    name: "shop",
-                    label: "Shop Themes",
-                    fields: [
-                      {
-                        label: "Categories",
-                        name: "categories",
-                        widget: "list",
-                        fields: [
-                          { label: "ID", name: "id", widget: "string" },
-                          { label: "English Label", name: "en", widget: "string" },
-                          { label: "Arabic Label", name: "ar", widget: "string" }
-                        ]
-                      },
-                      {
-                        label: "Themes",
-                        name: "products",
-                        widget: "list",
-                        fields: [
-                          { label: "Category ID", name: "category", widget: "string" },
-                          { label: "Image", name: "image", widget: "image", required: false },
-                          { label: "Title", name: "title", widget: "object", fields: [
-                            { label: "English", name: "en", widget: "string" },
-                            { label: "Arabic", name: "ar", widget: "string" }
-                          ] },
-                          { label: "Price", name: "price", widget: "object", fields: [
-                            { label: "English", name: "en", widget: "string" },
-                            { label: "Arabic", name: "ar", widget: "string" }
-                          ] },
-                          { label: "Delivery", name: "timeframe", widget: "object", fields: [
-                            { label: "English", name: "en", widget: "string" },
-                            { label: "Arabic", name: "ar", widget: "string" }
-                          ] },
-                          { label: "Description", name: "description", widget: "object", fields: [
-                            { label: "English", name: "en", widget: "text" },
-                            { label: "Arabic", name: "ar", widget: "text" }
-                          ] }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        });
-      });
-    </script>
+    <main class="cms-shell">
+      <section class="login-view" data-login-view>
+        <div class="login-card">
+          <div class="brand-mark">arabix</div>
+          <p class="eyebrow">Private CMS</p>
+          <h1>Update portfolio and shop without touching code.</h1>
+          <p class="muted">
+            Login with a GitHub fine-grained token for <strong>paule2york/Arabix</strong>.
+            The token stays in this browser session only.
+          </p>
+
+          <form class="token-form" data-login-form>
+            <label for="github-token">GitHub token</label>
+            <input id="github-token" name="token" type="password" autocomplete="off" placeholder="github_pat_..." required />
+            <button type="submit">Open CMS</button>
+          </form>
+
+          <details class="help-box">
+            <summary>Need a token?</summary>
+            <ol>
+              <li>Open GitHub settings, then create a fine-grained personal access token.</li>
+              <li>Select the <strong>paule2york/Arabix</strong> repository.</li>
+              <li>Give <strong>Contents: Read and write</strong> permission.</li>
+              <li>Copy the token here. Use a short expiry like 30 or 90 days.</li>
+            </ol>
+          </details>
+
+          <p class="status" data-login-status></p>
+        </div>
+      </section>
+
+      <section class="app-view is-hidden" data-app-view>
+        <header class="cms-header">
+          <div>
+            <div class="brand-mark">arabix</div>
+            <p>CMS dashboard</p>
+          </div>
+          <div class="header-actions">
+            <a href="/" target="_blank" rel="noreferrer">View site</a>
+            <button type="button" data-refresh>Refresh data</button>
+            <button type="button" data-logout>Logout</button>
+          </div>
+        </header>
+
+        <nav class="cms-tabs" aria-label="CMS sections">
+          <button type="button" class="is-active" data-tab="portfolio">Portfolio</button>
+          <button type="button" data-tab="shop">Shop themes</button>
+        </nav>
+
+        <section class="panel" data-panel="portfolio">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Portfolio</p>
+              <h2>Work gallery</h2>
+            </div>
+            <button type="button" data-save="portfolio">Save portfolio</button>
+          </div>
+          <div class="editor-grid">
+            <div class="editor-card">
+              <h3>Categories</h3>
+              <div data-categories="portfolio"></div>
+              <button type="button" class="ghost" data-add-category="portfolio">Add category</button>
+            </div>
+            <div class="editor-card wide">
+              <h3>Projects</h3>
+              <div data-items="portfolio"></div>
+              <button type="button" class="ghost" data-add-item="portfolio">Add project</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel is-hidden" data-panel="shop">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Shop</p>
+              <h2>Theme products</h2>
+            </div>
+            <button type="button" data-save="shop">Save shop</button>
+          </div>
+          <div class="editor-grid">
+            <div class="editor-card">
+              <h3>Categories</h3>
+              <div data-categories="shop"></div>
+              <button type="button" class="ghost" data-add-category="shop">Add category</button>
+            </div>
+            <div class="editor-card wide">
+              <h3>Themes</h3>
+              <div data-items="shop"></div>
+              <button type="button" class="ghost" data-add-item="shop">Add theme</button>
+            </div>
+          </div>
+        </section>
+
+        <p class="status" data-app-status></p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
   </body>
 </html>
