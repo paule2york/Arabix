@@ -45,7 +45,68 @@
       "description": {
         "en": "A clean service-business theme with homepage, about, services and contact sections ready to edit.",
         "ar": "قالب نظيف للأعمال الخدمية مع الرئيسية ومن نحن والخدمات والتواصل، جاهز للتعديل."
-      }
+      },
+      "slug": "business-theme",
+      "badge": {
+        "en": "Product of the Week",
+        "ar": "???? ???????"
+      },
+      "platform": {
+        "en": "HTML / CMS-ready",
+        "ar": "HTML / ???? ???????"
+      },
+      "liveDemo": "#",
+      "license": {
+        "personal": {
+          "en": "Personal license",
+          "ar": "???? ?????",
+          "price": 499,
+          "oldPrice": 773
+        },
+        "commercial": {
+          "en": "Commercial license",
+          "ar": "???? ??????",
+          "price": 899,
+          "oldPrice": 1304
+        }
+      },
+      "addons": [
+        {
+          "id": "support",
+          "en": "Extra 6 months support",
+          "ar": "??? ????? ???? 6 ????",
+          "price": 120,
+          "selected": false
+        },
+        {
+          "id": "setup",
+          "en": "Installation & setup",
+          "ar": "??????? ????????",
+          "price": 180,
+          "selected": true
+        },
+        {
+          "id": "customization",
+          "en": "Basic customization package",
+          "ar": "???? ????? ??????",
+          "price": 350,
+          "selected": false
+        },
+        {
+          "id": "seo",
+          "en": "Launch SEO setup",
+          "ar": "????? SEO ???????",
+          "price": 250,
+          "selected": false
+        },
+        {
+          "id": "plugins",
+          "en": "Must-have plugins pack",
+          "ar": "???? ???????? ??????",
+          "price": 160,
+          "selected": true
+        }
+      ]
     },
     {
       "category": "ecommerce",
@@ -65,7 +126,68 @@
       "description": {
         "en": "A store layout for product collections, offers and a smooth purchase path.",
         "ar": "تصميم متجر لعرض المنتجات والعروض ومسار شراء واضح."
-      }
+      },
+      "slug": "ecommerce-theme",
+      "badge": {
+        "en": "Ready Theme",
+        "ar": "???? ????"
+      },
+      "platform": {
+        "en": "HTML / CMS-ready",
+        "ar": "HTML / ???? ???????"
+      },
+      "liveDemo": "#",
+      "license": {
+        "personal": {
+          "en": "Personal license",
+          "ar": "???? ?????",
+          "price": 799,
+          "oldPrice": 1238
+        },
+        "commercial": {
+          "en": "Commercial license",
+          "ar": "???? ??????",
+          "price": 1399,
+          "oldPrice": 2029
+        }
+      },
+      "addons": [
+        {
+          "id": "support",
+          "en": "Extra 6 months support",
+          "ar": "??? ????? ???? 6 ????",
+          "price": 120,
+          "selected": false
+        },
+        {
+          "id": "setup",
+          "en": "Installation & setup",
+          "ar": "??????? ????????",
+          "price": 180,
+          "selected": true
+        },
+        {
+          "id": "customization",
+          "en": "Basic customization package",
+          "ar": "???? ????? ??????",
+          "price": 350,
+          "selected": false
+        },
+        {
+          "id": "seo",
+          "en": "Launch SEO setup",
+          "ar": "????? SEO ???????",
+          "price": 250,
+          "selected": false
+        },
+        {
+          "id": "plugins",
+          "en": "Must-have plugins pack",
+          "ar": "???? ???????? ??????",
+          "price": 160,
+          "selected": true
+        }
+      ]
     },
     {
       "category": "landing",
@@ -85,7 +207,68 @@
       "description": {
         "en": "A focused landing page for ads, lead capture and service launches.",
         "ar": "صفحة هبوط مركزة للإعلانات وجمع العملاء وإطلاق الخدمات."
-      }
+      },
+      "slug": "landing-theme",
+      "badge": {
+        "en": "Ready Theme",
+        "ar": "???? ????"
+      },
+      "platform": {
+        "en": "HTML / CMS-ready",
+        "ar": "HTML / ???? ???????"
+      },
+      "liveDemo": "#",
+      "license": {
+        "personal": {
+          "en": "Personal license",
+          "ar": "???? ?????",
+          "price": 349,
+          "oldPrice": 541
+        },
+        "commercial": {
+          "en": "Commercial license",
+          "ar": "???? ??????",
+          "price": 699,
+          "oldPrice": 1014
+        }
+      },
+      "addons": [
+        {
+          "id": "support",
+          "en": "Extra 6 months support",
+          "ar": "??? ????? ???? 6 ????",
+          "price": 120,
+          "selected": false
+        },
+        {
+          "id": "setup",
+          "en": "Installation & setup",
+          "ar": "??????? ????????",
+          "price": 180,
+          "selected": true
+        },
+        {
+          "id": "customization",
+          "en": "Basic customization package",
+          "ar": "???? ????? ??????",
+          "price": 350,
+          "selected": false
+        },
+        {
+          "id": "seo",
+          "en": "Launch SEO setup",
+          "ar": "????? SEO ???????",
+          "price": 250,
+          "selected": false
+        },
+        {
+          "id": "plugins",
+          "en": "Must-have plugins pack",
+          "ar": "???? ???????? ??????",
+          "price": 160,
+          "selected": true
+        }
+      ]
     },
     {
       "category": "portfolio",
@@ -105,7 +288,68 @@
       "description": {
         "en": "A gallery-first theme for designers, studios and creators who need quick proof of work.",
         "ar": "قالب يركز على المعرض للمصممين والاستوديوهات وصناع المحتوى."
-      }
+      },
+      "slug": "portfolio-theme",
+      "badge": {
+        "en": "Ready Theme",
+        "ar": "???? ????"
+      },
+      "platform": {
+        "en": "HTML / CMS-ready",
+        "ar": "HTML / ???? ???????"
+      },
+      "liveDemo": "#",
+      "license": {
+        "personal": {
+          "en": "Personal license",
+          "ar": "???? ?????",
+          "price": 449,
+          "oldPrice": 696
+        },
+        "commercial": {
+          "en": "Commercial license",
+          "ar": "???? ??????",
+          "price": 849,
+          "oldPrice": 1231
+        }
+      },
+      "addons": [
+        {
+          "id": "support",
+          "en": "Extra 6 months support",
+          "ar": "??? ????? ???? 6 ????",
+          "price": 120,
+          "selected": false
+        },
+        {
+          "id": "setup",
+          "en": "Installation & setup",
+          "ar": "??????? ????????",
+          "price": 180,
+          "selected": true
+        },
+        {
+          "id": "customization",
+          "en": "Basic customization package",
+          "ar": "???? ????? ??????",
+          "price": 350,
+          "selected": false
+        },
+        {
+          "id": "seo",
+          "en": "Launch SEO setup",
+          "ar": "????? SEO ???????",
+          "price": 250,
+          "selected": false
+        },
+        {
+          "id": "plugins",
+          "en": "Must-have plugins pack",
+          "ar": "???? ???????? ??????",
+          "price": 160,
+          "selected": true
+        }
+      ]
     }
   ]
 }

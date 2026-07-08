@@ -247,6 +247,102 @@ const renderPortfolioCms = async () => {
   grid.querySelectorAll("img").forEach(setupImageFallback);
   setupCmsFilter(bar, grid);
 };
+const parsePriceValue = (value) => {
+  if (typeof value === "number") return value;
+  const match = String(value || "").replace(/,/g, "").match(/\d+(?:\.\d+)?/);
+  return match ? Number(match[0]) : 0;
+};
+const formatSar = (amount) => (langKey === "ar" ? "\u0631.\u0633 " : "SAR ") + Number(amount || 0).toLocaleString("en-US");
+const shopCart = [];
+const ensureShopCart = () => {
+  let drawer = document.querySelector("[data-shop-cart]");
+  if (drawer) return drawer;
+  drawer = document.createElement("aside");
+  drawer.className = "shop-cart-drawer";
+  drawer.setAttribute("data-shop-cart", "");
+  drawer.innerHTML = '<button class="shop-cart-close" type="button" data-cart-close>?</button><h3>' + (langKey === "ar" ? "\u0633\u0644\u0629 \u0627\u0644\u0637\u0644\u0628" : "Your Cart") + '</h3><div class="shop-cart-items" data-cart-items></div><div class="shop-cart-total"><span>' + (langKey === "ar" ? "\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a" : "Total") + '</span><strong data-cart-total></strong></div><button class="shop-cart-checkout" type="button" data-cart-checkout>' + (langKey === "ar" ? "\u0625\u062a\u0645\u0627\u0645 \u0627\u0644\u0637\u0644\u0628" : "Checkout") + '</button><p>' + (langKey === "ar" ? "\u0633\u0646\u0631\u0633\u0644 \u0644\u0643 \u0631\u0627\u0628\u0637 \u062f\u0641\u0639 \u0623\u0648 \u0641\u0627\u062a\u0648\u0631\u0629 Payoneer \u0628\u0639\u062f \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0637\u0644\u0628." : "We will send a payment link or Payoneer invoice after reviewing your order.") + '</p>';
+  document.body.appendChild(drawer);
+  drawer.querySelector("[data-cart-close]").addEventListener("click", () => drawer.classList.remove("is-open"));
+  drawer.querySelector("[data-cart-checkout]").addEventListener("click", () => {
+    if (!shopCart.length) return;
+    const total = shopCart.reduce((sum, item) => sum + item.total, 0);
+    const message = shopCart.map((item, index) => (index + 1) + ". " + item.title + " - " + item.license + " - " + formatSar(item.total) + (item.addons.length ? "\nAdd-ons: " + item.addons.join(", ") : "")).join("\n\n");
+    window.location.href = "./contact.html?order=" + encodeURIComponent(message) + "&total=" + encodeURIComponent(formatSar(total));
+  });
+  return drawer;
+};
+const renderShopCart = () => {
+  const drawer = ensureShopCart();
+  const items = drawer.querySelector("[data-cart-items]");
+  const total = shopCart.reduce((sum, item) => sum + item.total, 0);
+  items.innerHTML = shopCart.length ? shopCart.map((item, index) => '<div class="shop-cart-item"><div><strong>' + escapeHtml(item.title) + '</strong><span>' + escapeHtml(item.license) + '</span></div><b>' + formatSar(item.total) + '</b><button type="button" data-remove-cart="' + index + '">?</button></div>').join("") : '<p class="shop-cart-empty">' + (langKey === "ar" ? "\u0627\u0644\u0633\u0644\u0629 \u0641\u0627\u0631\u063a\u0629" : "Cart is empty") + '</p>';
+  drawer.querySelector("[data-cart-total]").textContent = formatSar(total);
+  items.querySelectorAll("[data-remove-cart]").forEach((button) => button.addEventListener("click", () => {
+    shopCart.splice(Number(button.dataset.removeCart), 1);
+    renderShopCart();
+  }));
+  drawer.classList.add("is-open");
+};
+
+const getProductBasePrice = (product) => product?.license?.personal?.price || parsePriceValue(textFrom(product?.price));
+const ensureShopModal = () => {
+  let modal = document.querySelector("[data-shop-modal]");
+  if (modal) return modal;
+  modal = document.createElement("div");
+  modal.className = "shop-product-modal";
+  modal.setAttribute("data-shop-modal", "");
+  modal.setAttribute("aria-hidden", "true");
+  modal.innerHTML = '<div class="shop-product-backdrop" data-shop-close></div><section class="shop-product-panel" role="dialog" aria-modal="true"><button class="shop-product-close" type="button" data-shop-close aria-label="Close">?</button><div data-shop-detail></div></section>';
+  document.body.appendChild(modal);
+  modal.addEventListener("click", (event) => {
+    if (event.target.closest("[data-shop-close]")) {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("shop-modal-open");
+    }
+  });
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.classList.contains("is-open")) {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("shop-modal-open");
+    }
+  });
+  return modal;
+};
+const openShopProduct = (product) => {
+  const modal = ensureShopModal();
+  const detail = modal.querySelector("[data-shop-detail]");
+  const personal = product.license?.personal || { price: getProductBasePrice(product), oldPrice: 0, en: "Personal license", ar: "\u0631\u062e\u0635\u0629 \u0634\u062e\u0635\u064a\u0629" };
+  const commercial = product.license?.commercial || { price: getProductBasePrice(product) * 2, oldPrice: 0, en: "Commercial license", ar: "\u0631\u062e\u0635\u0629 \u062a\u062c\u0627\u0631\u064a\u0629" };
+  const addons = Array.isArray(product.addons) ? product.addons : [];
+  const productTitle = textFrom(product.title);
+  detail.innerHTML = '<div class="shop-detail-layout"><div class="shop-detail-preview"><div class="shop-detail-topline"><span>' + escapeHtml(textFrom(product.platform) || "Arabix Theme") + '</span><a href="' + escapeHtml(product.liveDemo || "#") + '">' + (langKey === "ar" ? "\u0639\u0631\u0636 \u0645\u0628\u0627\u0634\u0631" : "Live Demo") + '</a></div><div class="shop-detail-media-wrap">' + buildCmsMedia(product, "shop") + '<b>' + escapeHtml(textFrom(product.badge) || (langKey === "ar" ? "\u0642\u0627\u0644\u0628 \u062c\u0627\u0647\u0632" : "Ready Theme")) + '</b></div><h2>' + escapeHtml(productTitle) + '</h2><p>' + escapeHtml(textFrom(product.description)) + '</p></div><aside class="shop-detail-buy"><p class="shop-detail-kicker">' + (langKey === "ar" ? "\u0627\u062e\u062a\u0631 \u0627\u0644\u0631\u062e\u0635\u0629" : "Choose a license") + '</p><div class="shop-license-list"><label><input type="radio" name="shop-license" value="personal" checked data-license-price="' + personal.price + '"><span><strong>' + escapeHtml(textFrom(personal)) + '</strong><em>' + (personal.oldPrice ? '<del>' + formatSar(personal.oldPrice) + '</del>' : '') + '<b>' + formatSar(personal.price) + '</b></em></span></label><label><input type="radio" name="shop-license" value="commercial" data-license-price="' + commercial.price + '"><span><strong>' + escapeHtml(textFrom(commercial)) + '</strong><em>' + (commercial.oldPrice ? '<del>' + formatSar(commercial.oldPrice) + '</del>' : '') + '<b>' + formatSar(commercial.price) + '</b></em></span></label></div><p class="shop-detail-kicker">' + (langKey === "ar" ? "\u062e\u062f\u0645\u0627\u062a \u0625\u0636\u0627\u0641\u064a\u0629" : "Popular services") + '</p><div class="shop-addon-list">' + addons.map((addon) => '<label><input type="checkbox" data-addon-price="' + Number(addon.price || 0) + '" ' + (addon.selected ? 'checked' : '') + '><span><strong>' + escapeHtml(textFrom(addon)) + '</strong><em>+' + formatSar(addon.price || 0) + '</em></span></label>').join("") + '</div><div class="shop-total-row"><span>' + (langKey === "ar" ? "\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a" : "Total") + '</span><strong data-shop-total></strong></div><button class="shop-cart-button" type="button" data-shop-order>' + (langKey === "ar" ? "\u0623\u0636\u0641 \u0625\u0644\u0649 \u0627\u0644\u0633\u0644\u0629" : "Add to Cart") + '</button><p class="shop-manual-note">' + (langKey === "ar" ? "\u0628\u0639\u062f \u0627\u0644\u0637\u0644\u0628 \u0633\u0646\u0631\u0633\u0644 \u0644\u0643 \u0631\u0627\u0628\u0637 \u0627\u0644\u062f\u0641\u0639 \u0623\u0648 \u0641\u0627\u062a\u0648\u0631\u0629 Payoneer." : "After the order, we will send a Payoneer invoice or payment link.") + '</p></aside></div>';
+  detail.querySelectorAll("img").forEach(setupImageFallback);
+  const totalEl = detail.querySelector("[data-shop-total]");
+  const updateTotal = () => {
+    const license = detail.querySelector('input[name="shop-license"]:checked');
+    const addonsTotal = [...detail.querySelectorAll("[data-addon-price]:checked")].reduce((sum, item) => sum + Number(item.dataset.addonPrice || 0), 0);
+    const total = Number(license?.dataset.licensePrice || 0) + addonsTotal;
+    totalEl.textContent = formatSar(total);
+    return total;
+  };
+  detail.querySelectorAll("input").forEach((input) => input.addEventListener("change", updateTotal));
+  detail.querySelector("[data-shop-order]").addEventListener("click", () => {
+    const total = updateTotal();
+    const licenseLabel = detail.querySelector('input[name="shop-license"]:checked')?.closest("label")?.querySelector("strong")?.textContent || "";
+    const selectedAddons = [...detail.querySelectorAll("[data-addon-price]:checked")].map((item) => item.closest("label")?.querySelector("strong")?.textContent).filter(Boolean);
+    shopCart.push({ title: productTitle, license: licenseLabel, addons: selectedAddons, total });
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("shop-modal-open");
+    renderShopCart();
+  });
+  updateTotal();
+  modal.classList.add("is-open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("shop-modal-open");
+};
 const renderShopCms = async () => {
   const grid = document.querySelector("[data-shop-grid]");
   const bar = document.querySelector("[data-shop-filters]");
@@ -254,10 +350,22 @@ const renderShopCms = async () => {
   try {
     const data = await loadCmsJson(grid.dataset.source || "./data/shop.json");
     renderFilterButtons(bar, data.categories, langKey === "ar" ? "\u0643\u0644 \u0627\u0644\u0642\u0648\u0627\u0644\u0628" : "All Themes");
-    grid.innerHTML = (data.products || []).map((product) => {
-      const cta = langKey === "ar" ? "\u0627\u0637\u0644\u0628 \u0627\u0644\u0642\u0627\u0644\u0628" : "Request Theme";
-      return '<article class="shop-card" data-category="' + escapeHtml(product.category || "all") + '">' + buildCmsMedia(product, "shop") + '<div class="shop-card-body"><p>' + escapeHtml(textFrom(product.timeframe)) + '</p><h3>' + escapeHtml(textFrom(product.title)) + '</h3><strong>' + escapeHtml(textFrom(product.price)) + '</strong><span>' + escapeHtml(textFrom(product.description)) + '</span><a href="./contact.html">' + cta + '</a></div></article>';
+    grid.innerHTML = (data.products || []).map((product, index) => {
+      const cta = langKey === "ar" ? "\u0639\u0631\u0636 \u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644" : "View Details";
+      const price = product.license?.personal?.price ? formatSar(product.license.personal.price) : escapeHtml(textFrom(product.price));
+      return '<article class="shop-card" data-category="' + escapeHtml(product.category || "all") + '" data-product-index="' + index + '" tabindex="0" role="button">' + buildCmsMedia(product, "shop") + '<div class="shop-card-body"><p>' + escapeHtml(textFrom(product.timeframe)) + '</p><h3>' + escapeHtml(textFrom(product.title)) + '</h3><strong>' + price + '</strong><span>' + escapeHtml(textFrom(product.description)) + '</span><button type="button">' + cta + '</button></div></article>';
     }).join("");
+    const products = data.products || [];
+    grid.querySelectorAll("[data-product-index]").forEach((card) => {
+      const open = () => openShopProduct(products[Number(card.dataset.productIndex)]);
+      card.addEventListener("click", open);
+      card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          open();
+        }
+      });
+    });
   } catch (error) {
     console.warn(error);
   }
