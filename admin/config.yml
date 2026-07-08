@@ -1,0 +1,86 @@
+backend:
+  name: github
+  repo: paule2york/Arabix
+  branch: main
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+collections:
+  - name: "site_data"
+    label: "Site Data"
+    files:
+      - file: "data/portfolio.json"
+        name: "portfolio"
+        label: "Portfolio Projects"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "English Label", name: "en", widget: "string" }
+              - { label: "Arabic Label", name: "ar", widget: "string" }
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Category ID", name: "category", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Arabic", name: "ar", widget: "string" }
+              - label: "Timeframe"
+                name: "timeframe"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Arabic", name: "ar", widget: "string" }
+              - label: "Budget"
+                name: "budget"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Arabic", name: "ar", widget: "string" }
+      - file: "data/shop.json"
+        name: "shop"
+        label: "Shop Themes"
+        fields:
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "English Label", name: "en", widget: "string" }
+              - { label: "Arabic Label", name: "ar", widget: "string" }
+          - label: "Themes"
+            name: "products"
+            widget: "list"
+            fields:
+              - { label: "Category ID", name: "category", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Arabic", name: "ar", widget: "string" }
+              - label: "Price"
+                name: "price"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Arabic", name: "ar", widget: "string" }
+              - label: "Delivery"
+                name: "timeframe"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Arabic", name: "ar", widget: "string" }
+              - label: "Description"
+                name: "description"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "text" }
+                  - { label: "Arabic", name: "ar", widget: "text" }

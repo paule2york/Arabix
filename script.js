@@ -169,35 +169,103 @@ if (canvas && !reduceMotion.matches && heroCanvasQuery.matches) {
   window.addEventListener("beforeunload", () => cancelAnimationFrame(animationFrame));
 }
 
-const portfolioImages = document.querySelectorAll(".portfolio-image-tile img");
-portfolioImages.forEach((image) => {
-  const removeBrokenImage = () => image.remove();
-  image.addEventListener("error", removeBrokenImage, { once: true });
-  if (image.complete && image.naturalWidth === 0) removeBrokenImage();
-});
-const portfolioFilterBar = document.querySelector("[data-portfolio-filters]");
-const portfolioGrid = document.querySelector("[data-portfolio-grid]");
-if (portfolioFilterBar && portfolioGrid) {
-  const filterButtons = [...portfolioFilterBar.querySelectorAll("[data-filter]")];
-  const portfolioItems = [...portfolioGrid.querySelectorAll("[data-category]")];
-
-  filterButtons.forEach((button) => {
+const langKey = (document.documentElement.lang || "en").toLowerCase().startsWith("ar") ? "ar" : "en";
+const textFrom = (value) => {
+  if (value && typeof value === "object") return value[langKey] || value.en || value.ar || "";
+  return value || "";
+};
+const escapeHtml = (value) => String(value || "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
+const setupImageFallback = (image) => {
+  const fail = () => {
+    const media = image.closest(".portfolio-card-media, .shop-card-media");
+    if (!media) return;
+    image.remove();
+    media.classList.add("is-placeholder");
+    if (!media.querySelector(".cms-placeholder-mark")) {
+      const mark = document.createElement("span");
+      mark.className = "cms-placeholder-mark";
+      mark.textContent = media.dataset.mark || "A";
+      media.appendChild(mark);
+    }
+  };
+  image.addEventListener("error", fail, { once: true });
+  if (image.complete && image.naturalWidth === 0) fail();
+};
+const buildCmsMedia = (item, kind) => {
+  const title = textFrom(item.title);
+  const letter = (title.trim()[0] || "A").toUpperCase();
+  const image = String(item.image || "").trim();
+  if (!image) return '<div class="' + kind + '-card-media is-placeholder" data-mark="' + escapeHtml(letter) + '"><span class="cms-placeholder-mark">' + escapeHtml(letter) + '</span></div>';
+  return '<div class="' + kind + '-card-media" data-mark="' + escapeHtml(letter) + '"><img src="' + escapeHtml(image) + '" alt="' + escapeHtml(title) + '" loading="lazy" /></div>';
+};
+const renderFilterButtons = (bar, categories, fallbackAllLabel) => {
+  if (!bar || !Array.isArray(categories)) return;
+  const list = categories.length ? categories : [{ id: "all", en: fallbackAllLabel, ar: fallbackAllLabel }];
+  bar.innerHTML = list.map((category, index) => {
+    const id = category.id || "all";
+    const active = index === 0;
+    return '<button class="' + (active ? 'is-active' : '') + '" type="button" data-filter="' + escapeHtml(id) + '" aria-pressed="' + String(active) + '">' + escapeHtml(textFrom(category)) + '</button>';
+  }).join("");
+};
+const setupCmsFilter = (bar, grid) => {
+  if (!bar || !grid) return;
+  const buttons = [...bar.querySelectorAll("[data-filter]")];
+  const items = () => [...grid.querySelectorAll("[data-category]")];
+  buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const filter = button.dataset.filter || "all";
-
-      filterButtons.forEach((item) => {
-        const isActive = item === button;
-        item.classList.toggle("is-active", isActive);
-        item.setAttribute("aria-pressed", String(isActive));
+      buttons.forEach((item) => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
       });
-
-      portfolioItems.forEach((item) => {
-        const shouldShow = filter === "all" || item.dataset.category === filter;
-        item.classList.toggle("is-filtered-out", !shouldShow);
-      });
+      items().forEach((item) => item.classList.toggle("is-filtered-out", filter !== "all" && item.dataset.category !== filter));
     });
   });
-}
+};
+const loadCmsJson = async (source) => {
+  if (!source) return null;
+  const response = await fetch(source, { cache: "no-store" });
+  if (!response.ok) throw new Error("Could not load " + source);
+  return response.json();
+};
+const renderPortfolioCms = async () => {
+  const grid = document.querySelector("[data-portfolio-grid]");
+  const bar = document.querySelector("[data-portfolio-filters]");
+  if (!grid) return;
+  try {
+    const data = await loadCmsJson(grid.dataset.source || "./data/portfolio.json");
+    renderFilterButtons(bar, data.categories, langKey === "ar" ? "\u0643\u0644 \u0627\u0644\u0623\u0639\u0645\u0627\u0644" : "All Work");
+    grid.innerHTML = (data.projects || []).map((project) => {
+      const timeLabel = langKey === "ar" ? "\u0627\u0644\u0645\u062f\u0629" : "Timeframe";
+      const budgetLabel = langKey === "ar" ? "\u0627\u0644\u0645\u064a\u0632\u0627\u0646\u064a\u0629" : "Budget";
+      return '<figure class="portfolio-image-tile" data-category="' + escapeHtml(project.category || "all") + '">' + buildCmsMedia(project, "portfolio") + '<figcaption class="portfolio-project-meta"><h3>' + escapeHtml(textFrom(project.title)) + '</h3><dl><div><dt>' + timeLabel + '</dt><dd>' + escapeHtml(textFrom(project.timeframe)) + '</dd></div><div><dt>' + budgetLabel + '</dt><dd>' + escapeHtml(textFrom(project.budget)) + '</dd></div></dl></figcaption></figure>';
+    }).join("");
+  } catch (error) {
+    console.warn(error);
+  }
+  grid.querySelectorAll("img").forEach(setupImageFallback);
+  setupCmsFilter(bar, grid);
+};
+const renderShopCms = async () => {
+  const grid = document.querySelector("[data-shop-grid]");
+  const bar = document.querySelector("[data-shop-filters]");
+  if (!grid) return;
+  try {
+    const data = await loadCmsJson(grid.dataset.source || "./data/shop.json");
+    renderFilterButtons(bar, data.categories, langKey === "ar" ? "\u0643\u0644 \u0627\u0644\u0642\u0648\u0627\u0644\u0628" : "All Themes");
+    grid.innerHTML = (data.products || []).map((product) => {
+      const cta = langKey === "ar" ? "\u0627\u0637\u0644\u0628 \u0627\u0644\u0642\u0627\u0644\u0628" : "Request Theme";
+      return '<article class="shop-card" data-category="' + escapeHtml(product.category || "all") + '">' + buildCmsMedia(product, "shop") + '<div class="shop-card-body"><p>' + escapeHtml(textFrom(product.timeframe)) + '</p><h3>' + escapeHtml(textFrom(product.title)) + '</h3><strong>' + escapeHtml(textFrom(product.price)) + '</strong><span>' + escapeHtml(textFrom(product.description)) + '</span><a href="./contact.html">' + cta + '</a></div></article>';
+    }).join("");
+  } catch (error) {
+    console.warn(error);
+  }
+  grid.querySelectorAll("img").forEach(setupImageFallback);
+  setupCmsFilter(bar, grid);
+};
+renderPortfolioCms();
+renderShopCms();
 
 const projectForm = document.querySelector(".project-form");
 if (projectForm) {

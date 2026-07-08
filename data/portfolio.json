@@ -1,0 +1,174 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "en": "All Work",
+      "ar": "كل الأعمال"
+    },
+    {
+      "id": "ecommerce",
+      "en": "Ecommerce",
+      "ar": "المتاجر"
+    },
+    {
+      "id": "web",
+      "en": "Websites",
+      "ar": "المواقع"
+    },
+    {
+      "id": "branding",
+      "en": "Branding",
+      "ar": "الهوية"
+    },
+    {
+      "id": "campaigns",
+      "en": "Campaigns",
+      "ar": "الحملات"
+    },
+    {
+      "id": "social",
+      "en": "Social Media",
+      "ar": "السوشيال ميديا"
+    },
+    {
+      "id": "seo",
+      "en": "SEO",
+      "ar": "SEO"
+    },
+    {
+      "id": "ui",
+      "en": "UI",
+      "ar": "الواجهات"
+    }
+  ],
+  "projects": [
+    {
+      "category": "ecommerce",
+      "image": "/assets/portfolio/work-01.jpg",
+      "title": {
+        "en": "Luxury Storefront Build",
+        "ar": "بناء واجهة متجر راقية"
+      },
+      "timeframe": {
+        "en": "10 days",
+        "ar": "10 أيام"
+      },
+      "budget": {
+        "en": "SAR 1,999",
+        "ar": "ر.س 1,999"
+      }
+    },
+    {
+      "category": "web",
+      "image": "",
+      "title": {
+        "en": "Service Website Refresh",
+        "ar": "تحديث موقع خدمي"
+      },
+      "timeframe": {
+        "en": "7 days",
+        "ar": "7 أيام"
+      },
+      "budget": {
+        "en": "SAR 1,600",
+        "ar": "ر.س 1,600"
+      }
+    },
+    {
+      "category": "branding",
+      "image": "",
+      "title": {
+        "en": "Brand Identity Direction",
+        "ar": "اتجاه هوية بصرية"
+      },
+      "timeframe": {
+        "en": "12 days",
+        "ar": "12 يوما"
+      },
+      "budget": {
+        "en": "SAR 3,500",
+        "ar": "ر.س 3,500"
+      }
+    },
+    {
+      "category": "campaigns",
+      "image": "",
+      "title": {
+        "en": "Campaign Landing Page",
+        "ar": "صفحة هبوط لحملة"
+      },
+      "timeframe": {
+        "en": "5 days",
+        "ar": "5 أيام"
+      },
+      "budget": {
+        "en": "SAR 1,000",
+        "ar": "ر.س 1,000"
+      }
+    },
+    {
+      "category": "social",
+      "image": "",
+      "title": {
+        "en": "Social Content System",
+        "ar": "نظام محتوى اجتماعي"
+      },
+      "timeframe": {
+        "en": "14 days",
+        "ar": "14 يوما"
+      },
+      "budget": {
+        "en": "SAR 2,500",
+        "ar": "ر.س 2,500"
+      }
+    },
+    {
+      "category": "ui",
+      "image": "",
+      "title": {
+        "en": "Product Dashboard UI",
+        "ar": "واجهة لوحة تحكم"
+      },
+      "timeframe": {
+        "en": "18 days",
+        "ar": "18 يوما"
+      },
+      "budget": {
+        "en": "SAR 6,500",
+        "ar": "ر.س 6,500"
+      }
+    },
+    {
+      "category": "seo",
+      "image": "",
+      "title": {
+        "en": "SEO Page Structure",
+        "ar": "هيكلة صفحات SEO"
+      },
+      "timeframe": {
+        "en": "6 days",
+        "ar": "6 أيام"
+      },
+      "budget": {
+        "en": "SAR 1,000",
+        "ar": "ر.س 1,000"
+      }
+    },
+    {
+      "category": "campaigns",
+      "image": "",
+      "title": {
+        "en": "Press Launch Page",
+        "ar": "صفحة إطلاق صحفي"
+      },
+      "timeframe": {
+        "en": "8 days",
+        "ar": "8 أيام"
+      },
+      "budget": {
+        "en": "SAR 3,000",
+        "ar": "ر.س 3,000"
+      }
+    }
+  ]
+}

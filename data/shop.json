@@ -1,0 +1,111 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "en": "All Themes",
+      "ar": "كل القوالب"
+    },
+    {
+      "id": "business",
+      "en": "Business",
+      "ar": "أعمال"
+    },
+    {
+      "id": "ecommerce",
+      "en": "Ecommerce",
+      "ar": "المتاجر"
+    },
+    {
+      "id": "landing",
+      "en": "Landing Pages",
+      "ar": "صفحات هبوط"
+    },
+    {
+      "id": "portfolio",
+      "en": "Portfolio",
+      "ar": "معارض أعمال"
+    }
+  ],
+  "products": [
+    {
+      "category": "business",
+      "image": "",
+      "title": {
+        "en": "Premium Business Website Theme",
+        "ar": "قالب موقع أعمال احترافي"
+      },
+      "price": {
+        "en": "SAR 499",
+        "ar": "ر.س 499"
+      },
+      "timeframe": {
+        "en": "Instant delivery",
+        "ar": "تسليم فوري"
+      },
+      "description": {
+        "en": "A clean service-business theme with homepage, about, services and contact sections ready to edit.",
+        "ar": "قالب نظيف للأعمال الخدمية مع الرئيسية ومن نحن والخدمات والتواصل، جاهز للتعديل."
+      }
+    },
+    {
+      "category": "ecommerce",
+      "image": "",
+      "title": {
+        "en": "Starter Store Theme",
+        "ar": "قالب متجر البداية"
+      },
+      "price": {
+        "en": "SAR 799",
+        "ar": "ر.س 799"
+      },
+      "timeframe": {
+        "en": "Instant delivery",
+        "ar": "تسليم فوري"
+      },
+      "description": {
+        "en": "A store layout for product collections, offers and a smooth purchase path.",
+        "ar": "تصميم متجر لعرض المنتجات والعروض ومسار شراء واضح."
+      }
+    },
+    {
+      "category": "landing",
+      "image": "",
+      "title": {
+        "en": "Campaign Landing Theme",
+        "ar": "قالب صفحة حملة"
+      },
+      "price": {
+        "en": "SAR 349",
+        "ar": "ر.س 349"
+      },
+      "timeframe": {
+        "en": "Instant delivery",
+        "ar": "تسليم فوري"
+      },
+      "description": {
+        "en": "A focused landing page for ads, lead capture and service launches.",
+        "ar": "صفحة هبوط مركزة للإعلانات وجمع العملاء وإطلاق الخدمات."
+      }
+    },
+    {
+      "category": "portfolio",
+      "image": "",
+      "title": {
+        "en": "Creator Portfolio Theme",
+        "ar": "قالب معرض أعمال للمبدعين"
+      },
+      "price": {
+        "en": "SAR 449",
+        "ar": "ر.س 449"
+      },
+      "timeframe": {
+        "en": "Instant delivery",
+        "ar": "تسليم فوري"
+      },
+      "description": {
+        "en": "A gallery-first theme for designers, studios and creators who need quick proof of work.",
+        "ar": "قالب يركز على المعرض للمصممين والاستوديوهات وصناع المحتوى."
+      }
+    }
+  ]
+}
