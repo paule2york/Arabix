@@ -175,6 +175,30 @@ portfolioImages.forEach((image) => {
   image.addEventListener("error", removeBrokenImage, { once: true });
   if (image.complete && image.naturalWidth === 0) removeBrokenImage();
 });
+const portfolioFilterBar = document.querySelector("[data-portfolio-filters]");
+const portfolioGrid = document.querySelector("[data-portfolio-grid]");
+if (portfolioFilterBar && portfolioGrid) {
+  const filterButtons = [...portfolioFilterBar.querySelectorAll("[data-filter]")];
+  const portfolioItems = [...portfolioGrid.querySelectorAll("[data-category]")];
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter || "all";
+
+      filterButtons.forEach((item) => {
+        const isActive = item === button;
+        item.classList.toggle("is-active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
+      });
+
+      portfolioItems.forEach((item) => {
+        const shouldShow = filter === "all" || item.dataset.category === filter;
+        item.classList.toggle("is-filtered-out", !shouldShow);
+      });
+    });
+  });
+}
+
 const projectForm = document.querySelector(".project-form");
 if (projectForm) {
   const statusEl = projectForm.querySelector("[data-form-status]");

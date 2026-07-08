@@ -71,8 +71,18 @@
       </section>
 
       <section class="portfolio-gallery portfolio-gallery-only" aria-label="Portfolio image gallery">
-        <div class="portfolio-image-grid">
-          <figure class="portfolio-image-tile tile-large"><span></span><img src="./assets/portfolio/work-01.jpg" alt="Luxury Storefront Build" loading="lazy" />
+        <div class="portfolio-filter-bar" data-portfolio-filters aria-label="Filter portfolio by service">
+          <button class="is-active" type="button" data-filter="all" aria-pressed="true">All Work</button>
+          <button type="button" data-filter="ecommerce" aria-pressed="false">Ecommerce</button>
+          <button type="button" data-filter="web" aria-pressed="false">Websites</button>
+          <button type="button" data-filter="branding" aria-pressed="false">Branding</button>
+          <button type="button" data-filter="campaigns" aria-pressed="false">Campaigns</button>
+          <button type="button" data-filter="social" aria-pressed="false">Social Media</button>
+          <button type="button" data-filter="seo" aria-pressed="false">SEO</button>
+          <button type="button" data-filter="ui" aria-pressed="false">UI</button>
+        </div>
+        <div class="portfolio-image-grid" data-portfolio-grid>
+          <figure class="portfolio-image-tile tile-large" data-category="ecommerce"><span></span><img src="./assets/portfolio/work-01.jpg" alt="Luxury Storefront Build" loading="lazy" />
             <figcaption class="portfolio-project-meta">
               <h3>Luxury Storefront Build</h3>
               <dl>
@@ -81,7 +91,7 @@
               </dl>
             </figcaption>
           </figure>
-          <figure class="portfolio-image-tile"><span></span><img src="./assets/portfolio/work-02.jpg" alt="Service Website Refresh" loading="lazy" />
+          <figure class="portfolio-image-tile" data-category="web"><span></span><img src="./assets/portfolio/work-02.jpg" alt="Service Website Refresh" loading="lazy" />
             <figcaption class="portfolio-project-meta">
               <h3>Service Website Refresh</h3>
               <dl>
@@ -90,7 +100,7 @@
               </dl>
             </figcaption>
           </figure>
-          <figure class="portfolio-image-tile tile-tall"><span></span><img src="./assets/portfolio/work-03.jpg" alt="Brand Identity Direction" loading="lazy" />
+          <figure class="portfolio-image-tile tile-tall" data-category="branding"><span></span><img src="./assets/portfolio/work-03.jpg" alt="Brand Identity Direction" loading="lazy" />
             <figcaption class="portfolio-project-meta">
               <h3>Brand Identity Direction</h3>
               <dl>
@@ -99,7 +109,7 @@
               </dl>
             </figcaption>
           </figure>
-          <figure class="portfolio-image-tile"><span></span><img src="./assets/portfolio/work-04.jpg" alt="Campaign Landing Page" loading="lazy" />
+          <figure class="portfolio-image-tile" data-category="campaigns"><span></span><img src="./assets/portfolio/work-04.jpg" alt="Campaign Landing Page" loading="lazy" />
             <figcaption class="portfolio-project-meta">
               <h3>Campaign Landing Page</h3>
               <dl>
@@ -108,7 +118,7 @@
               </dl>
             </figcaption>
           </figure>
-          <figure class="portfolio-image-tile"><span></span><img src="./assets/portfolio/work-05.jpg" alt="Social Content System" loading="lazy" />
+          <figure class="portfolio-image-tile" data-category="social"><span></span><img src="./assets/portfolio/work-05.jpg" alt="Social Content System" loading="lazy" />
             <figcaption class="portfolio-project-meta">
               <h3>Social Content System</h3>
               <dl>
@@ -117,7 +127,7 @@
               </dl>
             </figcaption>
           </figure>
-          <figure class="portfolio-image-tile tile-wide"><span></span><img src="./assets/portfolio/work-06.jpg" alt="Product Dashboard UI" loading="lazy" />
+          <figure class="portfolio-image-tile tile-wide" data-category="ui"><span></span><img src="./assets/portfolio/work-06.jpg" alt="Product Dashboard UI" loading="lazy" />
             <figcaption class="portfolio-project-meta">
               <h3>Product Dashboard UI</h3>
               <dl>
@@ -126,7 +136,7 @@
               </dl>
             </figcaption>
           </figure>
-          <figure class="portfolio-image-tile"><span></span><img src="./assets/portfolio/work-07.jpg" alt="SEO Page Structure" loading="lazy" />
+          <figure class="portfolio-image-tile" data-category="seo"><span></span><img src="./assets/portfolio/work-07.jpg" alt="SEO Page Structure" loading="lazy" />
             <figcaption class="portfolio-project-meta">
               <h3>SEO Page Structure</h3>
               <dl>
@@ -135,7 +145,7 @@
               </dl>
             </figcaption>
           </figure>
-          <figure class="portfolio-image-tile"><span></span><img src="./assets/portfolio/work-08.jpg" alt="Press Launch Page" loading="lazy" />
+          <figure class="portfolio-image-tile" data-category="campaigns"><span></span><img src="./assets/portfolio/work-08.jpg" alt="Press Launch Page" loading="lazy" />
             <figcaption class="portfolio-project-meta">
               <h3>Press Launch Page</h3>
               <dl>

@@ -9941,3 +9941,100 @@ html[lang^="ar"] .portfolio-project-meta dd {
     grid-template-columns: 1fr;
   }
 }
+
+/* Portfolio category filtering */
+.portfolio-filter-bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto clamp(28px, 4vw, 46px);
+}
+
+.portfolio-filter-bar button {
+  min-height: 46px;
+  padding: 0 18px;
+  border: 1px solid rgba(5, 7, 12, 0.13);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: #05070c;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 14px 36px rgba(5, 7, 12, 0.08);
+  transition: transform 0.24s ease, background 0.24s ease, color 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+}
+
+.portfolio-filter-bar button:hover,
+.portfolio-filter-bar button.is-active {
+  transform: translateY(-2px);
+  border-color: rgba(5, 7, 12, 0.92);
+  background: #05070c;
+  color: var(--lime);
+  box-shadow: 0 18px 46px rgba(5, 7, 12, 0.18);
+}
+
+.portfolio-image-tile[data-category] {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  min-height: 0;
+  height: 100%;
+}
+
+.portfolio-image-tile[data-category].is-filtered-out {
+  display: none;
+}
+
+.portfolio-image-tile[data-category] img {
+  flex: 0 0 230px;
+  height: 230px;
+  min-height: 230px;
+}
+
+.portfolio-image-tile[data-category] .portfolio-project-meta {
+  min-height: 156px;
+}
+
+.portfolio-image-tile[data-category] .portfolio-project-meta h3 {
+  min-height: 2.3em;
+}
+
+html[lang^="ar"] .portfolio-filter-bar {
+  direction: rtl;
+}
+
+html[lang^="ar"] .portfolio-filter-bar button {
+  font-family: "Noto Kufi Arabic", "Tahoma", "Arial", sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@media (max-width: 680px) {
+  .portfolio-filter-bar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+
+  .portfolio-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .portfolio-filter-bar button {
+    flex: 0 0 auto;
+  }
+
+  .portfolio-image-tile[data-category] img {
+    flex-basis: 210px;
+    height: 210px;
+    min-height: 210px;
+  }
+}
