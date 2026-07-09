@@ -35,7 +35,10 @@ const files = {
         personal: { en: "Personal license", ar: "", price: 499, oldPrice: 799 },
         commercial: { en: "Commercial license", ar: "", price: 899, oldPrice: 1299 }
       },
-      addons: []
+      addons: [],
+      isNew: true,
+      isPopular: false,
+      isFeatured: false
     })
   }
 };
@@ -132,6 +135,15 @@ function numberField(label, path, value) {
   `;
 }
 
+function checkboxField(label, path, value) {
+  return `
+    <label class="checkbox-field">
+      <input type="checkbox" ${value ? "checked" : ""} data-field="${path}" />
+      <span>${label}</span>
+    </label>
+  `;
+}
+
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -220,8 +232,11 @@ function renderCategories(key) {
     .map((category, index) => `
       <div class="category-row" data-category-index="${index}">
         ${textField("ID", "id", category.id)}
+        ${textField("Icon", "icon", category.icon)}
         ${textField("English", "en", category.en)}
         ${textField("Arabic", "ar", category.ar)}
+        ${textField("Description EN", "description.en", category.description?.en)}
+        ${textField("Description AR", "description.ar", category.description?.ar)}
         <button type="button" class="danger" data-remove-category="${key}:${index}">Remove</button>
       </div>
     `)
@@ -283,6 +298,11 @@ function shopExtraFields(item) {
     ${textField("Badge AR", "badge.ar", item.badge?.ar)}
     ${textField("Platform EN", "platform.en", item.platform?.en)}
     ${textField("Platform AR", "platform.ar", item.platform?.ar)}
+    <div class="field-full flag-row">
+      ${checkboxField("New Added", "isNew", item.isNew)}
+      ${checkboxField("Popular", "isPopular", item.isPopular)}
+      ${checkboxField("Featured", "isFeatured", item.isFeatured)}
+    </div>
     ${textField("Personal license EN", "license.personal.en", item.license?.personal?.en)}
     ${textField("Personal license AR", "license.personal.ar", item.license?.personal?.ar)}
     ${numberField("Personal price", "license.personal.price", item.license?.personal?.price)}
@@ -300,7 +320,8 @@ function syncPanel(key) {
   qsa("[data-category-index]", panel).forEach((row) => {
     const category = {};
     qsa("[data-field]", row).forEach((input) => {
-      category[input.dataset.field] = input.value.trim();
+      const value = input.type === "checkbox" ? input.checked : input.value.trim();
+      setByPath(category, input.dataset.field, value);
     });
     categories.push(category);
   });
@@ -310,7 +331,7 @@ function syncPanel(key) {
   qsa("[data-item-index]", panel).forEach((card) => {
     const current = structuredClone(state.data[key][itemKey][Number(card.dataset.itemIndex)] || {});
     qsa("[data-field]", card).forEach((input) => {
-      const value = input.type === "number" ? Number(input.value || 0) : input.value.trim();
+      const value = input.type === "checkbox" ? input.checked : input.type === "number" ? Number(input.value || 0) : input.value.trim();
       setByPath(current, input.dataset.field, value);
     });
     items.push(current);
@@ -328,7 +349,7 @@ function showTab(key) {
 
 function addCategory(key) {
   syncPanel(key);
-  state.data[key].categories.push({ id: "new", en: "New category", ar: "" });
+  state.data[key].categories.push({ id: "new", icon: "market", en: "New category", ar: "", description: { en: "", ar: "" } });
   renderPanel(key);
 }
 

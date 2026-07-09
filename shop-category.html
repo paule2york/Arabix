@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shop Website Themes | Arabix</title>
-    <meta name="description" content="Browse Arabix website themes by category for ecommerce, restaurants, clinics, real estate, law firms and more." />
+    <title>Theme Category | Arabix</title>
+    <meta name="description" content="Browse Arabix themes by category." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&family=Cairo:wght@600;700;800;900&display=swap" rel="stylesheet" />
@@ -31,15 +31,9 @@
       <a class="lang-switch" href="./ar/shop.html" aria-label="Switch to Arabic">AR</a>
       <a class="header-cta magnetic-link" href="./contact.html"><i aria-hidden="true"></i><span data-label="START A PROJECT">START A PROJECT</span></a>
     </header>
-    <main class="shop-page shop-marketplace" data-shop-home data-source="./data/shop.json">
-      <section class="shop-market-hero">
-        <p class="eyebrow space-eyebrow"><span></span>Arabix theme marketplace</p>
-        <h1>Website themes for stores, services and growing brands.</h1>
-        <p>Browse clean, ready-to-customize website templates by business type. Pick a category, open a theme page, choose the license and request setup.</p>
-        <label class="shop-search" aria-label="Search themes"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg><input type="search" data-shop-search placeholder='Search themes, e.g. "clinic"' /></label>
-        <div class="shop-category-strip" data-shop-categories></div>
-      </section>
-      <section class="shop-showcase" data-shop-showcase></section>
+    <main class="shop-page shop-marketplace" data-shop-category-page data-source="./data/shop.json">
+      <section class="shop-category-hero" data-category-hero></section>
+      <section class="shop-showcase" data-category-products></section>
     </main>
 <footer class="site-footer">
       <div class="footer-motion" aria-hidden="true">

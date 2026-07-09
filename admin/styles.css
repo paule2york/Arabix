@@ -219,3 +219,33 @@ input:focus, textarea:focus, select:focus {
   .editor-grid, .field-grid, .category-row { grid-template-columns: 1fr; }
   .image-field { grid-template-columns: 1fr; }
 }
+
+.checkbox-field {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.checkbox-field input {
+  width: auto;
+  accent-color: var(--green);
+}
+
+.checkbox-field span {
+  margin: 0;
+}
+
+.flag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-row {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) auto;
+}

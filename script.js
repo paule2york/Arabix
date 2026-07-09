@@ -343,34 +343,116 @@ const openShopProduct = (product) => {
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("shop-modal-open");
 };
+
+const shopIconSvg = (name) => {
+  const icons = {
+    market: '<path d="M4 8h16l-1.2 11H5.2L4 8Z"/><path d="M7 8a5 5 0 0 1 10 0"/>',
+    store: '<path d="M4 10h16l-1-5H5l-1 5Z"/><path d="M6 10v9h12v-9"/><path d="M9 19v-5h6v5"/>',
+    utensils: '<path d="M7 4v16"/><path d="M4.5 4v5a2.5 2.5 0 0 0 5 0V4"/><path d="M15 4v16"/><path d="M15 4c3 1.4 4.5 4 3.3 7H15"/>',
+    hotel: '<path d="M4 20V6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v14"/><path d="M2 20h20"/><path d="M8 8h2M8 12h2M14 8h2M14 12h2"/>',
+    medical: '<path d="M12 5v14"/><path d="M5 12h14"/><path d="M6 6h12v12H6z"/>',
+    building: '<path d="M4 20V6l8-3 8 3v14"/><path d="M9 20v-6h6v6"/><path d="M8 8h.01M12 8h.01M16 8h.01M8 11h.01M12 11h.01M16 11h.01"/>',
+    scale: '<path d="M12 4v16"/><path d="M5 7h14"/><path d="M7 7l-3 6h6L7 7Z"/><path d="M17 7l-3 6h6l-3-6Z"/><path d="M9 20h6"/>',
+    briefcase: '<path d="M4 8h16v11H4z"/><path d="M9 8V5h6v3"/><path d="M4 13h16"/>',
+    book: '<path d="M5 4h10a4 4 0 0 1 4 4v12H9a4 4 0 0 0-4-4V4Z"/><path d="M5 16V4"/>',
+    user: '<path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M4 21a8 8 0 0 1 16 0"/>'
+  };
+  return '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + (icons[name] || icons.market) + '</svg>';
+};
+const shopCategoryHref = (categoryId) => (langKey === "ar" ? "./shop-category.html" : "./shop-category.html") + "?cat=" + encodeURIComponent(categoryId);
+const shopThemeHref = (slug) => (langKey === "ar" ? "./theme.html" : "./theme.html") + "?slug=" + encodeURIComponent(slug || "");
+const shopCategoryById = (data, id) => (data.categories || []).find((category) => category.id === id);
+const productSlug = (product, index = 0) => product.slug || String(textFrom(product.title) || "theme").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "theme-" + index;
+const shopCardHtml = (product, index, compact = false) => {
+  const href = shopThemeHref(productSlug(product, index));
+  const price = product.license?.personal?.price ? formatSar(product.license.personal.price) : escapeHtml(textFrom(product.price));
+  const badge = textFrom(product.badge) || (langKey === "ar" ? "???? ????" : "Ready Theme");
+  return '<article class="shop-card shop-market-card" data-category="' + escapeHtml(product.category || "all") + '"><a href="' + href + '">' + buildCmsMedia(product, "shop") + '<div class="shop-card-body"><p>' + escapeHtml(badge) + '</p><h3>' + escapeHtml(textFrom(product.title)) + '</h3><strong>' + price + '</strong>' + (compact ? '' : '<span>' + escapeHtml(textFrom(product.description)) + '</span>') + '<em>' + (langKey === "ar" ? "??? ????????" : "View details") + '</em></div></a></article>';
+};
+const renderShopRows = (target, data, products) => {
+  const newest = products.filter((item) => item.isNew).slice(0, 8);
+  const popular = products.filter((item) => item.isPopular).slice(0, 8);
+  const featuredCats = (data.categories || []).filter((category) => category.id !== "all");
+  const row = (title, subtitle, list) => '<div class="shop-product-row"><div class="shop-row-head"><div><p class="eyebrow">' + escapeHtml(subtitle) + '</p><h2>' + escapeHtml(title) + '</h2></div></div><div class="shop-row-grid">' + list.map((product, index) => shopCardHtml(product, index, true)).join("") + '</div></div>';
+  let html = row(langKey === "ar" ? "???? ??????" : "New Added", langKey === "ar" ? "??????? ?????" : "Fresh picks", newest.length ? newest : products.slice(0, 8));
+  html += row(langKey === "ar" ? "?????? ?????" : "Popular", langKey === "ar" ? "?? ???? ??? ???????" : "Customer favorites", popular.length ? popular : products.slice(2, 10));
+  featuredCats.forEach((category) => {
+    const list = products.filter((product) => product.category === category.id).slice(0, 5);
+    if (list.length) html += row((langKey === "ar" ? "?????? ?? " : "Latest in ") + textFrom(category), textFrom(category.description) || textFrom(category), list);
+  });
+  target.innerHTML = html;
+  target.querySelectorAll("img").forEach(setupImageFallback);
+};
+const renderShopHome = async (root) => {
+  const data = await loadCmsJson(root.dataset.source || "./data/shop.json");
+  const products = data.products || [];
+  const categoryWrap = root.querySelector("[data-shop-categories]");
+  const search = root.querySelector("[data-shop-search]");
+  const showcase = root.querySelector("[data-shop-showcase]");
+  categoryWrap.innerHTML = (data.categories || []).filter((category) => category.id !== "all").map((category) => '<a class="shop-category-tile" href="' + shopCategoryHref(category.id) + '"><span>' + shopIconSvg(category.icon) + '</span><strong>' + escapeHtml(textFrom(category)) + '</strong><small>' + escapeHtml(textFrom(category.description)) + '</small></a>').join("");
+  const update = () => {
+    const query = (search?.value || "").trim().toLowerCase();
+    const filtered = query ? products.filter((product) => [textFrom(product.title), textFrom(product.description), product.category].join(" ").toLowerCase().includes(query)) : products;
+    renderShopRows(showcase, data, filtered);
+  };
+  search?.addEventListener("input", update);
+  update();
+};
+const renderShopCategoryPage = async (root) => {
+  const data = await loadCmsJson(root.dataset.source || "./data/shop.json");
+  const params = new URLSearchParams(window.location.search);
+  const catId = params.get("cat") || "ecommerce";
+  const category = shopCategoryById(data, catId) || (data.categories || [])[1] || { id: "all", en: "Themes", ar: "???????", icon: "market" };
+  const products = (data.products || []).filter((product) => product.category === category.id);
+  const hero = root.querySelector("[data-category-hero]");
+  const list = root.querySelector("[data-category-products]");
+  hero.innerHTML = '<div class="shop-category-title"><span>' + shopIconSvg(category.icon) + '</span><p class="eyebrow">' + (langKey === "ar" ? "??? ???????" : "Theme category") + '</p><h1>' + escapeHtml(textFrom(category)) + '</h1><p>' + escapeHtml(textFrom(category.description)) + '</p></div>';
+  list.innerHTML = '<div class="shop-product-row"><div class="shop-row-head"><div><p class="eyebrow">' + (langKey === "ar" ? "?? ???????" : "All themes") + '</p><h2>' + escapeHtml(textFrom(category)) + '</h2></div><a href="./shop.html">' + (langKey === "ar" ? "?? ??????" : "All categories") + '</a></div><div class="shop-grid">' + products.map((product, index) => shopCardHtml(product, index)).join("") + '</div></div>';
+  list.querySelectorAll("img").forEach(setupImageFallback);
+};
+const renderThemeDetailPage = async (root) => {
+  const data = await loadCmsJson(root.dataset.source || "./data/shop.json");
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get("slug") || "";
+  const product = (data.products || []).find((item, index) => productSlug(item, index) === slug) || (data.products || [])[0];
+  const target = root.querySelector("[data-shop-detail-page-target]");
+  if (!product || !target) return;
+  const category = shopCategoryById(data, product.category) || {};
+  const personal = product.license?.personal || { price: getProductBasePrice(product), oldPrice: 0, en: "Personal license", ar: "???? ?????" };
+  const commercial = product.license?.commercial || { price: getProductBasePrice(product) * 2, oldPrice: 0, en: "Commercial license", ar: "???? ??????" };
+  const addons = Array.isArray(product.addons) ? product.addons : [];
+  const productTitle = textFrom(product.title);
+  target.innerHTML = '<div class="shop-detail-layout shop-detail-page-layout"><div class="shop-detail-preview"><nav class="shop-breadcrumb"><a href="./shop.html">' + (langKey === "ar" ? "??????" : "Shop") + '</a><span>/</span><a href="' + shopCategoryHref(product.category) + '">' + escapeHtml(textFrom(category) || product.category) + '</a></nav><div class="shop-detail-topline"><span>' + escapeHtml(textFrom(product.platform) || "Arabix Theme") + '</span><a href="' + escapeHtml(product.liveDemo || "#") + '">' + (langKey === "ar" ? "??? ?????" : "Live Demo") + '</a></div><h1>' + escapeHtml(productTitle) + '</h1><p>' + escapeHtml(textFrom(product.description)) + '</p><div class="shop-detail-media-wrap">' + buildCmsMedia(product, "shop") + '<b>' + escapeHtml(textFrom(product.badge) || (langKey === "ar" ? "???? ????" : "Ready Theme")) + '</b></div></div><aside class="shop-detail-buy"><p class="shop-detail-kicker">' + (langKey === "ar" ? "???? ??????" : "Choose a license") + '</p><div class="shop-license-list"><label><input type="radio" name="shop-license" value="personal" checked data-license-price="' + personal.price + '"><span><strong>' + escapeHtml(textFrom(personal)) + '</strong><em>' + (personal.oldPrice ? '<del>' + formatSar(personal.oldPrice) + '</del>' : '') + '<b>' + formatSar(personal.price) + '</b></em></span></label><label><input type="radio" name="shop-license" value="commercial" data-license-price="' + commercial.price + '"><span><strong>' + escapeHtml(textFrom(commercial)) + '</strong><em>' + (commercial.oldPrice ? '<del>' + formatSar(commercial.oldPrice) + '</del>' : '') + '<b>' + formatSar(commercial.price) + '</b></em></span></label></div><p class="shop-detail-kicker">' + (langKey === "ar" ? "????? ??????" : "Popular services") + '</p><div class="shop-addon-list">' + addons.map((addon) => '<label><input type="checkbox" data-addon-price="' + Number(addon.price || 0) + '" ' + (addon.selected ? 'checked' : '') + '><span><strong>' + escapeHtml(textFrom(addon)) + '</strong><em>+' + formatSar(addon.price || 0) + '</em></span></label>').join("") + '</div><div class="shop-total-row"><span>' + (langKey === "ar" ? "????????" : "Total") + '</span><strong data-shop-total></strong></div><button class="shop-cart-button" type="button" data-shop-order>' + (langKey === "ar" ? "??? ??? ?????" : "Add to Cart") + '</button><p class="shop-manual-note">' + (langKey === "ar" ? "??? ????? ????? ?? ???? ????? ?? ?????? Payoneer." : "After the order, we will send a Payoneer invoice or payment link.") + '</p></aside></div>';
+  target.querySelectorAll("img").forEach(setupImageFallback);
+  const totalEl = target.querySelector("[data-shop-total]");
+  const updateTotal = () => {
+    const license = target.querySelector('input[name="shop-license"]:checked');
+    const addonsTotal = [...target.querySelectorAll("[data-addon-price]:checked")].reduce((sum, item) => sum + Number(item.dataset.addonPrice || 0), 0);
+    const total = Number(license?.dataset.licensePrice || 0) + addonsTotal;
+    totalEl.textContent = formatSar(total);
+    return total;
+  };
+  target.querySelectorAll("input").forEach((input) => input.addEventListener("change", updateTotal));
+  target.querySelector("[data-shop-order]").addEventListener("click", () => {
+    const total = updateTotal();
+    const licenseLabel = target.querySelector('input[name="shop-license"]:checked')?.closest("label")?.querySelector("strong")?.textContent || "";
+    const selectedAddons = [...target.querySelectorAll("[data-addon-price]:checked")].map((item) => item.closest("label")?.querySelector("strong")?.textContent).filter(Boolean);
+    shopCart.push({ title: productTitle, license: licenseLabel, addons: selectedAddons, total });
+    renderShopCart();
+  });
+  updateTotal();
+};
 const renderShopCms = async () => {
-  const grid = document.querySelector("[data-shop-grid]");
-  const bar = document.querySelector("[data-shop-filters]");
-  if (!grid) return;
+  const home = document.querySelector("[data-shop-home]");
+  const categoryPage = document.querySelector("[data-shop-category-page]");
+  const detailPage = document.querySelector("[data-shop-detail-page]");
   try {
-    const data = await loadCmsJson(grid.dataset.source || "./data/shop.json");
-    renderFilterButtons(bar, data.categories, langKey === "ar" ? "\u0643\u0644 \u0627\u0644\u0642\u0648\u0627\u0644\u0628" : "All Themes");
-    grid.innerHTML = (data.products || []).map((product, index) => {
-      const cta = langKey === "ar" ? "\u0639\u0631\u0636 \u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644" : "View Details";
-      const price = product.license?.personal?.price ? formatSar(product.license.personal.price) : escapeHtml(textFrom(product.price));
-      return '<article class="shop-card" data-category="' + escapeHtml(product.category || "all") + '" data-product-index="' + index + '" tabindex="0" role="button">' + buildCmsMedia(product, "shop") + '<div class="shop-card-body"><p>' + escapeHtml(textFrom(product.timeframe)) + '</p><h3>' + escapeHtml(textFrom(product.title)) + '</h3><strong>' + price + '</strong><span>' + escapeHtml(textFrom(product.description)) + '</span><button type="button">' + cta + '</button></div></article>';
-    }).join("");
-    const products = data.products || [];
-    grid.querySelectorAll("[data-product-index]").forEach((card) => {
-      const open = () => openShopProduct(products[Number(card.dataset.productIndex)]);
-      card.addEventListener("click", open);
-      card.addEventListener("keydown", (event) => {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          open();
-        }
-      });
-    });
+    if (home) await renderShopHome(home);
+    if (categoryPage) await renderShopCategoryPage(categoryPage);
+    if (detailPage) await renderThemeDetailPage(detailPage);
   } catch (error) {
     console.warn(error);
   }
-  grid.querySelectorAll("img").forEach(setupImageFallback);
-  setupCmsFilter(bar, grid);
 };
 renderPortfolioCms();
 renderShopCms();
@@ -442,9 +524,9 @@ const setupArabixChat = () => {
   };
   window.Tawk_LoadStart = new Date();
 
-  const launcherTitle = isArabicPage ? "تحدث مع أرابكس" : "Chat with Arabix";
-  const launcherSubcopy = isArabicPage ? "نرد بسرعة عادة" : "Usually replies fast";
-  const launcherLabel = isArabicPage ? "افتح محادثة أرابكس المباشرة" : "Open Arabix live chat";
+  const launcherTitle = isArabicPage ? "ØªØ­Ø¯Ø« Ù…Ø¹ Ø£Ø±Ø§Ø¨ÙƒØ³" : "Chat with Arabix";
+  const launcherSubcopy = isArabicPage ? "Ù†Ø±Ø¯ Ø¨Ø³Ø±Ø¹Ø© Ø¹Ø§Ø¯Ø©" : "Usually replies fast";
+  const launcherLabel = isArabicPage ? "Ø§ÙØªØ­ Ù…Ø­Ø§Ø¯Ø«Ø© Ø£Ø±Ø§Ø¨ÙƒØ³ Ø§Ù„Ù…Ø¨Ø§Ø´Ø±Ø©" : "Open Arabix live chat";
 
   const launcher = document.createElement("button");
   launcher.type = "button";
