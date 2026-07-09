@@ -3,101 +3,101 @@
     {
       "id": "all",
       "en": "All Themes",
-      "ar": "?? ???????",
+      "ar": "كل القوالب",
       "icon": "market",
       "description": {
         "en": "Browse every ready-to-customize Arabix theme.",
-        "ar": "?? ???????"
+        "ar": "تصفح كل قوالب أرابكس الجاهزة للتخصيص."
       }
     },
     {
       "id": "ecommerce",
       "en": "Ecommerce Stores",
-      "ar": "??????? ???????????",
+      "ar": "المتاجر الإلكترونية",
       "icon": "store",
       "description": {
         "en": "Online stores for products, brands and catalog launches.",
-        "ar": "??????? ???????????"
+        "ar": "قوالب متاجر للمنتجات والعلامات وإطلاق الكتالوج."
       }
     },
     {
       "id": "restaurant",
       "en": "Restaurant & Cafe",
-      "ar": "??????? ????????",
+      "ar": "المطاعم والمقاهي",
       "icon": "utensils",
       "description": {
         "en": "Menus, reservations and food brand websites.",
-        "ar": "??????? ????????"
+        "ar": "مواقع للقوائم والحجوزات وهوية المطعم."
       }
     },
     {
       "id": "hotel",
       "en": "Hotel & Travel",
-      "ar": "??????? ??????",
+      "ar": "الفنادق والسفر",
       "icon": "hotel",
       "description": {
         "en": "Hotels, trips, tourism and booking-style layouts.",
-        "ar": "??????? ??????"
+        "ar": "قوالب للفنادق والرحلات ومكاتب السياحة."
       }
     },
     {
       "id": "clinic",
       "en": "Clinic & Medical",
-      "ar": "???????? ????????",
+      "ar": "العيادات والتجميل",
       "icon": "medical",
       "description": {
         "en": "Healthcare, dental, beauty and wellness templates.",
-        "ar": "???????? ????????"
+        "ar": "قوالب للعيادات والأسنان والتجميل والصحة."
       }
     },
     {
       "id": "realestate",
       "en": "Real Estate",
-      "ar": "????????",
+      "ar": "العقارات",
       "icon": "building",
       "description": {
         "en": "Property agencies, rentals and luxury listing pages.",
-        "ar": "????????"
+        "ar": "مواقع للعقارات والإيجارات وعرض الفلل والمشاريع."
       }
     },
     {
       "id": "legal",
       "en": "Law & Legal",
-      "ar": "???????? ????????",
+      "ar": "المحاماة والقانون",
       "icon": "scale",
       "description": {
         "en": "Law firms, consultants and professional legal offices.",
-        "ar": "???????? ????????"
+        "ar": "قوالب لمكاتب المحاماة والاستشارات القانونية."
       }
     },
     {
       "id": "business",
       "en": "Business / Corporate",
-      "ar": "??????? ????????",
+      "ar": "الأعمال والشركات",
       "icon": "briefcase",
       "description": {
         "en": "Company profile and service-business websites.",
-        "ar": "??????? ????????"
+        "ar": "مواقع تعريفية للشركات والخدمات والاستشارات."
       }
     },
     {
       "id": "education",
       "en": "Education & Courses",
-      "ar": "??????? ????????",
+      "ar": "التعليم والدورات",
       "icon": "book",
       "description": {
         "en": "Academies, courses, tutors and training centers.",
-        "ar": "??????? ????????"
+        "ar": "قوالب للأكاديميات والدورات ومراكز التدريب."
       }
     },
     {
       "id": "portfolio",
       "en": "Portfolio / Personal",
-      "ar": "??????? ???????",
+      "ar": "المعارض الشخصية",
       "icon": "user",
       "description": {
         "en": "Creators, consultants, photographers and personal brands.",
-        "ar": "??????? ???????"
+        "ar": "قوالب للمبدعين والمصورين والمستشارين."
       }
     }
   ],
@@ -108,7 +108,7 @@
       "slug": "ecommerce-luxury-storefront",
       "title": {
         "en": "Luxury Storefront Theme",
-        "ar": "??????? ??????????? - ???? 1"
+        "ar": "المتاجر الإلكترونية - قالب 1"
       },
       "price": {
         "en": "SAR 799",
@@ -116,19 +116,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished luxury storefront template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ???????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المتاجر الإلكترونية، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "New Added",
-        "ar": "????"
+        "ar": "جديد"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -137,13 +137,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 799,
           "oldPrice": 1238
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1249,
           "oldPrice": 1811
         }
@@ -152,28 +152,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -185,7 +185,7 @@
       "slug": "ecommerce-beauty-brand-shop",
       "title": {
         "en": "Beauty Brand Shop Theme",
-        "ar": "??????? ??????????? - ???? 2"
+        "ar": "المتاجر الإلكترونية - قالب 2"
       },
       "price": {
         "en": "SAR 879",
@@ -193,19 +193,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished beauty brand shop template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ???????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المتاجر الإلكترونية، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Popular",
-        "ar": "?????? ?????"
+        "ar": "الأكثر طلباً"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -214,13 +214,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 879,
           "oldPrice": 1362
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1329,
           "oldPrice": 1927
         }
@@ -229,28 +229,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -262,7 +262,7 @@
       "slug": "ecommerce-electronics-catalog",
       "title": {
         "en": "Electronics Catalog Theme",
-        "ar": "??????? ??????????? - ???? 3"
+        "ar": "المتاجر الإلكترونية - قالب 3"
       },
       "price": {
         "en": "SAR 959",
@@ -270,19 +270,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished electronics catalog template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ???????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المتاجر الإلكترونية، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -291,13 +291,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 959,
           "oldPrice": 1486
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1409,
           "oldPrice": 2043
         }
@@ -306,28 +306,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -339,7 +339,7 @@
       "slug": "ecommerce-perfume-boutique",
       "title": {
         "en": "Perfume Boutique Theme",
-        "ar": "??????? ??????????? - ???? 4"
+        "ar": "المتاجر الإلكترونية - قالب 4"
       },
       "price": {
         "en": "SAR 1,039",
@@ -347,19 +347,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished perfume boutique template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ???????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المتاجر الإلكترونية، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -368,13 +368,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 1039,
           "oldPrice": 1610
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1489,
           "oldPrice": 2159
         }
@@ -383,28 +383,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -416,7 +416,7 @@
       "slug": "ecommerce-fashion-drop-store",
       "title": {
         "en": "Fashion Drop Store Theme",
-        "ar": "??????? ??????????? - ???? 5"
+        "ar": "المتاجر الإلكترونية - قالب 5"
       },
       "price": {
         "en": "SAR 1,119",
@@ -424,19 +424,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished fashion drop store template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ???????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المتاجر الإلكترونية، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -445,13 +445,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 1119,
           "oldPrice": 1734
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1569,
           "oldPrice": 2275
         }
@@ -460,28 +460,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -493,7 +493,7 @@
       "slug": "restaurant-modern-cafe-menu",
       "title": {
         "en": "Modern Cafe Menu Theme",
-        "ar": "??????? ???????? - ???? 1"
+        "ar": "المطاعم والمقاهي - قالب 1"
       },
       "price": {
         "en": "SAR 449",
@@ -501,19 +501,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished modern cafe menu template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المطاعم والمقاهي، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "New Added",
-        "ar": "????"
+        "ar": "جديد"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -522,13 +522,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 449,
           "oldPrice": 696
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 899,
           "oldPrice": 1304
         }
@@ -537,28 +537,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -570,7 +570,7 @@
       "slug": "restaurant-cloud-kitchen-order-page",
       "title": {
         "en": "Cloud Kitchen Order Page Theme",
-        "ar": "??????? ???????? - ???? 2"
+        "ar": "المطاعم والمقاهي - قالب 2"
       },
       "price": {
         "en": "SAR 529",
@@ -578,19 +578,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished cloud kitchen order page template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المطاعم والمقاهي، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Popular",
-        "ar": "?????? ?????"
+        "ar": "الأكثر طلباً"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -599,13 +599,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 529,
           "oldPrice": 820
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 979,
           "oldPrice": 1420
         }
@@ -614,28 +614,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -647,7 +647,7 @@
       "slug": "restaurant-fine-dining-website",
       "title": {
         "en": "Fine Dining Website Theme",
-        "ar": "??????? ???????? - ???? 3"
+        "ar": "المطاعم والمقاهي - قالب 3"
       },
       "price": {
         "en": "SAR 609",
@@ -655,19 +655,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished fine dining website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المطاعم والمقاهي، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -676,13 +676,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 609,
           "oldPrice": 944
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1059,
           "oldPrice": 1536
         }
@@ -691,28 +691,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -724,7 +724,7 @@
       "slug": "restaurant-bakery-showcase",
       "title": {
         "en": "Bakery Showcase Theme",
-        "ar": "??????? ???????? - ???? 4"
+        "ar": "المطاعم والمقاهي - قالب 4"
       },
       "price": {
         "en": "SAR 689",
@@ -732,19 +732,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished bakery showcase template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المطاعم والمقاهي، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -753,13 +753,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 689,
           "oldPrice": 1068
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1139,
           "oldPrice": 1652
         }
@@ -768,28 +768,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -801,7 +801,7 @@
       "slug": "restaurant-burger-brand-storefront",
       "title": {
         "en": "Burger Brand Storefront Theme",
-        "ar": "??????? ???????? - ???? 5"
+        "ar": "المطاعم والمقاهي - قالب 5"
       },
       "price": {
         "en": "SAR 769",
@@ -809,19 +809,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished burger brand storefront template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المطاعم والمقاهي، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -830,13 +830,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 769,
           "oldPrice": 1192
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1219,
           "oldPrice": 1768
         }
@@ -845,28 +845,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -878,7 +878,7 @@
       "slug": "hotel-boutique-hotel-website",
       "title": {
         "en": "Boutique Hotel Website Theme",
-        "ar": "??????? ?????? - ???? 1"
+        "ar": "الفنادق والسفر - قالب 1"
       },
       "price": {
         "en": "SAR 599",
@@ -886,19 +886,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished boutique hotel website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ??????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة الفنادق والسفر، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "New Added",
-        "ar": "????"
+        "ar": "جديد"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -907,13 +907,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 599,
           "oldPrice": 928
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1049,
           "oldPrice": 1521
         }
@@ -922,28 +922,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -955,7 +955,7 @@
       "slug": "hotel-travel-agency-packages",
       "title": {
         "en": "Travel Agency Packages Theme",
-        "ar": "??????? ?????? - ???? 2"
+        "ar": "الفنادق والسفر - قالب 2"
       },
       "price": {
         "en": "SAR 679",
@@ -963,19 +963,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished travel agency packages template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ??????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة الفنادق والسفر، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Popular",
-        "ar": "?????? ?????"
+        "ar": "الأكثر طلباً"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -984,13 +984,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 679,
           "oldPrice": 1052
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1129,
           "oldPrice": 1637
         }
@@ -999,28 +999,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1032,7 +1032,7 @@
       "slug": "hotel-umrah-trip-landing",
       "title": {
         "en": "Umrah Trip Landing Theme",
-        "ar": "??????? ?????? - ???? 3"
+        "ar": "الفنادق والسفر - قالب 3"
       },
       "price": {
         "en": "SAR 759",
@@ -1040,19 +1040,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished umrah trip landing template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ??????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة الفنادق والسفر، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -1061,13 +1061,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 759,
           "oldPrice": 1176
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1209,
           "oldPrice": 1753
         }
@@ -1076,28 +1076,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1109,7 +1109,7 @@
       "slug": "hotel-resort-booking-layout",
       "title": {
         "en": "Resort Booking Layout Theme",
-        "ar": "??????? ?????? - ???? 4"
+        "ar": "الفنادق والسفر - قالب 4"
       },
       "price": {
         "en": "SAR 839",
@@ -1117,19 +1117,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished resort booking layout template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ??????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة الفنادق والسفر، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -1138,13 +1138,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 839,
           "oldPrice": 1300
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1289,
           "oldPrice": 1869
         }
@@ -1153,28 +1153,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1186,7 +1186,7 @@
       "slug": "hotel-city-tours-website",
       "title": {
         "en": "City Tours Website Theme",
-        "ar": "??????? ?????? - ???? 5"
+        "ar": "الفنادق والسفر - قالب 5"
       },
       "price": {
         "en": "SAR 919",
@@ -1194,19 +1194,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished city tours website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ??????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة الفنادق والسفر، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -1215,13 +1215,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 919,
           "oldPrice": 1424
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1369,
           "oldPrice": 1985
         }
@@ -1230,28 +1230,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1263,7 +1263,7 @@
       "slug": "clinic-dental-clinic-website",
       "title": {
         "en": "Dental Clinic Website Theme",
-        "ar": "???????? ???????? - ???? 1"
+        "ar": "العيادات والتجميل - قالب 1"
       },
       "price": {
         "en": "SAR 549",
@@ -1271,19 +1271,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished dental clinic website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ???????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة العيادات والتجميل، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "New Added",
-        "ar": "????"
+        "ar": "جديد"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -1292,13 +1292,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 549,
           "oldPrice": 851
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 999,
           "oldPrice": 1449
         }
@@ -1307,28 +1307,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1340,7 +1340,7 @@
       "slug": "clinic-beauty-clinic-booking",
       "title": {
         "en": "Beauty Clinic Booking Theme",
-        "ar": "???????? ???????? - ???? 2"
+        "ar": "العيادات والتجميل - قالب 2"
       },
       "price": {
         "en": "SAR 629",
@@ -1348,19 +1348,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished beauty clinic booking template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ???????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة العيادات والتجميل، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Popular",
-        "ar": "?????? ?????"
+        "ar": "الأكثر طلباً"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -1369,13 +1369,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 629,
           "oldPrice": 975
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1079,
           "oldPrice": 1565
         }
@@ -1384,28 +1384,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1417,7 +1417,7 @@
       "slug": "clinic-physio-care-website",
       "title": {
         "en": "Physio Care Website Theme",
-        "ar": "???????? ???????? - ???? 3"
+        "ar": "العيادات والتجميل - قالب 3"
       },
       "price": {
         "en": "SAR 709",
@@ -1425,19 +1425,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished physio care website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ???????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة العيادات والتجميل، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -1446,13 +1446,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 709,
           "oldPrice": 1099
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1159,
           "oldPrice": 1681
         }
@@ -1461,28 +1461,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1494,7 +1494,7 @@
       "slug": "clinic-medical-center-profile",
       "title": {
         "en": "Medical Center Profile Theme",
-        "ar": "???????? ???????? - ???? 4"
+        "ar": "العيادات والتجميل - قالب 4"
       },
       "price": {
         "en": "SAR 789",
@@ -1502,19 +1502,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished medical center profile template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ???????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة العيادات والتجميل، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -1523,13 +1523,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 789,
           "oldPrice": 1223
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1239,
           "oldPrice": 1797
         }
@@ -1538,28 +1538,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1571,7 +1571,7 @@
       "slug": "clinic-wellness-spa-website",
       "title": {
         "en": "Wellness Spa Website Theme",
-        "ar": "???????? ???????? - ???? 5"
+        "ar": "العيادات والتجميل - قالب 5"
       },
       "price": {
         "en": "SAR 869",
@@ -1579,19 +1579,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished wellness spa website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ???????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة العيادات والتجميل، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -1600,13 +1600,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 869,
           "oldPrice": 1347
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1319,
           "oldPrice": 1913
         }
@@ -1615,28 +1615,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1648,7 +1648,7 @@
       "slug": "realestate-luxury-villas-listings",
       "title": {
         "en": "Luxury Villas Listings Theme",
-        "ar": "???????? - ???? 1"
+        "ar": "العقارات - قالب 1"
       },
       "price": {
         "en": "SAR 649",
@@ -1656,19 +1656,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished luxury villas listings template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة العقارات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "New Added",
-        "ar": "????"
+        "ar": "جديد"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -1677,13 +1677,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 649,
           "oldPrice": 1006
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1099,
           "oldPrice": 1594
         }
@@ -1692,28 +1692,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1725,7 +1725,7 @@
       "slug": "realestate-property-agency-website",
       "title": {
         "en": "Property Agency Website Theme",
-        "ar": "???????? - ???? 2"
+        "ar": "العقارات - قالب 2"
       },
       "price": {
         "en": "SAR 729",
@@ -1733,19 +1733,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished property agency website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة العقارات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Popular",
-        "ar": "?????? ?????"
+        "ar": "الأكثر طلباً"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -1754,13 +1754,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 729,
           "oldPrice": 1130
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1179,
           "oldPrice": 1710
         }
@@ -1769,28 +1769,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1802,7 +1802,7 @@
       "slug": "realestate-rental-homes-portal",
       "title": {
         "en": "Rental Homes Portal Theme",
-        "ar": "???????? - ???? 3"
+        "ar": "العقارات - قالب 3"
       },
       "price": {
         "en": "SAR 809",
@@ -1810,19 +1810,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished rental homes portal template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة العقارات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -1831,13 +1831,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 809,
           "oldPrice": 1254
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1259,
           "oldPrice": 1826
         }
@@ -1846,28 +1846,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1879,7 +1879,7 @@
       "slug": "realestate-off-plan-project-page",
       "title": {
         "en": "Off Plan Project Page Theme",
-        "ar": "???????? - ???? 4"
+        "ar": "العقارات - قالب 4"
       },
       "price": {
         "en": "SAR 889",
@@ -1887,19 +1887,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished off plan project page template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة العقارات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -1908,13 +1908,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 889,
           "oldPrice": 1378
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1339,
           "oldPrice": 1942
         }
@@ -1923,28 +1923,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -1956,7 +1956,7 @@
       "slug": "realestate-real-estate-consultant",
       "title": {
         "en": "Real Estate Consultant Theme",
-        "ar": "???????? - ???? 5"
+        "ar": "العقارات - قالب 5"
       },
       "price": {
         "en": "SAR 969",
@@ -1964,19 +1964,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished real estate consultant template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة العقارات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -1985,13 +1985,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 969,
           "oldPrice": 1502
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1419,
           "oldPrice": 2058
         }
@@ -2000,28 +2000,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2033,7 +2033,7 @@
       "slug": "legal-law-firm-website",
       "title": {
         "en": "Law Firm Website Theme",
-        "ar": "???????? ???????? - ???? 1"
+        "ar": "المحاماة والقانون - قالب 1"
       },
       "price": {
         "en": "SAR 599",
@@ -2041,19 +2041,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished law firm website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ???????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المحاماة والقانون، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "New Added",
-        "ar": "????"
+        "ar": "جديد"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -2062,13 +2062,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 599,
           "oldPrice": 928
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1049,
           "oldPrice": 1521
         }
@@ -2077,28 +2077,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2110,7 +2110,7 @@
       "slug": "legal-legal-consultant-profile",
       "title": {
         "en": "Legal Consultant Profile Theme",
-        "ar": "???????? ???????? - ???? 2"
+        "ar": "المحاماة والقانون - قالب 2"
       },
       "price": {
         "en": "SAR 679",
@@ -2118,19 +2118,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished legal consultant profile template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ???????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المحاماة والقانون، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Popular",
-        "ar": "?????? ?????"
+        "ar": "الأكثر طلباً"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -2139,13 +2139,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 679,
           "oldPrice": 1052
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1129,
           "oldPrice": 1637
         }
@@ -2154,28 +2154,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2187,7 +2187,7 @@
       "slug": "legal-corporate-lawyer-site",
       "title": {
         "en": "Corporate Lawyer Site Theme",
-        "ar": "???????? ???????? - ???? 3"
+        "ar": "المحاماة والقانون - قالب 3"
       },
       "price": {
         "en": "SAR 759",
@@ -2195,19 +2195,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished corporate lawyer site template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ???????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المحاماة والقانون، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -2216,13 +2216,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 759,
           "oldPrice": 1176
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1209,
           "oldPrice": 1753
         }
@@ -2231,28 +2231,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2264,7 +2264,7 @@
       "slug": "legal-immigration-law-website",
       "title": {
         "en": "Immigration Law Website Theme",
-        "ar": "???????? ???????? - ???? 4"
+        "ar": "المحاماة والقانون - قالب 4"
       },
       "price": {
         "en": "SAR 839",
@@ -2272,19 +2272,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished immigration law website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ???????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المحاماة والقانون، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -2293,13 +2293,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 839,
           "oldPrice": 1300
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1289,
           "oldPrice": 1869
         }
@@ -2308,28 +2308,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2341,7 +2341,7 @@
       "slug": "legal-family-law-office",
       "title": {
         "en": "Family Law Office Theme",
-        "ar": "???????? ???????? - ???? 5"
+        "ar": "المحاماة والقانون - قالب 5"
       },
       "price": {
         "en": "SAR 919",
@@ -2349,19 +2349,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished family law office template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ???????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المحاماة والقانون، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -2370,13 +2370,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 919,
           "oldPrice": 1424
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1369,
           "oldPrice": 1985
         }
@@ -2385,28 +2385,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2418,7 +2418,7 @@
       "slug": "business-corporate-profile-website",
       "title": {
         "en": "Corporate Profile Website Theme",
-        "ar": "??????? ???????? - ???? 1"
+        "ar": "الأعمال والشركات - قالب 1"
       },
       "price": {
         "en": "SAR 499",
@@ -2426,19 +2426,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished corporate profile website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة الأعمال والشركات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "New Added",
-        "ar": "????"
+        "ar": "جديد"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -2447,13 +2447,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 499,
           "oldPrice": 773
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 949,
           "oldPrice": 1376
         }
@@ -2462,28 +2462,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2495,7 +2495,7 @@
       "slug": "business-consulting-company-theme",
       "title": {
         "en": "Consulting Company Theme Theme",
-        "ar": "??????? ???????? - ???? 2"
+        "ar": "الأعمال والشركات - قالب 2"
       },
       "price": {
         "en": "SAR 579",
@@ -2503,19 +2503,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished consulting company theme template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة الأعمال والشركات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Popular",
-        "ar": "?????? ?????"
+        "ar": "الأكثر طلباً"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -2524,13 +2524,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 579,
           "oldPrice": 897
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1029,
           "oldPrice": 1492
         }
@@ -2539,28 +2539,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2572,7 +2572,7 @@
       "slug": "business-agency-services-website",
       "title": {
         "en": "Agency Services Website Theme",
-        "ar": "??????? ???????? - ???? 3"
+        "ar": "الأعمال والشركات - قالب 3"
       },
       "price": {
         "en": "SAR 659",
@@ -2580,19 +2580,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished agency services website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة الأعمال والشركات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -2601,13 +2601,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 659,
           "oldPrice": 1021
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1109,
           "oldPrice": 1608
         }
@@ -2616,28 +2616,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2649,7 +2649,7 @@
       "slug": "business-industrial-company-site",
       "title": {
         "en": "Industrial Company Site Theme",
-        "ar": "??????? ???????? - ???? 4"
+        "ar": "الأعمال والشركات - قالب 4"
       },
       "price": {
         "en": "SAR 739",
@@ -2657,19 +2657,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished industrial company site template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة الأعمال والشركات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -2678,13 +2678,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 739,
           "oldPrice": 1145
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1189,
           "oldPrice": 1724
         }
@@ -2693,28 +2693,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2726,7 +2726,7 @@
       "slug": "business-finance-advisor-website",
       "title": {
         "en": "Finance Advisor Website Theme",
-        "ar": "??????? ???????? - ???? 5"
+        "ar": "الأعمال والشركات - قالب 5"
       },
       "price": {
         "en": "SAR 819",
@@ -2734,19 +2734,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished finance advisor website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة الأعمال والشركات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -2755,13 +2755,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 819,
           "oldPrice": 1269
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1269,
           "oldPrice": 1840
         }
@@ -2770,28 +2770,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2803,7 +2803,7 @@
       "slug": "education-online-course-website",
       "title": {
         "en": "Online Course Website Theme",
-        "ar": "??????? ???????? - ???? 1"
+        "ar": "التعليم والدورات - قالب 1"
       },
       "price": {
         "en": "SAR 449",
@@ -2811,19 +2811,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished online course website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة التعليم والدورات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "New Added",
-        "ar": "????"
+        "ar": "جديد"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -2832,13 +2832,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 449,
           "oldPrice": 696
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 899,
           "oldPrice": 1304
         }
@@ -2847,28 +2847,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2880,7 +2880,7 @@
       "slug": "education-training-center-theme",
       "title": {
         "en": "Training Center Theme Theme",
-        "ar": "??????? ???????? - ???? 2"
+        "ar": "التعليم والدورات - قالب 2"
       },
       "price": {
         "en": "SAR 529",
@@ -2888,19 +2888,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished training center theme template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة التعليم والدورات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Popular",
-        "ar": "?????? ?????"
+        "ar": "الأكثر طلباً"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -2909,13 +2909,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 529,
           "oldPrice": 820
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 979,
           "oldPrice": 1420
         }
@@ -2924,28 +2924,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -2957,7 +2957,7 @@
       "slug": "education-academy-enrollment-page",
       "title": {
         "en": "Academy Enrollment Page Theme",
-        "ar": "??????? ???????? - ???? 3"
+        "ar": "التعليم والدورات - قالب 3"
       },
       "price": {
         "en": "SAR 609",
@@ -2965,19 +2965,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished academy enrollment page template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة التعليم والدورات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -2986,13 +2986,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 609,
           "oldPrice": 944
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1059,
           "oldPrice": 1536
         }
@@ -3001,28 +3001,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -3034,7 +3034,7 @@
       "slug": "education-tutor-personal-website",
       "title": {
         "en": "Tutor Personal Website Theme",
-        "ar": "??????? ???????? - ???? 4"
+        "ar": "التعليم والدورات - قالب 4"
       },
       "price": {
         "en": "SAR 689",
@@ -3042,19 +3042,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished tutor personal website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة التعليم والدورات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -3063,13 +3063,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 689,
           "oldPrice": 1068
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1139,
           "oldPrice": 1652
         }
@@ -3078,28 +3078,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -3111,7 +3111,7 @@
       "slug": "education-language-school-website",
       "title": {
         "en": "Language School Website Theme",
-        "ar": "??????? ???????? - ???? 5"
+        "ar": "التعليم والدورات - قالب 5"
       },
       "price": {
         "en": "SAR 769",
@@ -3119,19 +3119,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished language school website template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ????????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة التعليم والدورات، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -3140,13 +3140,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 769,
           "oldPrice": 1192
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1219,
           "oldPrice": 1768
         }
@@ -3155,28 +3155,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -3188,7 +3188,7 @@
       "slug": "portfolio-designer-portfolio",
       "title": {
         "en": "Designer Portfolio Theme",
-        "ar": "??????? ??????? - ???? 1"
+        "ar": "المعارض الشخصية - قالب 1"
       },
       "price": {
         "en": "SAR 399",
@@ -3196,19 +3196,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished designer portfolio template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ???????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المعارض الشخصية، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "New Added",
-        "ar": "????"
+        "ar": "جديد"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -3217,13 +3217,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 399,
           "oldPrice": 618
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 849,
           "oldPrice": 1231
         }
@@ -3232,28 +3232,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -3265,7 +3265,7 @@
       "slug": "portfolio-photographer-gallery",
       "title": {
         "en": "Photographer Gallery Theme",
-        "ar": "??????? ??????? - ???? 2"
+        "ar": "المعارض الشخصية - قالب 2"
       },
       "price": {
         "en": "SAR 479",
@@ -3273,19 +3273,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished photographer gallery template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ???????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المعارض الشخصية، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Popular",
-        "ar": "?????? ?????"
+        "ar": "الأكثر طلباً"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": true,
@@ -3294,13 +3294,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 479,
           "oldPrice": 742
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 929,
           "oldPrice": 1347
         }
@@ -3309,28 +3309,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -3342,7 +3342,7 @@
       "slug": "portfolio-consultant-personal-brand",
       "title": {
         "en": "Consultant Personal Brand Theme",
-        "ar": "??????? ??????? - ???? 3"
+        "ar": "المعارض الشخصية - قالب 3"
       },
       "price": {
         "en": "SAR 559",
@@ -3350,19 +3350,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished consultant personal brand template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ???????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المعارض الشخصية، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -3371,13 +3371,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 559,
           "oldPrice": 866
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1009,
           "oldPrice": 1463
         }
@@ -3386,28 +3386,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -3419,7 +3419,7 @@
       "slug": "portfolio-studio-work-showcase",
       "title": {
         "en": "Studio Work Showcase Theme",
-        "ar": "??????? ??????? - ???? 4"
+        "ar": "المعارض الشخصية - قالب 4"
       },
       "price": {
         "en": "SAR 639",
@@ -3427,19 +3427,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished studio work showcase template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ???????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المعارض الشخصية، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -3448,13 +3448,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 639,
           "oldPrice": 990
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1089,
           "oldPrice": 1579
         }
@@ -3463,28 +3463,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
@@ -3496,7 +3496,7 @@
       "slug": "portfolio-creator-media-kit",
       "title": {
         "en": "Creator Media Kit Theme",
-        "ar": "??????? ??????? - ???? 5"
+        "ar": "المعارض الشخصية - قالب 5"
       },
       "price": {
         "en": "SAR 719",
@@ -3504,19 +3504,19 @@
       },
       "timeframe": {
         "en": "Instant delivery",
-        "ar": "????? ????"
+        "ar": "تسليم فوري"
       },
       "description": {
         "en": "A polished creator media kit template built for fast launch, clean sections and easy brand editing.",
-        "ar": "???? ???? ???? ??????? ???????? ???? ??????? ?????? ???????? ?????."
+        "ar": "قالب جاهز لفئة المعارض الشخصية، مصمم للإطلاق السريع والتعديل السهل."
       },
       "badge": {
         "en": "Ready Theme",
-        "ar": "???? ????"
+        "ar": "قالب جاهز"
       },
       "platform": {
         "en": "HTML / CMS-ready",
-        "ar": "HTML / ???? ???????"
+        "ar": "HTML / جاهز للإدارة"
       },
       "liveDemo": "#",
       "isNew": false,
@@ -3525,13 +3525,13 @@
       "license": {
         "personal": {
           "en": "Personal license",
-          "ar": "???? ?????",
+          "ar": "رخصة شخصية",
           "price": 719,
           "oldPrice": 1114
         },
         "commercial": {
           "en": "Commercial license",
-          "ar": "???? ??????",
+          "ar": "رخصة تجارية",
           "price": 1169,
           "oldPrice": 1695
         }
@@ -3540,28 +3540,28 @@
         {
           "id": "support",
           "en": "Extra 6 months support",
-          "ar": "??? ????? ???? 6 ????",
+          "ar": "دعم إضافي لمدة 6 أشهر",
           "price": 120,
           "selected": false
         },
         {
           "id": "setup",
           "en": "Installation & setup",
-          "ar": "??????? ????????",
+          "ar": "التركيب والإعداد",
           "price": 180,
           "selected": true
         },
         {
           "id": "customization",
           "en": "Basic customization package",
-          "ar": "???? ????? ??????",
+          "ar": "حزمة تخصيص أساسية",
           "price": 350,
           "selected": false
         },
         {
           "id": "seo",
           "en": "Launch SEO setup",
-          "ar": "????? SEO ??? ???????",
+          "ar": "إعداد SEO عند الإطلاق",
           "price": 250,
           "selected": false
         }
