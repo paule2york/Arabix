@@ -11138,3 +11138,95 @@ html[lang^="ar"] .shop-search {
     grid-template-columns: 1fr;
   }
 }
+
+/* Colorful marketplace category tiles */
+.shop-market-hero {
+  background:
+    radial-gradient(circle at 11% 18%, rgba(166, 255, 0, 0.22), transparent 28rem),
+    radial-gradient(circle at 78% 5%, rgba(149, 116, 255, 0.22), transparent 34rem),
+    radial-gradient(circle at 50% 72%, rgba(255, 255, 255, 0.7), transparent 34rem),
+    linear-gradient(135deg, #c9ddff 0%, #d9e8ff 46%, #e7dcff 100%);
+}
+
+.shop-category-strip {
+  align-items: stretch;
+  gap: 16px;
+}
+
+.shop-category-tile {
+  position: relative;
+  overflow: hidden;
+  min-height: 156px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9));
+  box-shadow: 0 20px 52px rgba(40, 58, 92, 0.12);
+}
+
+.shop-category-tile::after {
+  content: "";
+  position: absolute;
+  inset: auto -24px -34px auto;
+  width: 86px;
+  height: 86px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cat-color, var(--lime)) 28%, transparent);
+  opacity: 0;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.shop-category-tile:hover::after {
+  opacity: 1;
+  transform: translate(-10px, -8px);
+}
+
+.shop-category-tile span,
+.shop-category-title span {
+  position: relative;
+  z-index: 1;
+  width: 66px;
+  height: 66px;
+  border-radius: 13px;
+  background:
+    radial-gradient(circle at 32% 22%, rgba(255, 255, 255, 0.32), transparent 34%),
+    linear-gradient(135deg, var(--cat-color, #111722), var(--cat-color-2, #111722));
+  color: #fff;
+  box-shadow: 0 12px 26px color-mix(in srgb, var(--cat-color, #111722) 32%, transparent);
+}
+
+.shop-category-tile svg,
+.shop-category-title svg {
+  width: 36px;
+  height: 36px;
+  stroke-width: 2.35;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.16));
+}
+
+.shop-category-tile strong {
+  position: relative;
+  z-index: 1;
+  max-width: 130px;
+  font-weight: 750;
+}
+
+.shop-category-tile[data-shop-cat="ecommerce"] { --cat-color: #22c55e; --cat-color-2: #16a34a; }
+.shop-category-tile[data-shop-cat="restaurant"] { --cat-color: #f97316; --cat-color-2: #ef4444; }
+.shop-category-tile[data-shop-cat="hotel"] { --cat-color: #0ea5e9; --cat-color-2: #2563eb; }
+.shop-category-tile[data-shop-cat="clinic"] { --cat-color: #14b8a6; --cat-color-2: #06b6d4; }
+.shop-category-tile[data-shop-cat="realestate"] { --cat-color: #6366f1; --cat-color-2: #8b5cf6; }
+.shop-category-tile[data-shop-cat="legal"] { --cat-color: #111827; --cat-color-2: #334155; }
+.shop-category-tile[data-shop-cat="business"] { --cat-color: #7c3aed; --cat-color-2: #a855f7; }
+.shop-category-tile[data-shop-cat="education"] { --cat-color: #f59e0b; --cat-color-2: #d97706; }
+.shop-category-tile[data-shop-cat="portfolio"] { --cat-color: #ec4899; --cat-color-2: #db2777; }
+
+.shop-category-tile:hover span {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.shop-category-tile span {
+  transition: transform 180ms ease;
+}
+
+html[lang^="ar"] .shop-category-tile strong {
+  font-weight: 800;
+}

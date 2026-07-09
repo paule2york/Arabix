@@ -389,7 +389,7 @@ const renderShopHome = async (root) => {
   const categoryWrap = root.querySelector("[data-shop-categories]");
   const search = root.querySelector("[data-shop-search]");
   const showcase = root.querySelector("[data-shop-showcase]");
-  categoryWrap.innerHTML = (data.categories || []).filter((category) => category.id !== "all").map((category) => '<a class="shop-category-tile" href="' + shopCategoryHref(category.id) + '"><span>' + shopIconSvg(category.icon) + '</span><strong>' + escapeHtml(textFrom(category)) + '</strong><small>' + escapeHtml(textFrom(category.description)) + '</small></a>').join("");
+  categoryWrap.innerHTML = (data.categories || []).filter((category) => category.id !== "all").map((category) => '<a class="shop-category-tile" data-shop-cat="' + escapeHtml(category.id || 'theme') + '" href="' + shopCategoryHref(category.id) + '"><span>' + shopIconSvg(category.icon) + '</span><strong>' + escapeHtml(textFrom(category)) + '</strong><small>' + escapeHtml(textFrom(category.description)) + '</small></a>').join("");
   const update = () => {
     const query = (search?.value || "").trim().toLowerCase();
     const filtered = query ? products.filter((product) => [textFrom(product.title), textFrom(product.description), product.category].join(" ").toLowerCase().includes(query)) : products;
