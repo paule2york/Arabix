@@ -11,15 +11,20 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body data-page="home"><header class="market-header">
-  <a class="brand" href="./index.html" aria-label="Arabix Templates home"><img src="./assets/logo-white.png" alt="Arabix" /></a>
-  <nav aria-label="Shop navigation">
-    <a href="./index.html">Templates</a>
-    <a href="./category.html?cat=ecommerce">Ecommerce</a>
-    <a href="./category.html?cat=hotel">Hotel</a>
-    <a href="./category.html?cat=clinic">Clinic</a>
-    <a href="./license.html">License</a>
-  </nav>
-  <a class="support-link" href="mailto:hello@arabixweb.com">Support</a>
+  <div class="header-left">
+    <a class="brand" href="./index.html" aria-label="Arabix Templates home"><img src="./assets/logo-white.png" alt="Arabix" /></a>
+    <div class="category-menu" data-category-menu>
+      <button class="category-menu-btn" type="button" aria-label="Browse categories" aria-expanded="false" data-category-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>
+        <span>Categories</span>
+      </button>
+      <div class="category-dropdown" data-category-dropdown></div>
+    </div>
+  </div>
+  <div class="header-actions" aria-label="Shop actions">
+    <button class="header-icon" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.6c0 5.3-8.8 10.4-8.8 10.4S3.2 13.9 3.2 8.6A4.6 4.6 0 0 1 12 6.1a4.6 4.6 0 0 1 8.8 2.5Z"/></svg><span>Wishlist</span></button>
+    <button class="header-icon" type="button" aria-label="Cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-2 9H8L6 3H3"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span>Cart</span></button>
+  </div>
 </header><main><section class="hero marketplace-hero"><h1>Premium website templates for fast launches.</h1><p class="hero-copy">Browse responsive templates for stores, clinics, hotels, restaurants, law offices and portfolios.</p><label class="market-search" aria-label="Search templates"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg><input type="search" data-search placeholder='Search templates, e.g. "clinic"' /></label><div class="category-strip" data-categories></div></section><section class="showcase" data-home-rows></section></main><footer class="market-footer">
   <div><img src="./assets/logo-white.png" alt="Arabix" /><p>Ready-made website templates, UI layouts and digital themes by Arabix.</p></div>
   <nav aria-label="Footer links"><a href="./terms.html">Terms</a><a href="./privacy.html">Privacy</a><a href="./refund-policy.html">Refunds</a><a href="./license.html">License</a><a href="mailto:hello@arabixweb.com">Contact</a></nav>

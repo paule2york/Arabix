@@ -11,15 +11,20 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body><header class="market-header">
-  <a class="brand" href="./index.html" aria-label="Arabix Templates home"><img src="./assets/logo-white.png" alt="Arabix" /></a>
-  <nav aria-label="Shop navigation">
-    <a href="./index.html">Templates</a>
-    <a href="./category.html?cat=ecommerce">Ecommerce</a>
-    <a href="./category.html?cat=hotel">Hotel</a>
-    <a href="./category.html?cat=clinic">Clinic</a>
-    <a href="./license.html">License</a>
-  </nav>
-  <a class="support-link" href="mailto:hello@arabixweb.com">Support</a>
+  <div class="header-left">
+    <a class="brand" href="./index.html" aria-label="Arabix Templates home"><img src="./assets/logo-white.png" alt="Arabix" /></a>
+    <div class="category-menu" data-category-menu>
+      <button class="category-menu-btn" type="button" aria-label="Browse categories" aria-expanded="false" data-category-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>
+        <span>Categories</span>
+      </button>
+      <div class="category-dropdown" data-category-dropdown></div>
+    </div>
+  </div>
+  <div class="header-actions" aria-label="Shop actions">
+    <button class="header-icon" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.6c0 5.3-8.8 10.4-8.8 10.4S3.2 13.9 3.2 8.6A4.6 4.6 0 0 1 12 6.1a4.6 4.6 0 0 1 8.8 2.5Z"/></svg><span>Wishlist</span></button>
+    <button class="header-icon" type="button" aria-label="Cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-2 9H8L6 3H3"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg><span>Cart</span></button>
+  </div>
 </header><main class="policy-wrap"><section class="policy-hero"><p class="eyebrow">Shop policy</p><h1>Terms of Service</h1><p>These terms apply to digital templates, UI kits and theme files sold by Arabix Templates.</p><b>Last updated: July 10, 2026</b></section><section class="policy-grid"><article><span>01</span><h2>Digital products</h2><p>Arabix Templates sells downloadable website templates, UI layouts and digital theme files. Product pages describe the included files, compatibility and license options.</p></article><article><span>02</span><h2>License use</h2><p>A purchase gives you a license to use the selected template according to the license type. You may not resell, share, redistribute or claim the template as your own standalone product.</p></article><article><span>03</span><h2>Delivery</h2><p>After payment confirmation, access or files are delivered digitally. If a manual payment request is used, delivery begins after payment is verified.</p></article><article><span>04</span><h2>Support</h2><p>Support covers product questions and issues related to the template files. It does not include unrelated platform setup, hosting, content writing or third-party tool problems.</p></article><article><span>05</span><h2>Payments</h2><p>Payments may be collected through an approved payment provider, payment link or invoice. Arabix does not store full card details on this site.</p></article><article><span>06</span><h2>Contact</h2><p>Questions about orders, delivery or licenses can be sent to hello@arabixweb.com.</p></article></section></main><footer class="market-footer">
   <div><img src="./assets/logo-white.png" alt="Arabix" /><p>Ready-made website templates, UI layouts and digital themes by Arabix.</p></div>
   <nav aria-label="Footer links"><a href="./terms.html">Terms</a><a href="./privacy.html">Privacy</a><a href="./refund-policy.html">Refunds</a><a href="./license.html">License</a><a href="mailto:hello@arabixweb.com">Contact</a></nav>
