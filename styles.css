@@ -11230,3 +11230,39 @@ html[lang^="ar"] .shop-search {
 html[lang^="ar"] .shop-category-tile strong {
   font-weight: 800;
 }
+
+/* Wider shop home cards */
+.shop-row-grid {
+  grid-auto-flow: initial;
+  grid-auto-columns: initial;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  overflow: visible;
+  padding: 3px 0 0;
+  scroll-snap-type: none;
+}
+
+.shop-row-grid .shop-market-card {
+  min-width: 0;
+}
+
+.shop-row-grid .shop-market-card .shop-card-media,
+.shop-row-grid .shop-market-card .shop-card-media img,
+.shop-row-grid .shop-market-card .shop-card-media.is-placeholder {
+  min-height: 285px;
+}
+
+.shop-row-grid .shop-card-body {
+  min-height: 210px;
+}
+
+@media (max-width: 1100px) {
+  .shop-row-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .shop-row-grid {
+    grid-template-columns: 1fr;
+  }
+}

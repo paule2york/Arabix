@@ -370,15 +370,15 @@ const shopCardHtml = (product, index, compact = false) => {
   return '<article class="shop-card shop-market-card" data-category="' + escapeHtml(product.category || "all") + '"><a href="' + href + '">' + buildCmsMedia(product, "shop") + '<div class="shop-card-body"><p>' + escapeHtml(badge) + '</p><h3>' + escapeHtml(textFrom(product.title)) + '</h3><strong>' + price + '</strong>' + (compact ? '' : '<span>' + escapeHtml(textFrom(product.description)) + '</span>') + '<em>' + (langKey === "ar" ? "\u0639\u0631\u0636 \u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644" : "View details") + '</em></div></a></article>';
 };
 const renderShopRows = (target, data, products) => {
-  const newest = products.filter((item) => item.isNew).slice(0, 8);
-  const popular = products.filter((item) => item.isPopular).slice(0, 8);
+  const newest = products.filter((item) => item.isNew).slice(0, 4);
+  const popular = products.filter((item) => item.isPopular).slice(0, 4);
   const featuredCats = (data.categories || []).filter((category) => category.id !== "all");
-  const row = (title, subtitle, list) => '<div class="shop-product-row"><div class="shop-row-head"><div><p class="eyebrow">' + escapeHtml(subtitle) + '</p><h2>' + escapeHtml(title) + '</h2></div></div><div class="shop-row-grid">' + list.map((product, index) => shopCardHtml(product, index, true)).join("") + '</div></div>';
-  let html = row(langKey === "ar" ? "\u0623\u0636\u064a\u0641 \u062d\u062f\u064a\u062b\u0627\u064b" : "New Added", langKey === "ar" ? "\u0645\u062e\u062a\u0627\u0631\u0627\u062a \u062c\u062f\u064a\u062f\u0629" : "Fresh picks", newest.length ? newest : products.slice(0, 8));
-  html += row(langKey === "ar" ? "\u0627\u0644\u0623\u0643\u062b\u0631 \u0637\u0644\u0628\u0627\u064b" : "Popular", langKey === "ar" ? "\u0645\u0627 \u064a\u0628\u062d\u062b \u0639\u0646\u0647 \u0627\u0644\u0639\u0645\u0644\u0627\u0621" : "Customer favorites", popular.length ? popular : products.slice(2, 10));
+  const row = (title, subtitle, list) => '<div class="shop-product-row"><div class="shop-row-head"><div><p class="eyebrow">' + escapeHtml(subtitle) + '</p><h2>' + escapeHtml(title) + '</h2></div></div><div class="shop-row-grid">' + list.slice(0, 4).map((product, index) => shopCardHtml(product, index, true)).join("") + '</div></div>';
+  let html = row(langKey === "ar" ? "\u0623\u0636\u064a\u0641 \u062d\u062f\u064a\u062b\u0627\u064b" : "New Added", langKey === "ar" ? "\u0645\u062e\u062a\u0627\u0631\u0627\u062a \u062c\u062f\u064a\u062f\u0629" : "Fresh picks", newest.length ? newest : products.slice(0, 4));
+  html += row(langKey === "ar" ? "\u0627\u0644\u0623\u0643\u062b\u0631 \u0637\u0644\u0628\u0627\u064b" : "Popular", langKey === "ar" ? "\u0645\u0627 \u064a\u0628\u062d\u062b \u0639\u0646\u0647 \u0627\u0644\u0639\u0645\u0644\u0627\u0621" : "Customer favorites", popular.length ? popular : products.slice(2, 6));
   featuredCats.forEach((category) => {
-    const list = products.filter((product) => product.category === category.id).slice(0, 5);
-  html += row(langKey === "ar" ? "\u0627\u0644\u0623\u0643\u062b\u0631 \u0637\u0644\u0628\u0627\u064b" : "Popular", langKey === "ar" ? "\u0645\u0627 \u064a\u0628\u062d\u062b \u0639\u0646\u0647 \u0627\u0644\u0639\u0645\u0644\u0627\u0621" : "Customer favorites", popular.length ? popular : products.slice(2, 10));
+    const list = products.filter((product) => product.category === category.id).slice(0, 4);
+    if (list.length) html += row(textFrom(category), textFrom(category.description) || ((langKey === "ar" ? "\u0627\u0644\u0623\u062d\u062f\u062b \u0641\u064a " : "Latest in ") + textFrom(category)), list);
   });
   target.innerHTML = html;
   target.querySelectorAll("img").forEach(setupImageFallback);
