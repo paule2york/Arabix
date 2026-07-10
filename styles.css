@@ -11266,3 +11266,195 @@ html[lang^="ar"] .shop-category-tile strong {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Policy pages */
+.policy-body {
+  background: #f4f8fb;
+  color: #0d111c;
+}
+.policy-page {
+  background: #f4f8fb;
+  overflow: hidden;
+}
+.policy-hero {
+  position: relative;
+  min-height: 62vh;
+  padding: clamp(150px, 18vw, 230px) clamp(22px, 6vw, 90px) clamp(70px, 9vw, 120px);
+  color: #fff;
+  border-bottom: 1px solid rgba(160, 255, 0, 0.22);
+}
+.policy-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 25%, rgba(160, 255, 0, 0.16), transparent 28%), linear-gradient(90deg, rgba(7, 11, 18, 0.42), rgba(7, 11, 18, 0.86));
+  pointer-events: none;
+}
+.policy-hero > * {
+  position: relative;
+  z-index: 1;
+  max-width: 980px;
+}
+.policy-hero h1 {
+  margin: 18px 0 18px;
+  font-size: clamp(4.4rem, 10vw, 11rem);
+  line-height: 0.88;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.policy-hero p:not(.section-eyebrow) {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+  line-height: 1.55;
+  font-weight: 700;
+}
+.policy-updated {
+  display: inline-flex;
+  margin-top: 26px;
+  padding: 10px 16px;
+  border: 1px solid rgba(160, 255, 0, 0.34);
+  border-radius: 999px;
+  color: #a6ff00;
+  background: rgba(160, 255, 0, 0.08);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+}
+.policy-hero__orb {
+  position: absolute;
+  right: clamp(30px, 12vw, 210px);
+  top: clamp(130px, 14vw, 190px);
+  width: clamp(160px, 24vw, 330px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(160, 255, 0, 0.22);
+  border-radius: 50%;
+  box-shadow: inset 0 0 80px rgba(160, 255, 0, 0.08), 0 0 90px rgba(160, 255, 0, 0.1);
+  animation: policyFloat 8s ease-in-out infinite;
+}
+.policy-content {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: clamp(45px, 8vw, 100px) 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.policy-card {
+  position: relative;
+  min-height: 255px;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid rgba(13, 17, 28, 0.1);
+  border-radius: 24px;
+  background: radial-gradient(circle at 90% 0%, rgba(160, 255, 0, 0.14), transparent 28%), #fff;
+  box-shadow: 0 20px 60px rgba(13, 17, 28, 0.08);
+  overflow: hidden;
+}
+.policy-card__num {
+  color: #a6ff00;
+  font-size: 0.88rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+.policy-card h2 {
+  margin: 18px 0 14px;
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  line-height: 1.05;
+}
+.policy-card p,
+.policy-card li {
+  color: #4f596b;
+  font-size: 1rem;
+  line-height: 1.78;
+  font-weight: 650;
+}
+.policy-card ul {
+  margin: 16px 0 0;
+  padding-left: 20px;
+}
+.policy-contact-card {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: clamp(28px, 5vw, 54px);
+  border-radius: 28px;
+  background: #a6ff00;
+  color: #05070c;
+  box-shadow: 0 24px 70px rgba(160, 255, 0, 0.22);
+}
+.policy-contact-card span {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+.policy-contact-card h2 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 5vw, 4.8rem);
+  line-height: 0.9;
+}
+.policy-contact-card p {
+  max-width: 640px;
+  margin: 0;
+  color: rgba(5, 7, 12, 0.72);
+  font-weight: 800;
+  line-height: 1.55;
+}
+.policy-contact-card a:not(.btn) {
+  color: #05070c;
+  text-decoration: underline;
+}
+.policy-contact-btn {
+  flex: 0 0 auto;
+  background: #05070c;
+  color: #fff;
+  border-color: #05070c;
+}
+.policy-page--ar,
+.policy-page--ar .policy-card,
+.policy-page--ar .policy-contact-card {
+  font-family: "Noto Kufi Arabic", "Space Grotesk", sans-serif;
+}
+.policy-page--ar .policy-hero h1,
+.policy-page--ar .policy-contact-card h2 {
+  text-transform: none;
+  line-height: 1.15;
+}
+.policy-page--ar .policy-card ul {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.policy-page--ar .policy-contact-card {
+  text-align: right;
+}
+@keyframes policyFloat {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(-18px, 16px, 0) rotate(8deg); }
+}
+@media (max-width: 760px) {
+  .policy-hero {
+    min-height: auto;
+    padding-top: 132px;
+  }
+  .policy-hero h1 {
+    font-size: clamp(3.4rem, 16vw, 5.8rem);
+  }
+  .policy-content {
+    grid-template-columns: 1fr;
+  }
+  .policy-contact-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .policy-contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
