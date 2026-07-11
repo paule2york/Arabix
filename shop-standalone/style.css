@@ -595,3 +595,72 @@
     font-size: clamp(1.75rem, 8.5vw, 2.65rem);
   }
 }
+
+
+/* License tooltip panel */
+.license-list span {
+  align-items: flex-start;
+}
+.license-list b {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.license-help {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  display: inline-grid;
+  place-items: center;
+  border: 2px solid #8aa0b9;
+  border-radius: 50%;
+  color: #60758c;
+  font-style: normal;
+  font-size: 0.74rem;
+  line-height: 1;
+  cursor: help;
+}
+.license-help small {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  width: min(420px, 82vw);
+  padding: 16px 18px;
+  border-radius: 8px;
+  background: #526c78;
+  color: #fff;
+  box-shadow: 0 18px 48px rgba(7, 16, 13, 0.24);
+  transform: translateX(-50%) translateY(6px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  font-weight: 750;
+  z-index: 5;
+}
+.license-help small::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 9px solid transparent;
+  border-top-color: #526c78;
+}
+.license-help:hover small,
+.license-help:focus small {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+@media (max-width: 520px) {
+  .license-list span {
+    display: grid;
+    gap: 8px;
+  }
+  .license-list em {
+    margin-left: 0;
+  }
+}

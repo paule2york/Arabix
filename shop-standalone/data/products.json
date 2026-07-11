@@ -80,9 +80,7 @@
       "badge": "New",
       "price": 149,
       "oldPrice": 229,
-      "commercialPrice": 299,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1499,
       "summary": "Luxe Cart is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -103,7 +101,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499
     },
     {
       "id": "002",
@@ -113,9 +113,7 @@
       "badge": "Popular",
       "price": 199,
       "oldPrice": 299,
-      "commercialPrice": 379,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1499,
       "summary": "Noura Store is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -136,7 +134,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 199,
+      "exclusiveBuyoutPrice": 1499
     },
     {
       "id": "003",
@@ -146,9 +146,7 @@
       "badge": "Best Seller",
       "price": 249,
       "oldPrice": 369,
-      "commercialPrice": 469,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1750,
       "summary": "Velvet Goods is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -169,7 +167,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 249,
+      "exclusiveBuyoutPrice": 1750
     },
     {
       "id": "004",
@@ -179,9 +179,7 @@
       "badge": "Ready",
       "price": 299,
       "oldPrice": 439,
-      "commercialPrice": 559,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2100,
       "summary": "Catalog Pro is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -202,7 +200,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 299,
+      "exclusiveBuyoutPrice": 2100
     },
     {
       "id": "005",
@@ -212,9 +212,7 @@
       "badge": "Ready",
       "price": 349,
       "oldPrice": 509,
-      "commercialPrice": 649,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2450,
       "summary": "Prime Drop is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -235,7 +233,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 349,
+      "exclusiveBuyoutPrice": 2450
     },
     {
       "id": "006",
@@ -245,9 +245,7 @@
       "badge": "New",
       "price": 169,
       "oldPrice": 249,
-      "commercialPrice": 319,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1499,
       "summary": "Saffron Table is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -268,7 +266,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 169,
+      "exclusiveBuyoutPrice": 1499
     },
     {
       "id": "007",
@@ -278,9 +278,7 @@
       "badge": "Popular",
       "price": 219,
       "oldPrice": 319,
-      "commercialPrice": 399,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1550,
       "summary": "Cafe Nora is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -301,7 +299,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 219,
+      "exclusiveBuyoutPrice": 1550
     },
     {
       "id": "008",
@@ -311,9 +311,7 @@
       "badge": "Best Seller",
       "price": 269,
       "oldPrice": 389,
-      "commercialPrice": 489,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1900,
       "summary": "Grill House is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -334,7 +332,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 269,
+      "exclusiveBuyoutPrice": 1900
     },
     {
       "id": "009",
@@ -344,9 +344,7 @@
       "badge": "Ready",
       "price": 319,
       "oldPrice": 459,
-      "commercialPrice": 579,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2250,
       "summary": "Sweet Oven is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -367,7 +365,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 319,
+      "exclusiveBuyoutPrice": 2250
     },
     {
       "id": "010",
@@ -377,9 +377,7 @@
       "badge": "Ready",
       "price": 369,
       "oldPrice": 529,
-      "commercialPrice": 669,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2600,
       "summary": "Urban Menu is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -400,7 +398,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 369,
+      "exclusiveBuyoutPrice": 2600
     },
     {
       "id": "011",
@@ -410,9 +410,7 @@
       "badge": "New",
       "price": 189,
       "oldPrice": 269,
-      "commercialPrice": 339,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1499,
       "summary": "Palm Stay is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -433,7 +431,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 189,
+      "exclusiveBuyoutPrice": 1499
     },
     {
       "id": "012",
@@ -443,9 +443,7 @@
       "badge": "Popular",
       "price": 239,
       "oldPrice": 339,
-      "commercialPrice": 419,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1700,
       "summary": "Desert Suites is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -466,7 +464,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 239,
+      "exclusiveBuyoutPrice": 1700
     },
     {
       "id": "013",
@@ -476,9 +476,7 @@
       "badge": "Best Seller",
       "price": 289,
       "oldPrice": 409,
-      "commercialPrice": 509,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2050,
       "summary": "Travel Vista is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -499,7 +497,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 289,
+      "exclusiveBuyoutPrice": 2050
     },
     {
       "id": "014",
@@ -509,9 +509,7 @@
       "badge": "Ready",
       "price": 339,
       "oldPrice": 479,
-      "commercialPrice": 599,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2400,
       "summary": "Riyadh Rooms is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -532,7 +530,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 339,
+      "exclusiveBuyoutPrice": 2400
     },
     {
       "id": "015",
@@ -542,9 +542,7 @@
       "badge": "Ready",
       "price": 389,
       "oldPrice": 549,
-      "commercialPrice": 689,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2750,
       "summary": "Coastal Booking is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -565,7 +563,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 389,
+      "exclusiveBuyoutPrice": 2750
     },
     {
       "id": "016",
@@ -575,9 +575,7 @@
       "badge": "New",
       "price": 209,
       "oldPrice": 289,
-      "commercialPrice": 359,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1500,
       "summary": "Care Point is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -598,7 +596,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 209,
+      "exclusiveBuyoutPrice": 1500
     },
     {
       "id": "017",
@@ -608,9 +608,7 @@
       "badge": "Popular",
       "price": 259,
       "oldPrice": 359,
-      "commercialPrice": 439,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1850,
       "summary": "Dental Glow is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -631,7 +629,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 259,
+      "exclusiveBuyoutPrice": 1850
     },
     {
       "id": "018",
@@ -641,9 +641,7 @@
       "badge": "Best Seller",
       "price": 309,
       "oldPrice": 429,
-      "commercialPrice": 529,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2200,
       "summary": "Derma Studio is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -664,7 +662,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 309,
+      "exclusiveBuyoutPrice": 2200
     },
     {
       "id": "019",
@@ -674,9 +674,7 @@
       "badge": "Ready",
       "price": 359,
       "oldPrice": 499,
-      "commercialPrice": 619,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2550,
       "summary": "Wellness Hub is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -697,7 +695,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 359,
+      "exclusiveBuyoutPrice": 2550
     },
     {
       "id": "020",
@@ -707,9 +707,7 @@
       "badge": "Ready",
       "price": 409,
       "oldPrice": 569,
-      "commercialPrice": 709,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2900,
       "summary": "Clinic Flow is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -730,7 +728,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 409,
+      "exclusiveBuyoutPrice": 2900
     },
     {
       "id": "021",
@@ -740,9 +740,7 @@
       "badge": "New",
       "price": 229,
       "oldPrice": 309,
-      "commercialPrice": 379,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1650,
       "summary": "Villa Scope is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -763,7 +761,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 229,
+      "exclusiveBuyoutPrice": 1650
     },
     {
       "id": "022",
@@ -773,9 +773,7 @@
       "badge": "Popular",
       "price": 279,
       "oldPrice": 379,
-      "commercialPrice": 459,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2000,
       "summary": "Metro Estates is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -796,7 +794,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 279,
+      "exclusiveBuyoutPrice": 2000
     },
     {
       "id": "023",
@@ -806,9 +806,7 @@
       "badge": "Best Seller",
       "price": 329,
       "oldPrice": 449,
-      "commercialPrice": 549,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2350,
       "summary": "Luxury Listing is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -829,7 +827,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 329,
+      "exclusiveBuyoutPrice": 2350
     },
     {
       "id": "024",
@@ -839,9 +839,7 @@
       "badge": "Ready",
       "price": 379,
       "oldPrice": 519,
-      "commercialPrice": 639,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2700,
       "summary": "Property Desk is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -862,7 +860,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 379,
+      "exclusiveBuyoutPrice": 2700
     },
     {
       "id": "025",
@@ -872,9 +872,7 @@
       "badge": "Ready",
       "price": 429,
       "oldPrice": 589,
-      "commercialPrice": 729,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 3050,
       "summary": "Rent Flow is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -895,7 +893,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 429,
+      "exclusiveBuyoutPrice": 3050
     },
     {
       "id": "026",
@@ -905,9 +905,7 @@
       "badge": "New",
       "price": 249,
       "oldPrice": 329,
-      "commercialPrice": 399,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1750,
       "summary": "Lex Prime is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -928,7 +926,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 249,
+      "exclusiveBuyoutPrice": 1750
     },
     {
       "id": "027",
@@ -938,9 +938,7 @@
       "badge": "Popular",
       "price": 299,
       "oldPrice": 399,
-      "commercialPrice": 479,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2100,
       "summary": "Justice Desk is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -961,7 +959,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 299,
+      "exclusiveBuyoutPrice": 2100
     },
     {
       "id": "028",
@@ -971,9 +971,7 @@
       "badge": "Best Seller",
       "price": 349,
       "oldPrice": 469,
-      "commercialPrice": 569,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2450,
       "summary": "Legal One is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -994,7 +992,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 349,
+      "exclusiveBuyoutPrice": 2450
     },
     {
       "id": "029",
@@ -1004,9 +1004,7 @@
       "badge": "Ready",
       "price": 399,
       "oldPrice": 539,
-      "commercialPrice": 659,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2800,
       "summary": "Firm Profile is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1027,7 +1025,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 399,
+      "exclusiveBuyoutPrice": 2800
     },
     {
       "id": "030",
@@ -1037,9 +1037,7 @@
       "badge": "Ready",
       "price": 449,
       "oldPrice": 609,
-      "commercialPrice": 749,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 3150,
       "summary": "Case Ledger is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1060,7 +1058,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 449,
+      "exclusiveBuyoutPrice": 3150
     },
     {
       "id": "031",
@@ -1070,9 +1070,7 @@
       "badge": "New",
       "price": 269,
       "oldPrice": 349,
-      "commercialPrice": 419,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 1900,
       "summary": "Boardline is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1093,7 +1091,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 269,
+      "exclusiveBuyoutPrice": 1900
     },
     {
       "id": "032",
@@ -1103,9 +1103,7 @@
       "badge": "Popular",
       "price": 319,
       "oldPrice": 419,
-      "commercialPrice": 499,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2250,
       "summary": "Company Grid is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1126,7 +1124,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 319,
+      "exclusiveBuyoutPrice": 2250
     },
     {
       "id": "033",
@@ -1136,9 +1136,7 @@
       "badge": "Best Seller",
       "price": 369,
       "oldPrice": 489,
-      "commercialPrice": 589,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2600,
       "summary": "Founder Desk is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1159,7 +1157,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 369,
+      "exclusiveBuyoutPrice": 2600
     },
     {
       "id": "034",
@@ -1169,9 +1169,7 @@
       "badge": "Ready",
       "price": 419,
       "oldPrice": 559,
-      "commercialPrice": 679,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2950,
       "summary": "Capital Profile is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1192,7 +1190,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 419,
+      "exclusiveBuyoutPrice": 2950
     },
     {
       "id": "035",
@@ -1202,9 +1202,7 @@
       "badge": "Ready",
       "price": 469,
       "oldPrice": 629,
-      "commercialPrice": 769,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 3300,
       "summary": "Corporate Core is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1225,7 +1223,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 469,
+      "exclusiveBuyoutPrice": 3300
     },
     {
       "id": "036",
@@ -1235,9 +1235,7 @@
       "badge": "New",
       "price": 289,
       "oldPrice": 369,
-      "commercialPrice": 439,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2050,
       "summary": "Course Lab is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1258,7 +1256,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 289,
+      "exclusiveBuyoutPrice": 2050
     },
     {
       "id": "037",
@@ -1268,9 +1268,7 @@
       "badge": "Popular",
       "price": 339,
       "oldPrice": 439,
-      "commercialPrice": 519,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2400,
       "summary": "Academy Pro is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1291,7 +1289,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 339,
+      "exclusiveBuyoutPrice": 2400
     },
     {
       "id": "038",
@@ -1301,9 +1301,7 @@
       "badge": "Best Seller",
       "price": 389,
       "oldPrice": 509,
-      "commercialPrice": 609,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2750,
       "summary": "Learn Desk is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1324,7 +1322,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 389,
+      "exclusiveBuyoutPrice": 2750
     },
     {
       "id": "039",
@@ -1334,9 +1334,7 @@
       "badge": "Ready",
       "price": 439,
       "oldPrice": 579,
-      "commercialPrice": 699,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 3100,
       "summary": "Tutor Flow is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1357,7 +1355,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 439,
+      "exclusiveBuyoutPrice": 3100
     },
     {
       "id": "040",
@@ -1367,9 +1367,7 @@
       "badge": "Ready",
       "price": 489,
       "oldPrice": 649,
-      "commercialPrice": 789,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 3450,
       "summary": "Skill Campus is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1390,7 +1388,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 489,
+      "exclusiveBuyoutPrice": 3450
     },
     {
       "id": "041",
@@ -1400,9 +1400,7 @@
       "badge": "New",
       "price": 309,
       "oldPrice": 389,
-      "commercialPrice": 459,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2200,
       "summary": "Creator Frame is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1423,7 +1421,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 309,
+      "exclusiveBuyoutPrice": 2200
     },
     {
       "id": "042",
@@ -1433,9 +1433,7 @@
       "badge": "Popular",
       "price": 359,
       "oldPrice": 459,
-      "commercialPrice": 539,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2550,
       "summary": "Design Shelf is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1456,7 +1454,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 359,
+      "exclusiveBuyoutPrice": 2550
     },
     {
       "id": "043",
@@ -1466,9 +1466,7 @@
       "badge": "Best Seller",
       "price": 409,
       "oldPrice": 529,
-      "commercialPrice": 629,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 2900,
       "summary": "Studio Loop is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1489,7 +1487,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 409,
+      "exclusiveBuyoutPrice": 2900
     },
     {
       "id": "044",
@@ -1499,9 +1499,7 @@
       "badge": "Ready",
       "price": 459,
       "oldPrice": 599,
-      "commercialPrice": 719,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 3250,
       "summary": "Artist Grid is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1522,7 +1520,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 459,
+      "exclusiveBuyoutPrice": 3250
     },
     {
       "id": "045",
@@ -1532,9 +1532,7 @@
       "badge": "Ready",
       "price": 509,
       "oldPrice": 669,
-      "commercialPrice": 809,
-      "supportPrice": 49,
-      "installPrice": 199,
+      "commercialPrice": 3600,
       "summary": "Personal Mark is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
       "features": [
@@ -1555,7 +1553,9 @@
         "CMS adaptation ready"
       ],
       "updated": "July 2026",
-      "currency": "SAR"
+      "currency": "SAR",
+      "singleLicensePrice": 509,
+      "exclusiveBuyoutPrice": 3600
     }
   ]
 }
