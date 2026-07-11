@@ -664,3 +664,37 @@
     margin-left: 0;
   }
 }
+
+
+/* Optional setup add-ons */
+.buy-panel h2 + .addon-list {
+  margin-top: 10px;
+}
+.addon-list label.featured-addon span {
+  border-color: rgba(34, 197, 94, 0.45);
+  background: linear-gradient(135deg, rgba(166, 255, 0, 0.12), #fff);
+}
+.addon-list b {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 0;
+}
+.support-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #a6ff00;
+  color: #07100d;
+  font-size: 0.7rem;
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.addon-list input:checked + span {
+  border-color: #22c55e;
+  background: #ecfdf3;
+}
