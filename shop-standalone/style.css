@@ -698,3 +698,56 @@
   border-color: #22c55e;
   background: #ecfdf3;
 }
+
+/* Discounted add-ons and social share colors */
+.sale-price {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #059669;
+  font-size: 1.05rem;
+  font-weight: 1000;
+}
+.sale-price del {
+  color: #8a95a3;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration-thickness: 2px;
+}
+.discount-pill {
+  background: #07100d;
+  color: #a6ff00;
+}
+.share-icon.share-facebook {
+  background: #1877f2;
+  color: #fff;
+}
+.share-icon.share-instagram {
+  background: radial-gradient(circle at 30% 30%, #ffd76f 0 16%, #f56040 36%, #c13584 64%, #405de6 100%);
+  color: #fff;
+}
+.share-icon.share-linkedin {
+  background: #0a66c2;
+  color: #fff;
+}
+.share-icon.share-x {
+  background: #05070a;
+  color: #fff;
+}
+.share-icon.share-whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+.share-icon.share-facebook:hover,
+.share-icon.share-instagram:hover,
+.share-icon.share-linkedin:hover,
+.share-icon.share-x:hover,
+.share-icon.share-whatsapp:hover,
+.share-icon.is-copied {
+  filter: brightness(1.06);
+  color: #fff;
+}
+.share-icon.share-instagram svg,
+.share-icon.share-linkedin svg {
+  stroke-width: 2.05;
+}
