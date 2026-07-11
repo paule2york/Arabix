@@ -751,3 +751,11 @@
 .share-icon.share-linkedin svg {
   stroke-width: 2.05;
 }
+
+/* Product detail spacing polish */
+.detail-page {
+  padding-top: clamp(28px, 4vw, 54px);
+}
+.detail-platform.share-only .share-group {
+  margin-left: 0;
+}
