@@ -460,3 +460,20 @@
     margin-left: 0;
   }
 }
+
+
+/* Detail demo position adjustment */
+.detail-tabs {
+  gap: clamp(32px, 7vw, 96px);
+}
+.detail-action-row {
+  grid-template-columns: auto minmax(260px, 450px) 1fr;
+}
+.detail-demo-inline {
+  justify-self: stretch;
+}
+@media (max-width: 920px) {
+  .detail-action-row {
+    grid-template-columns: 1fr;
+  }
+}
