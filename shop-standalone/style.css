@@ -582,3 +582,16 @@
     justify-self: stretch;
   }
 }
+
+
+/* Smaller detail title */
+.detail-content-head h1 {
+  max-width: 920px;
+  font-size: clamp(1.95rem, 3.35vw, 3.65rem);
+  line-height: 1.02;
+}
+@media (max-width: 760px) {
+  .detail-content-head h1 {
+    font-size: clamp(1.75rem, 8.5vw, 2.65rem);
+  }
+}
