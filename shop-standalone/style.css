@@ -302,7 +302,7 @@
   background: #fff;
 }
 .addon-list input:checked + span::before {
-  content: "?";
+  content: "\2713";
   display: inline-grid;
   place-items: center;
   background: #22c55e;
@@ -328,5 +328,65 @@
   .share-button {
     flex: 1;
     min-width: 0;
+  }
+}
+
+
+/* Detail share icon row */
+.detail-titlebar p:not(.eyebrow) {
+  display: none;
+}
+.share-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px;
+  border: 1px solid #d5e3ed;
+  border-radius: 14px;
+  background: #e9f3fb;
+}
+.share-icon {
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  border: 0;
+  border-radius: 11px;
+  background: #fff;
+  color: #172334;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+}
+.share-icon:hover,
+.share-icon.is-copied {
+  transform: translateY(-2px);
+  background: var(--lime);
+  color: #07100d;
+}
+.share-icon svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.share-icon[aria-label="Share on Facebook"] svg,
+.share-icon[aria-label="Share on WhatsApp"] svg {
+  fill: currentColor;
+  stroke: none;
+}
+.addon-list input:checked + span::before {
+  content: "\2713";
+}
+@media (max-width: 680px) {
+  .detail-title-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .share-group {
+    justify-content: center;
   }
 }
