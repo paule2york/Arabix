@@ -73,6 +73,21 @@
     }
   };
 
+
+  const flagSvg = (code) => {
+    const flags = {
+      SAR: '<svg class="currency-flag-svg" viewBox="0 0 60 42" aria-hidden="true"><rect width="60" height="42" rx="4" fill="#006c35"/><path d="M13 14h34M13 18h34M18 28h24" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M38 31h9" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>',
+      USD: '<svg class="currency-flag-svg" viewBox="0 0 60 42" aria-hidden="true"><rect width="60" height="42" rx="4" fill="#b22234"/><path stroke="#fff" stroke-width="3.23" d="M0 3.2h60M0 9.7h60M0 16.2h60M0 22.6h60M0 29.1h60M0 35.5h60"/><rect width="27" height="23" fill="#3c3b6e"/><g fill="#fff"><circle cx="5" cy="5" r="1"/><circle cx="11" cy="5" r="1"/><circle cx="17" cy="5" r="1"/><circle cx="23" cy="5" r="1"/><circle cx="8" cy="11" r="1"/><circle cx="14" cy="11" r="1"/><circle cx="20" cy="11" r="1"/><circle cx="5" cy="17" r="1"/><circle cx="11" cy="17" r="1"/><circle cx="17" cy="17" r="1"/><circle cx="23" cy="17" r="1"/></g></svg>',
+      AED: '<svg class="currency-flag-svg" viewBox="0 0 60 42" aria-hidden="true"><rect width="60" height="42" rx="4" fill="#fff"/><path fill="#009739" d="M0 0h60v14H0z"/><path fill="#000" d="M0 28h60v14H0z"/><path fill="#ef3340" d="M0 0h17v42H0z"/></svg>',
+      QAR: '<svg class="currency-flag-svg" viewBox="0 0 60 42" aria-hidden="true"><rect width="60" height="42" rx="4" fill="#8a1538"/><path fill="#fff" d="M0 0h20l7 2.33-7 2.34 7 2.33-7 2.33 7 2.34-7 2.33 7 2.33-7 2.34 7 2.33-7 2.33 7 2.34-7 2.33 7 2.33-7 2.34 7 2.33-7 2.33 7 2.34-7 2.33H0z"/></svg>',
+      KWD: '<svg class="currency-flag-svg" viewBox="0 0 60 42" aria-hidden="true"><rect width="60" height="42" rx="4" fill="#fff"/><path fill="#007840" d="M0 0h60v14H0z"/><path fill="#ce1126" d="M0 28h60v14H0z"/><path fill="#000" d="M0 0l21 14v14L0 42z"/></svg>',
+      BHD: '<svg class="currency-flag-svg" viewBox="0 0 60 42" aria-hidden="true"><rect width="60" height="42" rx="4" fill="#ce1126"/><path fill="#fff" d="M0 0h22l-8 4.2 8 4.2-8 4.2 8 4.2-8 4.2 8 4.2-8 4.2 8 4.2-8 4.2 8 4.2H0z"/></svg>',
+      OMR: '<svg class="currency-flag-svg" viewBox="0 0 60 42" aria-hidden="true"><rect width="60" height="42" rx="4" fill="#fff"/><path fill="#c8102e" d="M0 14h60v14H0z"/><path fill="#00753b" d="M0 28h60v14H0z"/><path fill="#c8102e" d="M0 0h18v42H0z"/></svg>'
+    };
+    return flags[code] || flags.SAR;
+  };
+  const chevronIcon = '<svg class="dropdown-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+
   const icon = (name) => {
     const map = { grid:'M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z', bag:'M6 8h12l-1 12H7L6 8zM9 8a3 3 0 0 1 6 0', utensils:'M7 4v7M5 4v7M9 4v7M5 11h4v9M15 4v16M15 4c3 1 4 3 4 6s-1 5-4 6', hotel:'M4 20V5h10v15M14 10h6v10M7 8h3M7 12h3M17 14h1', medical:'M12 5v14M5 12h14M7 7h10v10H7z', home:'M4 11 12 4l8 7v9H4zM9 20v-6h6v6', scale:'M12 4v16M6 7h12M7 7l-3 6h6L7 7zM17 7l-3 6h6l-3-6z', briefcase:'M4 8h16v11H4zM9 8V6h6v2M4 12h16', book:'M5 5h10a4 4 0 0 1 4 4v10H9a4 4 0 0 0-4 0zM5 5v14', spark:'M12 3l2.2 6 6 2.2-6 2.2-2.2 6-2.2-6-6-2.2 6-2.2z' };
     return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + (map[name] || map.grid) + '"/></svg>';
@@ -100,7 +115,7 @@
     qsa('[data-i18n-placeholder]').forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
     const langLabel = qs('[data-lang-label]'); const langFlag = qs('[data-lang-flag]');
     if (langLabel) langLabel.textContent = currentLang === 'ar' ? 'AR' : 'EN';
-    if (langFlag) { langFlag.textContent = ''; langFlag.className = 'flag-badge ' + (currentLang === 'ar' ? 'flag-sar' : 'flag-gb'); }
+    if (langFlag) { langFlag.textContent = ''; langFlag.removeAttribute('class'); }
     qsa('.market-footer p').forEach(p => p.textContent = t('footerCopy'));
     const footerKeys = ['terms','privacy','refunds','license','contact'];
     qsa('.market-footer nav a').forEach((a, i) => { if (footerKeys[i]) a.textContent = t(footerKeys[i]); });
@@ -109,14 +124,14 @@
   function updateCurrencyLabel(){
     const c = currencies.find(x => x.code === currentCurrency) || currencies[0];
     const flag = qs('[data-currency-flag]'); const label = qs('[data-currency-label]');
-    if (flag) { flag.textContent = ''; flag.className = 'flag-badge flag-' + c.code.toLowerCase(); }
+    if (flag) { flag.className = 'currency-flag-shell'; flag.innerHTML = flagSvg(c.code); }
     if (label) label.textContent = c.code;
   }
 
   function setupHeaderControls(){
     const menu = qs('[data-currency-menu]'); const list = qs('[data-currency-list]'); const toggle = qs('[data-currency-toggle]');
     if (list) {
-      list.innerHTML = currencies.map(c => `<button type="button" data-currency="${c.code}"><span class="flag-badge flag-${c.code.toLowerCase()}"></span><b>${c.code}</b><small>${c.name}</small></button>`).join('');
+      list.innerHTML = currencies.map(c => `<button type="button" data-currency="${c.code}"><span class="currency-flag-shell">${flagSvg(c.code)}</span><b>${c.code}</b><small>${c.name}</small></button>`).join('');
       qsa('[data-currency]', list).forEach(btn => btn.addEventListener('click', () => {
         currentCurrency = btn.dataset.currency;
         localStorage.setItem('arabixShopCurrency', currentCurrency);
@@ -145,7 +160,7 @@
   function renderHeaderDropdown(){
     const menu = qs('[data-category-menu]'); const drop = qs('[data-category-dropdown]'); const btn = qs('[data-category-toggle]');
     if (!menu || !drop || !btn) return;
-    drop.innerHTML = shopData.categories.filter(c => c.id !== 'all').map(c => `<a href="./category.html?cat=${c.id}"><span class="cat-mini" style="--cat:${c.color}">${icon(c.icon)}</span><strong>${catName(c.id)}</strong><i>&rsaquo;</i></a>`).join('') + `<a class="dropdown-feature" href="./license.html"><strong>${t('license')}</strong><i>&rsaquo;</i></a>`;
+    drop.innerHTML = shopData.categories.filter(c => c.id !== 'all').map(c => `<a href="./category.html?cat=${c.id}"><span class="cat-mini" style="--cat:${c.color}">${icon(c.icon)}</span><strong>${catName(c.id)}</strong>${chevronIcon}</a>`).join('') + `<a class="dropdown-feature" href="./license.html"><strong>${t('license')}</strong>${chevronIcon}</a>`;
     if (!btn.dataset.bound) {
       btn.dataset.bound = 'true';
       btn.addEventListener('click', () => { const open = menu.classList.toggle('is-open'); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); });

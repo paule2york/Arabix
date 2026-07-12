@@ -1352,3 +1352,59 @@ body.is-ar .row-head a {
 .shop-select-btn [data-currency-flag].flag-kwd { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 42'%3E%3Cpath fill='%23007840' d='M0 0h60v14H0z'/%3E%3Cpath fill='white' d='M0 14h60v14H0z'/%3E%3Cpath fill='%23ce1126' d='M0 28h60v14H0z'/%3E%3Cpath fill='%23000' d='M0 0l20 14v14L0 42z'/%3E%3C/svg%3E") !important; }
 .shop-select-btn [data-currency-flag].flag-bhd { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 42'%3E%3Crect width='60' height='42' fill='%23ce1126'/%3E%3Cpath fill='white' d='M0 0h22l-8 4.2 8 4.2-8 4.2 8 4.2-8 4.2 8 4.2-8 4.2 8 4.2-8 4.2 8 4.2H0z'/%3E%3C/svg%3E") !important; }
 .shop-select-btn [data-currency-flag].flag-omr { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 42'%3E%3Cpath fill='%23fff' d='M0 0h60v14H0z'/%3E%3Cpath fill='%23c8102e' d='M0 14h60v14H0z'/%3E%3Cpath fill='%2300753b' d='M0 28h60v14H0z'/%3E%3Cpath fill='%23c8102e' d='M0 0h18v42H0z'/%3E%3C/svg%3E") !important; }
+
+/* Inline SVG currency flags and cleaner dropdown chevrons */
+.currency-flag-shell {
+  width: 32px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 32px;
+}
+.currency-flag-svg {
+  width: 32px;
+  height: 22px;
+  display: block;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4), 0 4px 12px rgba(0,0,0,.26);
+}
+.shop-select-btn [data-currency-flag].currency-flag-shell {
+  color: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible;
+}
+.shop-select-btn [data-currency-flag].currency-flag-shell::before,
+.shop-select-btn [data-currency-flag].currency-flag-shell::after {
+  content: none !important;
+}
+.currency-dropdown .currency-flag-shell {
+  grid-column: auto;
+}
+.dropdown-chevron {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .72;
+  transition: transform .16s ease, opacity .16s ease;
+}
+.category-dropdown a:hover .dropdown-chevron {
+  opacity: 1;
+  transform: translateX(2px);
+}
+html[dir="rtl"] .dropdown-chevron {
+  transform: rotate(180deg);
+}
+html[dir="rtl"] .category-dropdown a:hover .dropdown-chevron {
+  transform: rotate(180deg) translateX(2px);
+}
+.lang-select [data-lang-flag] {
+  display: none !important;
+}
