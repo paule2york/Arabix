@@ -37,7 +37,7 @@
       searchPlaceholder: 'Search templates, e.g. "clinic"', searchTemplates: 'Search templates', searchInCategory: 'Search in category',
       viewAllTemplates: 'View all templates', newAdded: 'New Added', newAddedBlurb: 'Fresh templates added to the Arabix library.',
       popular: 'Popular Picks', popularBlurb: 'Strong marketplace-style templates customers can understand quickly.', latestIn: 'Latest in',
-      viewAll: 'View all ->', templateCategory: 'Template category', view: 'View', liveDemo: 'Live Demo', details: 'Details', buyNow: 'Buy now',
+      viewAll: 'View all', templateCategory: 'Template category', view: 'View', liveDemo: 'Live Demo', details: 'Details', buyNow: 'Buy now',
       description: 'Description', chooseLicense: 'Choose a license', singleLicense: 'Single Website License', exclusiveLicense: 'Exclusive Buyout License',
       singleTip: 'Use this template for one website only. You can customize it for your own brand, but you cannot resell, redistribute, or use it for multiple websites.',
       exclusiveTip: 'This template becomes exclusive to you. After purchase, Arabix removes it from the shop and will not sell the same template again.',
@@ -57,7 +57,7 @@
       searchPlaceholder: 'ابحث عن قالب، مثال: عيادة', searchTemplates: 'ابحث في القوالب', searchInCategory: 'ابحث داخل التصنيف',
       viewAllTemplates: 'عرض كل القوالب', newAdded: 'أضيف حديثاً', newAddedBlurb: 'قوالب جديدة تمت إضافتها إلى مكتبة أرابيكس.',
       popular: 'الأكثر طلباً', popularBlurb: 'قوالب واضحة وسهلة الفهم ومناسبة للبيع بسرعة.', latestIn: 'الأحدث في',
-      viewAll: 'عرض الكل ←', templateCategory: 'تصنيف القالب', view: 'عرض', liveDemo: 'معاينة مباشرة', details: 'التفاصيل', buyNow: 'اشتر الآن',
+      viewAll: 'عرض الكل', templateCategory: 'تصنيف القالب', view: 'عرض', liveDemo: 'معاينة مباشرة', details: 'التفاصيل', buyNow: 'اشتر الآن',
       description: 'الوصف', chooseLicense: 'اختر الترخيص', singleLicense: 'ترخيص موقع واحد', exclusiveLicense: 'ترخيص شراء حصري',
       singleTip: 'استخدم هذا القالب لموقع واحد فقط. يمكنك تعديله لعلامتك، لكن لا يمكنك إعادة بيعه أو استخدامه لأكثر من موقع.',
       exclusiveTip: 'يصبح القالب حصرياً لك. بعد الشراء، تقوم أرابيكس بإزالته من المتجر ولا تبيعه مرة أخرى.',
@@ -180,7 +180,7 @@
       { title: t('popular'), blurb: t('popularBlurb'), items: shopData.products.filter((_,i) => i % 3 === 1).slice(0,4), link: './category.html?cat=all' }
     ];
     shopData.categories.filter(c => c.id !== 'all').forEach(c => rows.push({ title: t('latestIn') + ' ' + catName(c.id), blurb: catBlurb(c.id), items: shopData.products.filter(p => p.category === c.id).slice(0,4), link: './category.html?cat=' + c.id }));
-    el.innerHTML = rows.map(r => `<section class="product-row"><div class="row-head"><div><h2>${r.title}</h2><p>${r.blurb}</p></div><a href="${r.link}">${t('viewAll')}</a></div><div class="row-grid">${r.items.map(card).join('')}</div></section>`).join('');
+    el.innerHTML = rows.map(r => `<section class="product-row"><div class="row-head"><div><h2>${r.title}</h2><p>${r.blurb}</p></div><a href="${r.link}">${t('viewAll')} ${chevronIcon}</a></div><div class="row-grid">${r.items.map(card).join('')}</div></section>`).join('');
   }
 
   function filterCards(){

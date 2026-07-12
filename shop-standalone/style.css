@@ -1408,3 +1408,46 @@ html[dir="rtl"] .category-dropdown a:hover .dropdown-chevron {
 .lang-select [data-lang-flag] {
   display: none !important;
 }
+
+/* Remove raw arrows: SVG caret and row chevrons */
+.select-caret {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .72;
+  transition: transform .16s ease, opacity .16s ease;
+}
+.shop-select.is-open .select-caret,
+.shop-select-btn:hover .select-caret {
+  opacity: 1;
+}
+.shop-select.is-open .select-caret {
+  transform: rotate(180deg);
+}
+.row-head a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.row-head a .dropdown-chevron {
+  width: 17px;
+  height: 17px;
+  opacity: .78;
+}
+.row-head a:hover .dropdown-chevron {
+  opacity: 1;
+  transform: translateX(2px);
+}
+html[dir="rtl"] .row-head a .dropdown-chevron {
+  transform: rotate(180deg);
+}
+html[dir="rtl"] .row-head a:hover .dropdown-chevron {
+  transform: rotate(180deg) translateX(2px);
+}
+.shop-select-btn i {
+  display: none !important;
+}
