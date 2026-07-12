@@ -100,7 +100,7 @@
     qsa('[data-i18n-placeholder]').forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
     const langLabel = qs('[data-lang-label]'); const langFlag = qs('[data-lang-flag]');
     if (langLabel) langLabel.textContent = currentLang === 'ar' ? 'AR' : 'EN';
-    if (langFlag) langFlag.textContent = currentLang === 'ar' ? '🇸🇦' : '🇬🇧';
+    if (langFlag) { langFlag.textContent = ''; langFlag.className = 'flag-badge ' + (currentLang === 'ar' ? 'flag-sar' : 'flag-gb'); }
     qsa('.market-footer p').forEach(p => p.textContent = t('footerCopy'));
     const footerKeys = ['terms','privacy','refunds','license','contact'];
     qsa('.market-footer nav a').forEach((a, i) => { if (footerKeys[i]) a.textContent = t(footerKeys[i]); });
@@ -109,14 +109,14 @@
   function updateCurrencyLabel(){
     const c = currencies.find(x => x.code === currentCurrency) || currencies[0];
     const flag = qs('[data-currency-flag]'); const label = qs('[data-currency-label]');
-    if (flag) flag.textContent = c.flag;
+    if (flag) { flag.textContent = ''; flag.className = 'flag-badge flag-' + c.code.toLowerCase(); }
     if (label) label.textContent = c.code;
   }
 
   function setupHeaderControls(){
     const menu = qs('[data-currency-menu]'); const list = qs('[data-currency-list]'); const toggle = qs('[data-currency-toggle]');
     if (list) {
-      list.innerHTML = currencies.map(c => `<button type="button" data-currency="${c.code}"><span>${c.flag}</span><b>${c.code}</b><small>${c.name}</small></button>`).join('');
+      list.innerHTML = currencies.map(c => `<button type="button" data-currency="${c.code}"><span class="flag-badge flag-${c.code.toLowerCase()}"></span><b>${c.code}</b><small>${c.name}</small></button>`).join('');
       qsa('[data-currency]', list).forEach(btn => btn.addEventListener('click', () => {
         currentCurrency = btn.dataset.currency;
         localStorage.setItem('arabixShopCurrency', currentCurrency);

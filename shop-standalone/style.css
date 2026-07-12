@@ -1210,3 +1210,88 @@ body.is-ar .row-head a {
     grid-template-columns: 1fr;
   }
 }
+
+/* Reliable drawn flags and refined shop header controls */
+.shop-select-btn [data-currency-flag],
+.shop-select-btn [data-lang-flag],
+.flag-badge {
+  position: relative;
+  width: 28px;
+  height: 20px;
+  flex: 0 0 28px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.36), 0 3px 10px rgba(0,0,0,.24);
+  color: transparent !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  vertical-align: middle;
+}
+.shop-select-btn [data-currency-flag],
+.flag-sar {
+  background: #0b7d3b;
+}
+.shop-select-btn [data-currency-flag]::after,
+.flag-sar::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  top: 8px;
+  height: 2px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 5px 0 #fff;
+}
+.shop-select-btn [data-lang-flag],
+.flag-gb {
+  background:
+    linear-gradient(32deg, transparent 42%, #fff 42% 48%, #c8102e 48% 53%, #fff 53% 59%, transparent 59%),
+    linear-gradient(148deg, transparent 42%, #fff 42% 48%, #c8102e 48% 53%, #fff 53% 59%, transparent 59%),
+    linear-gradient(90deg, transparent 42%, #fff 42% 58%, transparent 58%),
+    linear-gradient(0deg, transparent 38%, #fff 38% 62%, transparent 62%),
+    linear-gradient(90deg, transparent 46%, #c8102e 46% 54%, transparent 54%),
+    linear-gradient(0deg, transparent 43%, #c8102e 43% 57%, transparent 57%),
+    #012169;
+}
+.flag-usd { background: repeating-linear-gradient(0deg,#b22234 0 2px,#fff 2px 4px); }
+.flag-usd::before { content:""; position:absolute; inset:0 auto auto 0; width:12px; height:10px; background:#3c3b6e; }
+.flag-aed { background: linear-gradient(90deg,#ef3340 0 28%,transparent 28%), linear-gradient(0deg,#000 0 33%,#fff 33% 66%,#009739 66%); }
+.flag-qar { background: linear-gradient(90deg,#fff 0 34%,#8d1b3d 34%); }
+.flag-kwd { background: linear-gradient(90deg,#111 0 25%,transparent 25%), linear-gradient(0deg,#ce1126 0 33%,#fff 33% 66%,#007a3d 66%); }
+.flag-bhd { background: linear-gradient(90deg,#fff 0 34%,#ce1126 34%); }
+.flag-omr { background: linear-gradient(90deg,#c8102e 0 28%,transparent 28%), linear-gradient(0deg,#007a3d 0 33%,#fff 33% 66%,#c8102e 66%); }
+.shop-header .header-actions {
+  gap: 12px;
+}
+.shop-select-btn,
+.header-icon,
+.category-menu-btn {
+  min-height: 54px;
+  border-radius: 18px;
+  border-color: rgba(255,255,255,.18);
+  background: linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.045));
+}
+.shop-select-btn {
+  min-width: auto;
+  padding: 0 15px;
+}
+.lang-select .shop-select-btn {
+  min-width: 102px;
+}
+.header-icon {
+  padding: 0 18px;
+}
+.header-icon span,
+.category-menu-btn span,
+.shop-select-btn b {
+  letter-spacing: .01em;
+}
+.header-icon:hover,
+.category-menu-btn:hover,
+.shop-select-btn:hover,
+.category-menu.is-open .category-menu-btn,
+.shop-select.is-open .shop-select-btn {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 0 0 1px rgba(166,255,0,.18), 0 16px 34px rgba(166,255,0,.08);
+}
