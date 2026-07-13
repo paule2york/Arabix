@@ -70,6 +70,7 @@ function blankProduct() {
     id: next,
     slug: `new-template-${next}`,
     title: "New Website Template",
+    demoUrl: "",
     titleAr: "",
     category: "business",
     badge: "New",
@@ -133,6 +134,7 @@ function productEditorHtml(product, index) {
         <div class="field-grid">
           ${textField("ID", "id", product.id)}
           ${textField("Slug", "slug", product.slug)}
+          ${textField("Demo URL", "demoUrl", product.demoUrl || "")}
           ${selectField("Category", "category", product.category)}
           ${textField("Badge EN", "badge", product.badge)}
           ${textField("Title EN", "title", product.title, "field-half")}
