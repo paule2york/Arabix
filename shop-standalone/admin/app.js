@@ -1,4 +1,4 @@
-﻿const REPO_OWNER = "paule2york";
+const REPO_OWNER = "paule2york";
 const REPO_NAME = "Arabix";
 const BRANCH = "main";
 const DATA_PATH = "shop-standalone/data/products.json";
@@ -119,42 +119,59 @@ function renderCategoryFilter() {
   if (!select) return;
   select.innerHTML = `<option value="all">All categories</option>` + (state.data.categories || []).filter((cat) => cat.id !== "all").map((cat) => `<option value="${escapeAttr(cat.id)}">${escapeHtml(cat.name || cat.id)}</option>`).join("");
 }
+function productEditorHtml(product, index) {
+  return `
+    <details class="item-card product-card" data-product-index="${index}" data-category="${escapeAttr(product.category)}">
+      <summary class="product-summary">
+        <span class="summary-dot"></span>
+        <span class="summary-main"><strong>${escapeHtml(product.title || "Untitled")}</strong><small>${escapeHtml(product.slug || "no-slug")}</small></span>
+        <span class="summary-meta">SAR ${Number(product.price || 0).toLocaleString("en-US")}</span>
+        <span class="summary-edit">Edit</span>
+      </summary>
+      <div class="product-editor-body">
+        <div class="row-actions product-actions"><button type="button" class="ghost" data-duplicate-product="${index}">Duplicate</button><button type="button" class="danger" data-remove-product="${index}">Remove</button></div>
+        <div class="field-grid">
+          ${textField("ID", "id", product.id)}
+          ${textField("Slug", "slug", product.slug)}
+          ${selectField("Category", "category", product.category)}
+          ${textField("Badge EN", "badge", product.badge)}
+          ${textField("Title EN", "title", product.title, "field-half")}
+          ${textField("Title AR", "titleAr", product.titleAr, "field-half")}
+          ${numberField("Sale price SAR", "price", product.price)}
+          ${numberField("Old price SAR", "oldPrice", product.oldPrice)}
+          ${numberField("Single license SAR", "singleLicensePrice", product.singleLicensePrice ?? product.price)}
+          ${numberField("Exclusive buyout SAR", "exclusiveBuyoutPrice", product.exclusiveBuyoutPrice ?? product.commercialPrice ?? 1499)}
+          ${textArea("Summary EN", "summary", product.summary, "field-half")}
+          ${textArea("Summary AR", "summaryAr", product.summaryAr, "field-half")}
+          ${textArea("Details EN", "details", product.details, "field-half")}
+          ${textArea("Details AR", "detailsAr", product.detailsAr, "field-half")}
+          ${listField("Features EN", "features", product.features)}
+          ${listField("Features AR", "featuresAr", product.featuresAr)}
+          ${listField("Includes EN", "includes", product.includes)}
+          ${listField("Includes AR", "includesAr", product.includesAr)}
+          ${listField("Compatible EN", "compatible", product.compatible)}
+          ${listField("Compatible AR", "compatibleAr", product.compatibleAr)}
+          ${textField("Updated", "updated", product.updated)}
+          ${textField("Currency", "currency", product.currency || "SAR")}
+        </div>
+      </div>
+    </details>`;
+}
 function renderProducts() {
   const wrap = qs("[data-products]");
-  wrap.innerHTML = (state.data.products || []).map((product, index) => `
-    <article class="item-card product-card" data-product-index="${index}" data-category="${escapeAttr(product.category)}">
-      <div class="item-top">
-        <div><div class="item-title">${escapeHtml(product.title || "Untitled")}</div><div class="item-meta">${escapeHtml(product.category || "No category")} · SAR ${Number(product.price || 0).toLocaleString("en-US")}</div></div>
-        <div class="row-actions"><button type="button" class="ghost" data-duplicate-product="${index}">Duplicate</button><button type="button" class="danger" data-remove-product="${index}">Remove</button></div>
-      </div>
-      <div class="field-grid">
-        ${textField("ID", "id", product.id)}
-        ${textField("Slug", "slug", product.slug)}
-        ${selectField("Category", "category", product.category)}
-        ${textField("Badge EN", "badge", product.badge)}
-        ${textField("Title EN", "title", product.title, "field-half")}
-        ${textField("Title AR", "titleAr", product.titleAr, "field-half")}
-        ${numberField("Sale price SAR", "price", product.price)}
-        ${numberField("Old price SAR", "oldPrice", product.oldPrice)}
-        ${numberField("Single license SAR", "singleLicensePrice", product.singleLicensePrice ?? product.price)}
-        ${numberField("Exclusive buyout SAR", "exclusiveBuyoutPrice", product.exclusiveBuyoutPrice ?? product.commercialPrice ?? 1499)}
-        ${textArea("Summary EN", "summary", product.summary, "field-half")}
-        ${textArea("Summary AR", "summaryAr", product.summaryAr, "field-half")}
-        ${textArea("Details EN", "details", product.details, "field-half")}
-        ${textArea("Details AR", "detailsAr", product.detailsAr, "field-half")}
-        ${listField("Features EN", "features", product.features)}
-        ${listField("Features AR", "featuresAr", product.featuresAr)}
-        ${listField("Includes EN", "includes", product.includes)}
-        ${listField("Includes AR", "includesAr", product.includesAr)}
-        ${listField("Compatible EN", "compatible", product.compatible)}
-        ${listField("Compatible AR", "compatibleAr", product.compatibleAr)}
-        ${textField("Updated", "updated", product.updated)}
-        ${textField("Currency", "currency", product.currency || "SAR")}
-      </div>
-    </article>`).join("");
+  const products = state.data.products || [];
+  const categories = (state.data.categories || []).filter((cat) => cat.id !== "all");
+  const known = new Set(categories.map((cat) => cat.id));
+  const groups = categories.map((cat) => ({ ...cat, products: products.map((product, index) => ({ product, index })).filter((item) => item.product.category === cat.id) }));
+  const uncategorized = products.map((product, index) => ({ product, index })).filter((item) => !known.has(item.product.category));
+  if (uncategorized.length) groups.push({ id: "uncategorized", name: "Uncategorized", color: "#64748b", products: uncategorized });
+  wrap.innerHTML = groups.map((group) => `
+    <details class="category-group" data-category-group="${escapeAttr(group.id)}" open style="--group-color:${escapeAttr(group.color || "#a6ff00")}">
+      <summary class="category-summary"><span></span><strong>${escapeHtml(group.name || group.id)}</strong><em>${group.products.length} themes</em></summary>
+      <div class="category-product-list">${group.products.length ? group.products.map((item) => productEditorHtml(item.product, item.index)).join("") : `<p class="empty-group">No themes in this category yet.</p>`}</div>
+    </details>`).join("");
   applyFilters();
-}
-function renderCategories() {
+}function renderCategories() {
   const wrap = qs("[data-categories]");
   wrap.innerHTML = (state.data.categories || []).map((cat, index) => `
     <article class="item-card category-card" data-category-index="${index}">
@@ -209,6 +226,11 @@ function applyFilters() {
     const matchesCategory = category === "all" || card.dataset.category === category;
     card.classList.toggle("is-hidden", !(matchesQuery && matchesCategory));
   });
+  qsa("[data-category-group]").forEach((group) => {
+    const visibleCards = qsa("[data-product-index]", group).filter((card) => !card.classList.contains("is-hidden"));
+    group.classList.toggle("is-hidden", visibleCards.length === 0);
+    if (category !== "all" && group.dataset.categoryGroup === category) group.open = true;
+  });
 }
 function showTab(tab) {
   state.tab = tab;
@@ -252,8 +274,8 @@ document.addEventListener("click", async (event) => {
     if (target.matches("[data-fill-arabic]")) fillArabicDraft();
     if (target.matches("[data-add-product]")) { syncAll(); state.data.products.unshift(blankProduct()); renderAll(); }
     if (target.matches("[data-add-category]")) { syncAll(); state.data.categories.push(blankCategory()); renderAll(); showTab("categories"); }
-    if (target.matches("[data-remove-product]")) { syncAll(); state.data.products.splice(Number(target.dataset.removeProduct), 1); renderAll(); }
-    if (target.matches("[data-duplicate-product]")) { syncAll(); const copy = structuredClone(state.data.products[Number(target.dataset.duplicateProduct)]); copy.id = String(Date.now()).slice(-6); copy.slug = slugify(copy.slug + " copy"); copy.title += " Copy"; state.data.products.splice(Number(target.dataset.duplicateProduct) + 1, 0, copy); renderAll(); }
+    if (target.matches("[data-remove-product]")) { const card = target.closest("[data-product-index]"); const index = qsa("[data-product-index]").indexOf(card); syncAll(); state.data.products.splice(index, 1); renderAll(); }
+    if (target.matches("[data-duplicate-product]")) { const card = target.closest("[data-product-index]"); const index = qsa("[data-product-index]").indexOf(card); syncAll(); const copy = structuredClone(state.data.products[index]); copy.id = String(Date.now()).slice(-6); copy.slug = slugify(copy.slug + " copy"); copy.title += " Copy"; state.data.products.splice(index + 1, 0, copy); renderAll(); }
     if (target.matches("[data-remove-category]")) { syncAll(); state.data.categories.splice(Number(target.dataset.removeCategory), 1); renderAll(); showTab("categories"); }
     if (target.matches("[data-add-list-row]")) { const box = target.closest("[data-list-field]").querySelector(".list-box"); box.insertAdjacentHTML("beforeend", `<div class="list-row"><input type="text" data-list-item value="" /><button class="danger" type="button" data-remove-list-row>Remove</button></div>`); }
     if (target.matches("[data-remove-list-row]")) target.closest(".list-row")?.remove();
