@@ -1,4 +1,4 @@
-﻿(function clientCode(){
+(function clientCode(){
   const SHOP_DATA_URL = './data/products.json';
   const qs = (s, r = document) => r.querySelector(s);
   const qsa = (s, r = document) => [...r.querySelectorAll(s)];
@@ -98,8 +98,9 @@
   const catById = (id) => shopData.categories.find(c => c.id === id) || shopData.categories[0];
   const catName = (id) => { const c = catById(id); return currentLang === 'ar' ? (c.nameAr || (arCategories[id] && arCategories[id][0]) || c.name) : c.name; };
   const catBlurb = (id) => { const c = catById(id); return currentLang === 'ar' ? (c.blurbAr || (arCategories[id] && arCategories[id][1]) || c.blurb) : c.blurb; };
-  const productTitle = (p) => currentLang === 'ar' ? 'قالب ' + p.title.replace(' Website Template', '') : p.title;
-  const productDetails = (p) => currentLang === 'ar' ? 'قالب جاهز بتصميم متجاوب وأقسام منظمة يمكنك تعديلها لعلامتك وإطلاقها بسرعة. مناسب للعرض الاحترافي وتجربة مستخدم واضحة.' : p.details;
+  const productTitle = (p) => currentLang === 'ar' ? (p.titleAr || ('قالب ' + String(p.title || '').replace(' Website Template', ''))) : p.title;
+  const productBadge = (p) => currentLang === 'ar' ? (p.badgeAr || p.badge || 'جاهز') : (p.badge || 'Ready');
+  const productDetails = (p) => currentLang === 'ar' ? (p.detailsAr || p.summaryAr || 'قالب جاهز بتصميم متجاوب وأقسام منظمة يمكنك تعديلها لعلامتك وإطلاقها بسرعة. مناسب للعرض الاحترافي وتجربة مستخدم واضحة.') : p.details;
   const money = (amount) => {
     const c = currencies.find(x => x.code === currentCurrency) || currencies[0];
     const value = Number(amount) * c.rate;
