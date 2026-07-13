@@ -2,1560 +2,2138 @@
   "categories": [
     {
       "id": "all",
-      "name": "All Templates",
       "icon": "grid",
       "color": "#111827",
-      "blurb": "Every ready-made Arabix template in one place."
+      "name": "All Templates",
+      "nameAr": "",
+      "blurb": "Every ready-made Arabix template in one place.",
+      "blurbAr": ""
     },
     {
       "id": "ecommerce",
-      "name": "Ecommerce",
       "icon": "bag",
       "color": "#22c55e",
-      "blurb": "Storefront templates for catalogs, launches and premium product drops."
+      "name": "Ecommerce",
+      "nameAr": "",
+      "blurb": "Storefront templates for catalogs, launches and premium product drops.",
+      "blurbAr": ""
     },
     {
       "id": "restaurant",
-      "name": "Restaurant",
       "icon": "utensils",
       "color": "#f97316",
-      "blurb": "Menus, reservations and food brand templates."
+      "name": "Restaurant",
+      "nameAr": "",
+      "blurb": "Menus, reservations and food brand templates.",
+      "blurbAr": ""
     },
     {
       "id": "hotel",
-      "name": "Hotel & Travel",
       "icon": "hotel",
       "color": "#0ea5e9",
-      "blurb": "Hotel, trip, booking and destination templates."
+      "name": "Hotel & Travel",
+      "nameAr": "",
+      "blurb": "Hotel, trip, booking and destination templates.",
+      "blurbAr": ""
     },
     {
       "id": "clinic",
-      "name": "Clinic",
       "icon": "medical",
       "color": "#14b8a6",
-      "blurb": "Healthcare, beauty, dental and wellness templates."
+      "name": "Clinic",
+      "nameAr": "",
+      "blurb": "Healthcare, beauty, dental and wellness templates.",
+      "blurbAr": ""
     },
     {
       "id": "realestate",
-      "name": "Real Estate",
       "icon": "home",
       "color": "#6366f1",
-      "blurb": "Property, rental and luxury listing templates."
+      "name": "Real Estate",
+      "nameAr": "",
+      "blurb": "Property, rental and luxury listing templates.",
+      "blurbAr": ""
     },
     {
       "id": "legal",
-      "name": "Law",
       "icon": "scale",
       "color": "#334155",
-      "blurb": "Professional law office and legal practice templates."
+      "name": "Law",
+      "nameAr": "",
+      "blurb": "Professional law office and legal practice templates.",
+      "blurbAr": ""
     },
     {
       "id": "business",
-      "name": "Business",
       "icon": "briefcase",
       "color": "#7c3aed",
-      "blurb": "Corporate profile, team and company templates."
+      "name": "Business",
+      "nameAr": "",
+      "blurb": "Corporate profile, team and company templates.",
+      "blurbAr": ""
     },
     {
       "id": "education",
-      "name": "Education",
       "icon": "book",
       "color": "#f59e0b",
-      "blurb": "Courses, institutes and learning platform templates."
+      "name": "Education",
+      "nameAr": "",
+      "blurb": "Courses, institutes and learning platform templates.",
+      "blurbAr": ""
     },
     {
       "id": "portfolio",
-      "name": "Portfolio",
       "icon": "spark",
       "color": "#ec4899",
-      "blurb": "Creative portfolios for designers, creators and studios."
+      "name": "Portfolio",
+      "nameAr": "",
+      "blurb": "Creative portfolios for designers, creators and studios.",
+      "blurbAr": ""
     }
   ],
   "products": [
     {
       "id": "001",
       "slug": "luxe-cart",
-      "title": "Luxe Cart Website Template",
       "category": "ecommerce",
       "badge": "New",
+      "title": "Luxe Cart Website Template",
+      "titleAr": "",
       "price": 149,
       "oldPrice": 229,
-      "commercialPrice": 1499,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
       "summary": "Luxe Cart is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Product grid",
         "Offer sections",
         "Trust blocks",
         "Mobile catalog"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 149,
-      "exclusiveBuyoutPrice": 1499
+      "compatibleAr": [],
+      "commercialPrice": 1499
     },
     {
       "id": "002",
       "slug": "noura-store",
-      "title": "Noura Store Website Template",
       "category": "ecommerce",
       "badge": "Popular",
+      "title": "Noura Store Website Template",
+      "titleAr": "",
       "price": 199,
       "oldPrice": 299,
-      "commercialPrice": 1499,
+      "singleLicensePrice": 199,
+      "exclusiveBuyoutPrice": 1499,
       "summary": "Noura Store is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Product grid",
         "Offer sections",
         "Trust blocks",
         "Mobile catalog"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 199,
-      "exclusiveBuyoutPrice": 1499
+      "compatibleAr": [],
+      "commercialPrice": 1499
     },
     {
       "id": "003",
       "slug": "velvet-goods",
-      "title": "Velvet Goods Website Template",
       "category": "ecommerce",
       "badge": "Best Seller",
+      "title": "Velvet Goods Website Template",
+      "titleAr": "",
       "price": 249,
       "oldPrice": 369,
-      "commercialPrice": 1750,
+      "singleLicensePrice": 249,
+      "exclusiveBuyoutPrice": 1750,
       "summary": "Velvet Goods is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Product grid",
         "Offer sections",
         "Trust blocks",
         "Mobile catalog"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 249,
-      "exclusiveBuyoutPrice": 1750
+      "compatibleAr": [],
+      "commercialPrice": 1750
     },
     {
       "id": "004",
       "slug": "catalog-pro",
-      "title": "Catalog Pro Website Template",
       "category": "ecommerce",
       "badge": "Ready",
+      "title": "Catalog Pro Website Template",
+      "titleAr": "",
       "price": 299,
       "oldPrice": 439,
-      "commercialPrice": 2100,
+      "singleLicensePrice": 299,
+      "exclusiveBuyoutPrice": 2100,
       "summary": "Catalog Pro is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Product grid",
         "Offer sections",
         "Trust blocks",
         "Mobile catalog"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 299,
-      "exclusiveBuyoutPrice": 2100
+      "compatibleAr": [],
+      "commercialPrice": 2100
     },
     {
       "id": "005",
       "slug": "prime-drop",
-      "title": "Prime Drop Website Template",
       "category": "ecommerce",
       "badge": "Ready",
+      "title": "Prime Drop Website Template",
+      "titleAr": "",
       "price": 349,
       "oldPrice": 509,
-      "commercialPrice": 2450,
+      "singleLicensePrice": 349,
+      "exclusiveBuyoutPrice": 2450,
       "summary": "Prime Drop is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Product grid",
         "Offer sections",
         "Trust blocks",
         "Mobile catalog"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 349,
-      "exclusiveBuyoutPrice": 2450
+      "compatibleAr": [],
+      "commercialPrice": 2450
     },
     {
       "id": "006",
       "slug": "saffron-table",
-      "title": "Saffron Table Website Template",
       "category": "restaurant",
       "badge": "New",
+      "title": "Saffron Table Website Template",
+      "titleAr": "",
       "price": 169,
       "oldPrice": 249,
-      "commercialPrice": 1499,
+      "singleLicensePrice": 169,
+      "exclusiveBuyoutPrice": 1499,
       "summary": "Saffron Table is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Menu sections",
         "Reservation layout",
         "Gallery blocks",
         "Opening hours"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 169,
-      "exclusiveBuyoutPrice": 1499
+      "compatibleAr": [],
+      "commercialPrice": 1499
     },
     {
       "id": "007",
       "slug": "cafe-nora",
-      "title": "Cafe Nora Website Template",
       "category": "restaurant",
       "badge": "Popular",
+      "title": "Cafe Nora Website Template",
+      "titleAr": "",
       "price": 219,
       "oldPrice": 319,
-      "commercialPrice": 1550,
+      "singleLicensePrice": 219,
+      "exclusiveBuyoutPrice": 1550,
       "summary": "Cafe Nora is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Menu sections",
         "Reservation layout",
         "Gallery blocks",
         "Opening hours"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 219,
-      "exclusiveBuyoutPrice": 1550
+      "compatibleAr": [],
+      "commercialPrice": 1550
     },
     {
       "id": "008",
       "slug": "grill-house",
-      "title": "Grill House Website Template",
       "category": "restaurant",
       "badge": "Best Seller",
+      "title": "Grill House Website Template",
+      "titleAr": "",
       "price": 269,
       "oldPrice": 389,
-      "commercialPrice": 1900,
+      "singleLicensePrice": 269,
+      "exclusiveBuyoutPrice": 1900,
       "summary": "Grill House is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Menu sections",
         "Reservation layout",
         "Gallery blocks",
         "Opening hours"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 269,
-      "exclusiveBuyoutPrice": 1900
+      "compatibleAr": [],
+      "commercialPrice": 1900
     },
     {
       "id": "009",
       "slug": "sweet-oven",
-      "title": "Sweet Oven Website Template",
       "category": "restaurant",
       "badge": "Ready",
+      "title": "Sweet Oven Website Template",
+      "titleAr": "",
       "price": 319,
       "oldPrice": 459,
-      "commercialPrice": 2250,
+      "singleLicensePrice": 319,
+      "exclusiveBuyoutPrice": 2250,
       "summary": "Sweet Oven is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Menu sections",
         "Reservation layout",
         "Gallery blocks",
         "Opening hours"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 319,
-      "exclusiveBuyoutPrice": 2250
+      "compatibleAr": [],
+      "commercialPrice": 2250
     },
     {
       "id": "010",
       "slug": "urban-menu",
-      "title": "Urban Menu Website Template",
       "category": "restaurant",
       "badge": "Ready",
+      "title": "Urban Menu Website Template",
+      "titleAr": "",
       "price": 369,
       "oldPrice": 529,
-      "commercialPrice": 2600,
+      "singleLicensePrice": 369,
+      "exclusiveBuyoutPrice": 2600,
       "summary": "Urban Menu is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Menu sections",
         "Reservation layout",
         "Gallery blocks",
         "Opening hours"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 369,
-      "exclusiveBuyoutPrice": 2600
+      "compatibleAr": [],
+      "commercialPrice": 2600
     },
     {
       "id": "011",
       "slug": "palm-stay",
-      "title": "Palm Stay Website Template",
       "category": "hotel",
       "badge": "New",
+      "title": "Palm Stay Website Template",
+      "titleAr": "",
       "price": 189,
       "oldPrice": 269,
-      "commercialPrice": 1499,
+      "singleLicensePrice": 189,
+      "exclusiveBuyoutPrice": 1499,
       "summary": "Palm Stay is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Room cards",
         "Booking inquiry layout",
         "Destination blocks",
         "Amenities sections"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 189,
-      "exclusiveBuyoutPrice": 1499
+      "compatibleAr": [],
+      "commercialPrice": 1499
     },
     {
       "id": "012",
       "slug": "desert-suites",
-      "title": "Desert Suites Website Template",
       "category": "hotel",
       "badge": "Popular",
+      "title": "Desert Suites Website Template",
+      "titleAr": "",
       "price": 239,
       "oldPrice": 339,
-      "commercialPrice": 1700,
+      "singleLicensePrice": 239,
+      "exclusiveBuyoutPrice": 1700,
       "summary": "Desert Suites is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Room cards",
         "Booking inquiry layout",
         "Destination blocks",
         "Amenities sections"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 239,
-      "exclusiveBuyoutPrice": 1700
+      "compatibleAr": [],
+      "commercialPrice": 1700
     },
     {
       "id": "013",
       "slug": "travel-vista",
-      "title": "Travel Vista Website Template",
       "category": "hotel",
       "badge": "Best Seller",
+      "title": "Travel Vista Website Template",
+      "titleAr": "",
       "price": 289,
       "oldPrice": 409,
-      "commercialPrice": 2050,
+      "singleLicensePrice": 289,
+      "exclusiveBuyoutPrice": 2050,
       "summary": "Travel Vista is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Room cards",
         "Booking inquiry layout",
         "Destination blocks",
         "Amenities sections"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 289,
-      "exclusiveBuyoutPrice": 2050
+      "compatibleAr": [],
+      "commercialPrice": 2050
     },
     {
       "id": "014",
       "slug": "riyadh-rooms",
-      "title": "Riyadh Rooms Website Template",
       "category": "hotel",
       "badge": "Ready",
+      "title": "Riyadh Rooms Website Template",
+      "titleAr": "",
       "price": 339,
       "oldPrice": 479,
-      "commercialPrice": 2400,
+      "singleLicensePrice": 339,
+      "exclusiveBuyoutPrice": 2400,
       "summary": "Riyadh Rooms is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Room cards",
         "Booking inquiry layout",
         "Destination blocks",
         "Amenities sections"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 339,
-      "exclusiveBuyoutPrice": 2400
+      "compatibleAr": [],
+      "commercialPrice": 2400
     },
     {
       "id": "015",
       "slug": "coastal-booking",
-      "title": "Coastal Booking Website Template",
       "category": "hotel",
       "badge": "Ready",
+      "title": "Coastal Booking Website Template",
+      "titleAr": "",
       "price": 389,
       "oldPrice": 549,
-      "commercialPrice": 2750,
+      "singleLicensePrice": 389,
+      "exclusiveBuyoutPrice": 2750,
       "summary": "Coastal Booking is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Room cards",
         "Booking inquiry layout",
         "Destination blocks",
         "Amenities sections"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 389,
-      "exclusiveBuyoutPrice": 2750
+      "compatibleAr": [],
+      "commercialPrice": 2750
     },
     {
       "id": "016",
       "slug": "care-point",
-      "title": "Care Point Website Template",
       "category": "clinic",
       "badge": "New",
+      "title": "Care Point Website Template",
+      "titleAr": "",
       "price": 209,
       "oldPrice": 289,
-      "commercialPrice": 1500,
+      "singleLicensePrice": 209,
+      "exclusiveBuyoutPrice": 1500,
       "summary": "Care Point is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Appointment layout",
         "Profile blocks",
         "Treatment cards",
         "Trust badges"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 209,
-      "exclusiveBuyoutPrice": 1500
+      "compatibleAr": [],
+      "commercialPrice": 1500
     },
     {
       "id": "017",
       "slug": "dental-glow",
-      "title": "Dental Glow Website Template",
       "category": "clinic",
       "badge": "Popular",
+      "title": "Dental Glow Website Template",
+      "titleAr": "",
       "price": 259,
       "oldPrice": 359,
-      "commercialPrice": 1850,
+      "singleLicensePrice": 259,
+      "exclusiveBuyoutPrice": 1850,
       "summary": "Dental Glow is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Appointment layout",
         "Profile blocks",
         "Treatment cards",
         "Trust badges"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 259,
-      "exclusiveBuyoutPrice": 1850
+      "compatibleAr": [],
+      "commercialPrice": 1850
     },
     {
       "id": "018",
       "slug": "derma-studio",
-      "title": "Derma Studio Website Template",
       "category": "clinic",
       "badge": "Best Seller",
+      "title": "Derma Studio Website Template",
+      "titleAr": "",
       "price": 309,
       "oldPrice": 429,
-      "commercialPrice": 2200,
+      "singleLicensePrice": 309,
+      "exclusiveBuyoutPrice": 2200,
       "summary": "Derma Studio is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Appointment layout",
         "Profile blocks",
         "Treatment cards",
         "Trust badges"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 309,
-      "exclusiveBuyoutPrice": 2200
+      "compatibleAr": [],
+      "commercialPrice": 2200
     },
     {
       "id": "019",
       "slug": "wellness-hub",
-      "title": "Wellness Hub Website Template",
       "category": "clinic",
       "badge": "Ready",
+      "title": "Wellness Hub Website Template",
+      "titleAr": "",
       "price": 359,
       "oldPrice": 499,
-      "commercialPrice": 2550,
+      "singleLicensePrice": 359,
+      "exclusiveBuyoutPrice": 2550,
       "summary": "Wellness Hub is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Appointment layout",
         "Profile blocks",
         "Treatment cards",
         "Trust badges"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 359,
-      "exclusiveBuyoutPrice": 2550
+      "compatibleAr": [],
+      "commercialPrice": 2550
     },
     {
       "id": "020",
       "slug": "clinic-flow",
-      "title": "Clinic Flow Website Template",
       "category": "clinic",
       "badge": "Ready",
+      "title": "Clinic Flow Website Template",
+      "titleAr": "",
       "price": 409,
       "oldPrice": 569,
-      "commercialPrice": 2900,
+      "singleLicensePrice": 409,
+      "exclusiveBuyoutPrice": 2900,
       "summary": "Clinic Flow is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Appointment layout",
         "Profile blocks",
         "Treatment cards",
         "Trust badges"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 409,
-      "exclusiveBuyoutPrice": 2900
+      "compatibleAr": [],
+      "commercialPrice": 2900
     },
     {
       "id": "021",
       "slug": "villa-scope",
-      "title": "Villa Scope Website Template",
       "category": "realestate",
       "badge": "New",
+      "title": "Villa Scope Website Template",
+      "titleAr": "",
       "price": 229,
       "oldPrice": 309,
-      "commercialPrice": 1650,
+      "singleLicensePrice": 229,
+      "exclusiveBuyoutPrice": 1650,
       "summary": "Villa Scope is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Property cards",
         "Location blocks",
         "Lead form layout",
         "Gallery sections"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 229,
-      "exclusiveBuyoutPrice": 1650
+      "compatibleAr": [],
+      "commercialPrice": 1650
     },
     {
       "id": "022",
       "slug": "metro-estates",
-      "title": "Metro Estates Website Template",
       "category": "realestate",
       "badge": "Popular",
+      "title": "Metro Estates Website Template",
+      "titleAr": "",
       "price": 279,
       "oldPrice": 379,
-      "commercialPrice": 2000,
+      "singleLicensePrice": 279,
+      "exclusiveBuyoutPrice": 2000,
       "summary": "Metro Estates is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Property cards",
         "Location blocks",
         "Lead form layout",
         "Gallery sections"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 279,
-      "exclusiveBuyoutPrice": 2000
+      "compatibleAr": [],
+      "commercialPrice": 2000
     },
     {
       "id": "023",
       "slug": "luxury-listing",
-      "title": "Luxury Listing Website Template",
       "category": "realestate",
       "badge": "Best Seller",
+      "title": "Luxury Listing Website Template",
+      "titleAr": "",
       "price": 329,
       "oldPrice": 449,
-      "commercialPrice": 2350,
+      "singleLicensePrice": 329,
+      "exclusiveBuyoutPrice": 2350,
       "summary": "Luxury Listing is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Property cards",
         "Location blocks",
         "Lead form layout",
         "Gallery sections"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 329,
-      "exclusiveBuyoutPrice": 2350
+      "compatibleAr": [],
+      "commercialPrice": 2350
     },
     {
       "id": "024",
       "slug": "property-desk",
-      "title": "Property Desk Website Template",
       "category": "realestate",
       "badge": "Ready",
+      "title": "Property Desk Website Template",
+      "titleAr": "",
       "price": 379,
       "oldPrice": 519,
-      "commercialPrice": 2700,
+      "singleLicensePrice": 379,
+      "exclusiveBuyoutPrice": 2700,
       "summary": "Property Desk is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Property cards",
         "Location blocks",
         "Lead form layout",
         "Gallery sections"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 379,
-      "exclusiveBuyoutPrice": 2700
+      "compatibleAr": [],
+      "commercialPrice": 2700
     },
     {
       "id": "025",
       "slug": "rent-flow",
-      "title": "Rent Flow Website Template",
       "category": "realestate",
       "badge": "Ready",
+      "title": "Rent Flow Website Template",
+      "titleAr": "",
       "price": 429,
       "oldPrice": 589,
-      "commercialPrice": 3050,
+      "singleLicensePrice": 429,
+      "exclusiveBuyoutPrice": 3050,
       "summary": "Rent Flow is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Property cards",
         "Location blocks",
         "Lead form layout",
         "Gallery sections"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 429,
-      "exclusiveBuyoutPrice": 3050
+      "compatibleAr": [],
+      "commercialPrice": 3050
     },
     {
       "id": "026",
       "slug": "lex-prime",
-      "title": "Lex Prime Website Template",
       "category": "legal",
       "badge": "New",
+      "title": "Lex Prime Website Template",
+      "titleAr": "",
       "price": 249,
       "oldPrice": 329,
-      "commercialPrice": 1750,
+      "singleLicensePrice": 249,
+      "exclusiveBuyoutPrice": 1750,
       "summary": "Lex Prime is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Practice areas",
         "Case highlight blocks",
         "Attorney profile",
         "Contact CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 249,
-      "exclusiveBuyoutPrice": 1750
+      "compatibleAr": [],
+      "commercialPrice": 1750
     },
     {
       "id": "027",
       "slug": "justice-desk",
-      "title": "Justice Desk Website Template",
       "category": "legal",
       "badge": "Popular",
+      "title": "Justice Desk Website Template",
+      "titleAr": "",
       "price": 299,
       "oldPrice": 399,
-      "commercialPrice": 2100,
+      "singleLicensePrice": 299,
+      "exclusiveBuyoutPrice": 2100,
       "summary": "Justice Desk is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Practice areas",
         "Case highlight blocks",
         "Attorney profile",
         "Contact CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 299,
-      "exclusiveBuyoutPrice": 2100
+      "compatibleAr": [],
+      "commercialPrice": 2100
     },
     {
       "id": "028",
       "slug": "legal-one",
-      "title": "Legal One Website Template",
       "category": "legal",
       "badge": "Best Seller",
+      "title": "Legal One Website Template",
+      "titleAr": "",
       "price": 349,
       "oldPrice": 469,
-      "commercialPrice": 2450,
+      "singleLicensePrice": 349,
+      "exclusiveBuyoutPrice": 2450,
       "summary": "Legal One is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Practice areas",
         "Case highlight blocks",
         "Attorney profile",
         "Contact CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 349,
-      "exclusiveBuyoutPrice": 2450
+      "compatibleAr": [],
+      "commercialPrice": 2450
     },
     {
       "id": "029",
       "slug": "firm-profile",
-      "title": "Firm Profile Website Template",
       "category": "legal",
       "badge": "Ready",
+      "title": "Firm Profile Website Template",
+      "titleAr": "",
       "price": 399,
       "oldPrice": 539,
-      "commercialPrice": 2800,
+      "singleLicensePrice": 399,
+      "exclusiveBuyoutPrice": 2800,
       "summary": "Firm Profile is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Practice areas",
         "Case highlight blocks",
         "Attorney profile",
         "Contact CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 399,
-      "exclusiveBuyoutPrice": 2800
+      "compatibleAr": [],
+      "commercialPrice": 2800
     },
     {
       "id": "030",
       "slug": "case-ledger",
-      "title": "Case Ledger Website Template",
       "category": "legal",
       "badge": "Ready",
+      "title": "Case Ledger Website Template",
+      "titleAr": "",
       "price": 449,
       "oldPrice": 609,
-      "commercialPrice": 3150,
+      "singleLicensePrice": 449,
+      "exclusiveBuyoutPrice": 3150,
       "summary": "Case Ledger is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Practice areas",
         "Case highlight blocks",
         "Attorney profile",
         "Contact CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
+      "compatibleAr": [],
+      "commercialPrice": 3150
+    },
+    {
+      "id": "053",
+      "slug": "new-template-053",
+      "category": "business",
+      "badge": "New",
+      "title": "New Website Template",
+      "titleAr": "",
+      "price": 149,
+      "oldPrice": 249,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
+      "summary": "A polished ready-made website template for fast launch.",
+      "summaryAr": "",
+      "details": "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
+      "detailsAr": "",
       "updated": "July 2026",
       "currency": "SAR",
-      "singleLicensePrice": 449,
-      "exclusiveBuyoutPrice": 3150
+      "features": [
+        "Responsive sections",
+        "Clean layout",
+        "Fast launch"
+      ],
+      "featuresAr": [],
+      "includes": [
+        "Editable sections",
+        "Launch notes"
+      ],
+      "includesAr": [],
+      "compatible": [
+        "HTML/CSS",
+        "Static hosting",
+        "CMS adaptation ready"
+      ],
+      "compatibleAr": [],
+      "commercialPrice": 1499
+    },
+    {
+      "id": "052",
+      "slug": "new-template-052",
+      "category": "business",
+      "badge": "New",
+      "title": "New Website Template",
+      "titleAr": "",
+      "price": 149,
+      "oldPrice": 249,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
+      "summary": "A polished ready-made website template for fast launch.",
+      "summaryAr": "",
+      "details": "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
+      "features": [
+        "Responsive sections",
+        "Clean layout",
+        "Fast launch"
+      ],
+      "featuresAr": [],
+      "includes": [
+        "Editable sections",
+        "Launch notes"
+      ],
+      "includesAr": [],
+      "compatible": [
+        "HTML/CSS",
+        "Static hosting",
+        "CMS adaptation ready"
+      ],
+      "compatibleAr": [],
+      "commercialPrice": 1499
+    },
+    {
+      "id": "051",
+      "slug": "new-template-051",
+      "category": "business",
+      "badge": "New",
+      "title": "New Website Template",
+      "titleAr": "",
+      "price": 149,
+      "oldPrice": 249,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
+      "summary": "A polished ready-made website template for fast launch.",
+      "summaryAr": "",
+      "details": "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
+      "features": [
+        "Responsive sections",
+        "Clean layout",
+        "Fast launch"
+      ],
+      "featuresAr": [],
+      "includes": [
+        "Editable sections",
+        "Launch notes"
+      ],
+      "includesAr": [],
+      "compatible": [
+        "HTML/CSS",
+        "Static hosting",
+        "CMS adaptation ready"
+      ],
+      "compatibleAr": [],
+      "commercialPrice": 1499
+    },
+    {
+      "id": "050",
+      "slug": "new-template-050",
+      "category": "business",
+      "badge": "New",
+      "title": "New Website Template",
+      "titleAr": "",
+      "price": 149,
+      "oldPrice": 249,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
+      "summary": "A polished ready-made website template for fast launch.",
+      "summaryAr": "",
+      "details": "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
+      "features": [
+        "Responsive sections",
+        "Clean layout",
+        "Fast launch"
+      ],
+      "featuresAr": [],
+      "includes": [
+        "Editable sections",
+        "Launch notes"
+      ],
+      "includesAr": [],
+      "compatible": [
+        "HTML/CSS",
+        "Static hosting",
+        "CMS adaptation ready"
+      ],
+      "compatibleAr": [],
+      "commercialPrice": 1499
+    },
+    {
+      "id": "049",
+      "slug": "new-template-049",
+      "category": "business",
+      "badge": "New",
+      "title": "New Website Template",
+      "titleAr": "",
+      "price": 149,
+      "oldPrice": 249,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
+      "summary": "A polished ready-made website template for fast launch.",
+      "summaryAr": "",
+      "details": "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
+      "features": [
+        "Responsive sections",
+        "Clean layout",
+        "Fast launch"
+      ],
+      "featuresAr": [],
+      "includes": [
+        "Editable sections",
+        "Launch notes"
+      ],
+      "includesAr": [],
+      "compatible": [
+        "HTML/CSS",
+        "Static hosting",
+        "CMS adaptation ready"
+      ],
+      "compatibleAr": [],
+      "commercialPrice": 1499
+    },
+    {
+      "id": "048",
+      "slug": "new-template-048",
+      "category": "business",
+      "badge": "New",
+      "title": "New Website Template",
+      "titleAr": "",
+      "price": 149,
+      "oldPrice": 249,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
+      "summary": "A polished ready-made website template for fast launch.",
+      "summaryAr": "",
+      "details": "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
+      "features": [
+        "Responsive sections",
+        "Clean layout",
+        "Fast launch"
+      ],
+      "featuresAr": [],
+      "includes": [
+        "Editable sections",
+        "Launch notes"
+      ],
+      "includesAr": [],
+      "compatible": [
+        "HTML/CSS",
+        "Static hosting",
+        "CMS adaptation ready"
+      ],
+      "compatibleAr": [],
+      "commercialPrice": 1499
+    },
+    {
+      "id": "047",
+      "slug": "new-template-047",
+      "category": "business",
+      "badge": "New",
+      "title": "New Website Template",
+      "titleAr": "",
+      "price": 149,
+      "oldPrice": 249,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
+      "summary": "A polished ready-made website template for fast launch.",
+      "summaryAr": "",
+      "details": "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
+      "features": [
+        "Responsive sections",
+        "Clean layout",
+        "Fast launch"
+      ],
+      "featuresAr": [],
+      "includes": [
+        "Editable sections",
+        "Launch notes"
+      ],
+      "includesAr": [],
+      "compatible": [
+        "HTML/CSS",
+        "Static hosting",
+        "CMS adaptation ready"
+      ],
+      "compatibleAr": [],
+      "commercialPrice": 1499
+    },
+    {
+      "id": "046",
+      "slug": "new-template-046",
+      "category": "business",
+      "badge": "New",
+      "title": "New Website Template",
+      "titleAr": "",
+      "price": 149,
+      "oldPrice": 249,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
+      "summary": "A polished ready-made website template for fast launch.",
+      "summaryAr": "",
+      "details": "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
+      "features": [
+        "Responsive sections",
+        "Clean layout",
+        "Fast launch"
+      ],
+      "featuresAr": [],
+      "includes": [
+        "Editable sections",
+        "Launch notes"
+      ],
+      "includesAr": [],
+      "compatible": [
+        "HTML/CSS",
+        "Static hosting",
+        "CMS adaptation ready"
+      ],
+      "compatibleAr": [],
+      "commercialPrice": 1499
     },
     {
       "id": "031",
       "slug": "boardline",
-      "title": "Boardline Website Template",
       "category": "business",
       "badge": "New",
+      "title": "Boardline Website Template",
+      "titleAr": "",
       "price": 269,
       "oldPrice": 349,
-      "commercialPrice": 1900,
+      "singleLicensePrice": 269,
+      "exclusiveBuyoutPrice": 1900,
       "summary": "Boardline is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Company story",
         "Team blocks",
         "Feature sections",
         "Contact layout"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 269,
-      "exclusiveBuyoutPrice": 1900
+      "compatibleAr": [],
+      "commercialPrice": 1900
     },
     {
       "id": "032",
       "slug": "company-grid",
-      "title": "Company Grid Website Template",
       "category": "business",
       "badge": "Popular",
+      "title": "Company Grid Website Template",
+      "titleAr": "",
       "price": 319,
       "oldPrice": 419,
-      "commercialPrice": 2250,
+      "singleLicensePrice": 319,
+      "exclusiveBuyoutPrice": 2250,
       "summary": "Company Grid is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Company story",
         "Team blocks",
         "Feature sections",
         "Contact layout"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 319,
-      "exclusiveBuyoutPrice": 2250
+      "compatibleAr": [],
+      "commercialPrice": 2250
     },
     {
       "id": "033",
       "slug": "founder-desk",
-      "title": "Founder Desk Website Template",
       "category": "business",
       "badge": "Best Seller",
+      "title": "Founder Desk Website Template",
+      "titleAr": "",
       "price": 369,
       "oldPrice": 489,
-      "commercialPrice": 2600,
+      "singleLicensePrice": 369,
+      "exclusiveBuyoutPrice": 2600,
       "summary": "Founder Desk is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Company story",
         "Team blocks",
         "Feature sections",
         "Contact layout"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 369,
-      "exclusiveBuyoutPrice": 2600
+      "compatibleAr": [],
+      "commercialPrice": 2600
     },
     {
       "id": "034",
       "slug": "capital-profile",
-      "title": "Capital Profile Website Template",
       "category": "business",
       "badge": "Ready",
+      "title": "Capital Profile Website Template",
+      "titleAr": "",
       "price": 419,
       "oldPrice": 559,
-      "commercialPrice": 2950,
+      "singleLicensePrice": 419,
+      "exclusiveBuyoutPrice": 2950,
       "summary": "Capital Profile is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Company story",
         "Team blocks",
         "Feature sections",
         "Contact layout"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 419,
-      "exclusiveBuyoutPrice": 2950
+      "compatibleAr": [],
+      "commercialPrice": 2950
     },
     {
       "id": "035",
       "slug": "corporate-core",
-      "title": "Corporate Core Website Template",
       "category": "business",
       "badge": "Ready",
+      "title": "Corporate Core Website Template",
+      "titleAr": "",
       "price": 469,
       "oldPrice": 629,
-      "commercialPrice": 3300,
+      "singleLicensePrice": 469,
+      "exclusiveBuyoutPrice": 3300,
       "summary": "Corporate Core is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Company story",
         "Team blocks",
         "Feature sections",
         "Contact layout"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 469,
-      "exclusiveBuyoutPrice": 3300
+      "compatibleAr": [],
+      "commercialPrice": 3300
     },
     {
       "id": "036",
       "slug": "course-lab",
-      "title": "Course Lab Website Template",
       "category": "education",
       "badge": "New",
+      "title": "Course Lab Website Template",
+      "titleAr": "",
       "price": 289,
       "oldPrice": 369,
-      "commercialPrice": 2050,
+      "singleLicensePrice": 289,
+      "exclusiveBuyoutPrice": 2050,
       "summary": "Course Lab is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Course cards",
         "Instructor blocks",
         "Curriculum sections",
         "Enrollment CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 289,
-      "exclusiveBuyoutPrice": 2050
+      "compatibleAr": [],
+      "commercialPrice": 2050
     },
     {
       "id": "037",
       "slug": "academy-pro",
-      "title": "Academy Pro Website Template",
       "category": "education",
       "badge": "Popular",
+      "title": "Academy Pro Website Template",
+      "titleAr": "",
       "price": 339,
       "oldPrice": 439,
-      "commercialPrice": 2400,
+      "singleLicensePrice": 339,
+      "exclusiveBuyoutPrice": 2400,
       "summary": "Academy Pro is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Course cards",
         "Instructor blocks",
         "Curriculum sections",
         "Enrollment CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 339,
-      "exclusiveBuyoutPrice": 2400
+      "compatibleAr": [],
+      "commercialPrice": 2400
     },
     {
       "id": "038",
       "slug": "learn-desk",
-      "title": "Learn Desk Website Template",
       "category": "education",
       "badge": "Best Seller",
+      "title": "Learn Desk Website Template",
+      "titleAr": "",
       "price": 389,
       "oldPrice": 509,
-      "commercialPrice": 2750,
+      "singleLicensePrice": 389,
+      "exclusiveBuyoutPrice": 2750,
       "summary": "Learn Desk is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Course cards",
         "Instructor blocks",
         "Curriculum sections",
         "Enrollment CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 389,
-      "exclusiveBuyoutPrice": 2750
+      "compatibleAr": [],
+      "commercialPrice": 2750
     },
     {
       "id": "039",
       "slug": "tutor-flow",
-      "title": "Tutor Flow Website Template",
       "category": "education",
       "badge": "Ready",
+      "title": "Tutor Flow Website Template",
+      "titleAr": "",
       "price": 439,
       "oldPrice": 579,
-      "commercialPrice": 3100,
+      "singleLicensePrice": 439,
+      "exclusiveBuyoutPrice": 3100,
       "summary": "Tutor Flow is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Course cards",
         "Instructor blocks",
         "Curriculum sections",
         "Enrollment CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 439,
-      "exclusiveBuyoutPrice": 3100
+      "compatibleAr": [],
+      "commercialPrice": 3100
     },
     {
       "id": "040",
       "slug": "skill-campus",
-      "title": "Skill Campus Website Template",
       "category": "education",
       "badge": "Ready",
+      "title": "Skill Campus Website Template",
+      "titleAr": "",
       "price": 489,
       "oldPrice": 649,
-      "commercialPrice": 3450,
+      "singleLicensePrice": 489,
+      "exclusiveBuyoutPrice": 3450,
       "summary": "Skill Campus is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Course cards",
         "Instructor blocks",
         "Curriculum sections",
         "Enrollment CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 489,
-      "exclusiveBuyoutPrice": 3450
+      "compatibleAr": [],
+      "commercialPrice": 3450
     },
     {
       "id": "041",
       "slug": "creator-frame",
-      "title": "Creator Frame Website Template",
       "category": "portfolio",
       "badge": "New",
+      "title": "Creator Frame Website Template",
+      "titleAr": "",
       "price": 309,
       "oldPrice": 389,
-      "commercialPrice": 2200,
+      "singleLicensePrice": 309,
+      "exclusiveBuyoutPrice": 2200,
       "summary": "Creator Frame is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Project gallery",
         "About blocks",
         "Case layout",
         "Contact CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 309,
-      "exclusiveBuyoutPrice": 2200
+      "compatibleAr": [],
+      "commercialPrice": 2200
     },
     {
       "id": "042",
       "slug": "design-shelf",
-      "title": "Design Shelf Website Template",
       "category": "portfolio",
       "badge": "Popular",
+      "title": "Design Shelf Website Template",
+      "titleAr": "",
       "price": 359,
       "oldPrice": 459,
-      "commercialPrice": 2550,
+      "singleLicensePrice": 359,
+      "exclusiveBuyoutPrice": 2550,
       "summary": "Design Shelf is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Project gallery",
         "About blocks",
         "Case layout",
         "Contact CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 359,
-      "exclusiveBuyoutPrice": 2550
+      "compatibleAr": [],
+      "commercialPrice": 2550
     },
     {
       "id": "043",
       "slug": "studio-loop",
-      "title": "Studio Loop Website Template",
       "category": "portfolio",
       "badge": "Best Seller",
+      "title": "Studio Loop Website Template",
+      "titleAr": "",
       "price": 409,
       "oldPrice": 529,
-      "commercialPrice": 2900,
+      "singleLicensePrice": 409,
+      "exclusiveBuyoutPrice": 2900,
       "summary": "Studio Loop is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Project gallery",
         "About blocks",
         "Case layout",
         "Contact CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 409,
-      "exclusiveBuyoutPrice": 2900
+      "compatibleAr": [],
+      "commercialPrice": 2900
     },
     {
       "id": "044",
       "slug": "artist-grid",
-      "title": "Artist Grid Website Template",
       "category": "portfolio",
       "badge": "Ready",
+      "title": "Artist Grid Website Template",
+      "titleAr": "",
       "price": 459,
       "oldPrice": 599,
-      "commercialPrice": 3250,
+      "singleLicensePrice": 459,
+      "exclusiveBuyoutPrice": 3250,
       "summary": "Artist Grid is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Project gallery",
         "About blocks",
         "Case layout",
         "Contact CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 459,
-      "exclusiveBuyoutPrice": 3250
+      "compatibleAr": [],
+      "commercialPrice": 3250
     },
     {
       "id": "045",
       "slug": "personal-mark",
-      "title": "Personal Mark Website Template",
       "category": "portfolio",
       "badge": "Ready",
+      "title": "Personal Mark Website Template",
+      "titleAr": "",
       "price": 509,
       "oldPrice": 669,
-      "commercialPrice": 3600,
+      "singleLicensePrice": 509,
+      "exclusiveBuyoutPrice": 3600,
       "summary": "Personal Mark is a ready-made website template with polished sections, clean spacing and a purchase-friendly structure for modern online brands.",
+      "summaryAr": "",
       "details": "Built as a practical template foundation with responsive layouts, organized sections and reusable blocks. Replace the sample content with your brand, connect your forms and prepare the site for launch.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
       "features": [
         "Project gallery",
         "About blocks",
         "Case layout",
         "Contact CTA"
       ],
+      "featuresAr": [],
       "includes": [
         "Responsive page layouts",
         "Editable section structure",
         "Clean typography system",
         "Launch checklist notes"
       ],
+      "includesAr": [],
       "compatible": [
         "HTML/CSS",
         "Static hosting",
         "CMS adaptation ready"
       ],
-      "updated": "July 2026",
-      "currency": "SAR",
-      "singleLicensePrice": 509,
-      "exclusiveBuyoutPrice": 3600
+      "compatibleAr": [],
+      "commercialPrice": 3600
     }
   ]
 }
