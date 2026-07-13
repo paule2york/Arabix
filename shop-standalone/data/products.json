@@ -93,8 +93,46 @@
   ],
   "products": [
     {
+      "id": "799698",
+      "slug": "new-website-template-799698",
+      "demoUrl": "https://arabixweb.github.io/al-mizan-law/",
+      "category": "legal",
+      "badge": "New",
+      "title": "Al Mizan Law Firm",
+      "titleAr": "",
+      "price": 149,
+      "oldPrice": 249,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
+      "summary": "A polished ready-made website template for fast launch.",
+      "summaryAr": "",
+      "details": "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
+      "features": [
+        "Responsive sections",
+        "Clean layout",
+        "Fast launch"
+      ],
+      "featuresAr": [],
+      "includes": [
+        "Editable sections",
+        "Launch notes"
+      ],
+      "includesAr": [],
+      "compatible": [
+        "HTML/CSS",
+        "Static hosting",
+        "CMS adaptation ready"
+      ],
+      "compatibleAr": [],
+      "commercialPrice": 1499
+    },
+    {
       "id": "001",
       "slug": "luxe-cart",
+      "demoUrl": "",
       "category": "ecommerce",
       "badge": "New",
       "title": "Luxe Cart Website Template",
@@ -134,6 +172,7 @@
     {
       "id": "002",
       "slug": "noura-store",
+      "demoUrl": "",
       "category": "ecommerce",
       "badge": "Popular",
       "title": "Noura Store Website Template",
@@ -173,6 +212,7 @@
     {
       "id": "003",
       "slug": "velvet-goods",
+      "demoUrl": "",
       "category": "ecommerce",
       "badge": "Best Seller",
       "title": "Velvet Goods Website Template",
@@ -212,6 +252,7 @@
     {
       "id": "004",
       "slug": "catalog-pro",
+      "demoUrl": "",
       "category": "ecommerce",
       "badge": "Ready",
       "title": "Catalog Pro Website Template",
@@ -251,6 +292,7 @@
     {
       "id": "005",
       "slug": "prime-drop",
+      "demoUrl": "",
       "category": "ecommerce",
       "badge": "Ready",
       "title": "Prime Drop Website Template",
@@ -290,6 +332,7 @@
     {
       "id": "006",
       "slug": "saffron-table",
+      "demoUrl": "",
       "category": "restaurant",
       "badge": "New",
       "title": "Saffron Table Website Template",
@@ -329,6 +372,7 @@
     {
       "id": "007",
       "slug": "cafe-nora",
+      "demoUrl": "",
       "category": "restaurant",
       "badge": "Popular",
       "title": "Cafe Nora Website Template",
@@ -368,6 +412,7 @@
     {
       "id": "008",
       "slug": "grill-house",
+      "demoUrl": "",
       "category": "restaurant",
       "badge": "Best Seller",
       "title": "Grill House Website Template",
@@ -407,6 +452,7 @@
     {
       "id": "009",
       "slug": "sweet-oven",
+      "demoUrl": "",
       "category": "restaurant",
       "badge": "Ready",
       "title": "Sweet Oven Website Template",
@@ -446,6 +492,7 @@
     {
       "id": "010",
       "slug": "urban-menu",
+      "demoUrl": "",
       "category": "restaurant",
       "badge": "Ready",
       "title": "Urban Menu Website Template",
@@ -485,6 +532,7 @@
     {
       "id": "011",
       "slug": "palm-stay",
+      "demoUrl": "",
       "category": "hotel",
       "badge": "New",
       "title": "Palm Stay Website Template",
@@ -524,6 +572,7 @@
     {
       "id": "012",
       "slug": "desert-suites",
+      "demoUrl": "",
       "category": "hotel",
       "badge": "Popular",
       "title": "Desert Suites Website Template",
@@ -563,6 +612,7 @@
     {
       "id": "013",
       "slug": "travel-vista",
+      "demoUrl": "",
       "category": "hotel",
       "badge": "Best Seller",
       "title": "Travel Vista Website Template",
@@ -602,6 +652,7 @@
     {
       "id": "014",
       "slug": "riyadh-rooms",
+      "demoUrl": "",
       "category": "hotel",
       "badge": "Ready",
       "title": "Riyadh Rooms Website Template",
@@ -641,6 +692,7 @@
     {
       "id": "015",
       "slug": "coastal-booking",
+      "demoUrl": "",
       "category": "hotel",
       "badge": "Ready",
       "title": "Coastal Booking Website Template",
@@ -680,6 +732,7 @@
     {
       "id": "016",
       "slug": "care-point",
+      "demoUrl": "",
       "category": "clinic",
       "badge": "New",
       "title": "Care Point Website Template",
@@ -719,6 +772,7 @@
     {
       "id": "017",
       "slug": "dental-glow",
+      "demoUrl": "",
       "category": "clinic",
       "badge": "Popular",
       "title": "Dental Glow Website Template",
@@ -758,6 +812,7 @@
     {
       "id": "018",
       "slug": "derma-studio",
+      "demoUrl": "",
       "category": "clinic",
       "badge": "Best Seller",
       "title": "Derma Studio Website Template",
@@ -797,6 +852,7 @@
     {
       "id": "019",
       "slug": "wellness-hub",
+      "demoUrl": "",
       "category": "clinic",
       "badge": "Ready",
       "title": "Wellness Hub Website Template",
@@ -836,6 +892,7 @@
     {
       "id": "020",
       "slug": "clinic-flow",
+      "demoUrl": "",
       "category": "clinic",
       "badge": "Ready",
       "title": "Clinic Flow Website Template",
@@ -875,6 +932,7 @@
     {
       "id": "021",
       "slug": "villa-scope",
+      "demoUrl": "",
       "category": "realestate",
       "badge": "New",
       "title": "Villa Scope Website Template",
@@ -914,6 +972,7 @@
     {
       "id": "022",
       "slug": "metro-estates",
+      "demoUrl": "",
       "category": "realestate",
       "badge": "Popular",
       "title": "Metro Estates Website Template",
@@ -953,6 +1012,7 @@
     {
       "id": "023",
       "slug": "luxury-listing",
+      "demoUrl": "",
       "category": "realestate",
       "badge": "Best Seller",
       "title": "Luxury Listing Website Template",
@@ -992,6 +1052,7 @@
     {
       "id": "024",
       "slug": "property-desk",
+      "demoUrl": "",
       "category": "realestate",
       "badge": "Ready",
       "title": "Property Desk Website Template",
@@ -1031,6 +1092,7 @@
     {
       "id": "025",
       "slug": "rent-flow",
+      "demoUrl": "",
       "category": "realestate",
       "badge": "Ready",
       "title": "Rent Flow Website Template",
@@ -1070,6 +1132,7 @@
     {
       "id": "026",
       "slug": "lex-prime",
+      "demoUrl": "",
       "category": "legal",
       "badge": "New",
       "title": "Lex Prime Website Template",
@@ -1109,6 +1172,7 @@
     {
       "id": "027",
       "slug": "justice-desk",
+      "demoUrl": "",
       "category": "legal",
       "badge": "Popular",
       "title": "Justice Desk Website Template",
@@ -1148,6 +1212,7 @@
     {
       "id": "028",
       "slug": "legal-one",
+      "demoUrl": "",
       "category": "legal",
       "badge": "Best Seller",
       "title": "Legal One Website Template",
@@ -1187,6 +1252,7 @@
     {
       "id": "029",
       "slug": "firm-profile",
+      "demoUrl": "",
       "category": "legal",
       "badge": "Ready",
       "title": "Firm Profile Website Template",
@@ -1226,6 +1292,7 @@
     {
       "id": "030",
       "slug": "case-ledger",
+      "demoUrl": "",
       "category": "legal",
       "badge": "Ready",
       "title": "Case Ledger Website Template",
@@ -1265,6 +1332,7 @@
     {
       "id": "053",
       "slug": "new-template-053",
+      "demoUrl": "",
       "category": "business",
       "badge": "New",
       "title": "New Website Template",
@@ -1301,6 +1369,7 @@
     {
       "id": "052",
       "slug": "new-template-052",
+      "demoUrl": "",
       "category": "business",
       "badge": "New",
       "title": "New Website Template",
@@ -1337,6 +1406,7 @@
     {
       "id": "051",
       "slug": "new-template-051",
+      "demoUrl": "",
       "category": "business",
       "badge": "New",
       "title": "New Website Template",
@@ -1373,6 +1443,7 @@
     {
       "id": "050",
       "slug": "new-template-050",
+      "demoUrl": "",
       "category": "business",
       "badge": "New",
       "title": "New Website Template",
@@ -1409,6 +1480,7 @@
     {
       "id": "049",
       "slug": "new-template-049",
+      "demoUrl": "",
       "category": "business",
       "badge": "New",
       "title": "New Website Template",
@@ -1445,6 +1517,7 @@
     {
       "id": "048",
       "slug": "new-template-048",
+      "demoUrl": "",
       "category": "business",
       "badge": "New",
       "title": "New Website Template",
@@ -1481,6 +1554,7 @@
     {
       "id": "047",
       "slug": "new-template-047",
+      "demoUrl": "",
       "category": "business",
       "badge": "New",
       "title": "New Website Template",
@@ -1517,6 +1591,7 @@
     {
       "id": "046",
       "slug": "new-template-046",
+      "demoUrl": "",
       "category": "business",
       "badge": "New",
       "title": "New Website Template",
@@ -1553,6 +1628,7 @@
     {
       "id": "031",
       "slug": "boardline",
+      "demoUrl": "",
       "category": "business",
       "badge": "New",
       "title": "Boardline Website Template",
@@ -1592,6 +1668,7 @@
     {
       "id": "032",
       "slug": "company-grid",
+      "demoUrl": "",
       "category": "business",
       "badge": "Popular",
       "title": "Company Grid Website Template",
@@ -1631,6 +1708,7 @@
     {
       "id": "033",
       "slug": "founder-desk",
+      "demoUrl": "",
       "category": "business",
       "badge": "Best Seller",
       "title": "Founder Desk Website Template",
@@ -1670,6 +1748,7 @@
     {
       "id": "034",
       "slug": "capital-profile",
+      "demoUrl": "",
       "category": "business",
       "badge": "Ready",
       "title": "Capital Profile Website Template",
@@ -1709,6 +1788,7 @@
     {
       "id": "035",
       "slug": "corporate-core",
+      "demoUrl": "",
       "category": "business",
       "badge": "Ready",
       "title": "Corporate Core Website Template",
@@ -1748,6 +1828,7 @@
     {
       "id": "036",
       "slug": "course-lab",
+      "demoUrl": "",
       "category": "education",
       "badge": "New",
       "title": "Course Lab Website Template",
@@ -1787,6 +1868,7 @@
     {
       "id": "037",
       "slug": "academy-pro",
+      "demoUrl": "",
       "category": "education",
       "badge": "Popular",
       "title": "Academy Pro Website Template",
@@ -1826,6 +1908,7 @@
     {
       "id": "038",
       "slug": "learn-desk",
+      "demoUrl": "",
       "category": "education",
       "badge": "Best Seller",
       "title": "Learn Desk Website Template",
@@ -1865,6 +1948,7 @@
     {
       "id": "039",
       "slug": "tutor-flow",
+      "demoUrl": "",
       "category": "education",
       "badge": "Ready",
       "title": "Tutor Flow Website Template",
@@ -1904,6 +1988,7 @@
     {
       "id": "040",
       "slug": "skill-campus",
+      "demoUrl": "",
       "category": "education",
       "badge": "Ready",
       "title": "Skill Campus Website Template",
@@ -1943,6 +2028,7 @@
     {
       "id": "041",
       "slug": "creator-frame",
+      "demoUrl": "",
       "category": "portfolio",
       "badge": "New",
       "title": "Creator Frame Website Template",
@@ -1982,6 +2068,7 @@
     {
       "id": "042",
       "slug": "design-shelf",
+      "demoUrl": "",
       "category": "portfolio",
       "badge": "Popular",
       "title": "Design Shelf Website Template",
@@ -2021,6 +2108,7 @@
     {
       "id": "043",
       "slug": "studio-loop",
+      "demoUrl": "",
       "category": "portfolio",
       "badge": "Best Seller",
       "title": "Studio Loop Website Template",
@@ -2060,6 +2148,7 @@
     {
       "id": "044",
       "slug": "artist-grid",
+      "demoUrl": "",
       "category": "portfolio",
       "badge": "Ready",
       "title": "Artist Grid Website Template",
@@ -2099,6 +2188,7 @@
     {
       "id": "045",
       "slug": "personal-mark",
+      "demoUrl": "",
       "category": "portfolio",
       "badge": "Ready",
       "title": "Personal Mark Website Template",
