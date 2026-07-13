@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arabix Shop CMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="cms-shell">
+    <section class="login-view" data-login-view>
+      <div class="login-card">
+        <div class="brand-row"><img src="../assets/logo-white.png" alt="Arabix" /><span>Shop CMS</span></div>
+        <p class="eyebrow">Private dashboard</p>
+        <h1>Add templates, categories and Arabic content without touching code.</h1>
+        <p class="muted">Login with a GitHub fine-grained token for <strong>paule2york/Arabix</strong>. It only needs Contents read/write access.</p>
+        <form class="token-form" data-login-form>
+          <label for="github-token">GitHub token</label>
+          <input id="github-token" name="token" type="password" placeholder="github_pat_..." autocomplete="off" required />
+          <button type="submit">Open CMS</button>
+        </form>
+        <details class="help-box">
+          <summary>Need a token?</summary>
+          <ol>
+            <li>GitHub settings se fine-grained personal access token banao.</li>
+            <li>Repository select karo: <strong>paule2york/Arabix</strong>.</li>
+            <li>Permission: <strong>Contents: Read and write</strong>.</li>
+            <li>Token paste karo. Short expiry best hai.</li>
+          </ol>
+        </details>
+        <p class="status" data-login-status></p>
+      </div>
+    </section>
+
+    <section class="app-view is-hidden" data-app-view>
+      <header class="cms-header">
+        <div class="brand-row"><img src="../assets/logo-white.png" alt="Arabix" /><span>Shop CMS</span></div>
+        <div class="header-actions">
+          <a href="../index.html" target="_blank" rel="noreferrer">View shop</a>
+          <button type="button" data-refresh>Refresh</button>
+          <button type="button" data-logout>Logout</button>
+        </div>
+      </header>
+
+      <nav class="cms-tabs" aria-label="CMS sections">
+        <button type="button" class="is-active" data-tab="products">Themes</button>
+        <button type="button" data-tab="categories">Categories</button>
+      </nav>
+
+      <section class="panel" data-panel="products">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Theme library</p>
+            <h2>Templates</h2>
+          </div>
+          <div class="panel-actions">
+            <button type="button" class="ghost" data-add-product>Add theme</button>
+            <button type="button" data-save>Save changes</button>
+          </div>
+        </div>
+        <div class="quick-tools">
+          <input type="search" data-product-search placeholder="Search themes" />
+          <select data-category-filter><option value="all">All categories</option></select>
+          <button type="button" class="ghost" data-fill-arabic>Auto Arabic draft</button>
+        </div>
+        <div class="editor-list" data-products></div>
+      </section>
+
+      <section class="panel is-hidden" data-panel="categories">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Navigation</p>
+            <h2>Categories</h2>
+          </div>
+          <div class="panel-actions">
+            <button type="button" class="ghost" data-add-category>Add category</button>
+            <button type="button" data-save>Save changes</button>
+          </div>
+        </div>
+        <div class="editor-list compact" data-categories></div>
+      </section>
+
+      <p class="status" data-app-status></p>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

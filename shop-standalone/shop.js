@@ -96,8 +96,8 @@
   async function load(){ if (shopData) return shopData; shopData = await fetch(SHOP_DATA_URL).then(r => r.json()); return shopData; }
   const t = (key) => (i18n[currentLang] && i18n[currentLang][key]) || i18n.en[key] || key;
   const catById = (id) => shopData.categories.find(c => c.id === id) || shopData.categories[0];
-  const catName = (id) => currentLang === 'ar' && arCategories[id] ? arCategories[id][0] : catById(id).name;
-  const catBlurb = (id) => currentLang === 'ar' && arCategories[id] ? arCategories[id][1] : catById(id).blurb;
+  const catName = (id) => { const c = catById(id); return currentLang === 'ar' ? (c.nameAr || (arCategories[id] && arCategories[id][0]) || c.name) : c.name; };
+  const catBlurb = (id) => { const c = catById(id); return currentLang === 'ar' ? (c.blurbAr || (arCategories[id] && arCategories[id][1]) || c.blurb) : c.blurb; };
   const productTitle = (p) => currentLang === 'ar' ? 'قالب ' + p.title.replace(' Website Template', '') : p.title;
   const productDetails = (p) => currentLang === 'ar' ? 'قالب جاهز بتصميم متجاوب وأقسام منظمة يمكنك تعديلها لعلامتك وإطلاقها بسرعة. مناسب للعرض الاحترافي وتجربة مستخدم واضحة.' : p.details;
   const money = (amount) => {
@@ -154,7 +154,7 @@
 
   function card(p){
     const c = catById(p.category);
-    return `<a class="product-card shop-card" href="./theme.html?slug=${p.slug}" style="--accent:${c.color}"><div class="mockup"><div class="mock-browser"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-body"><b></b><span style="width:86%"></span><span style="width:58%"></span><div class="mock-cards"><i></i><i></i><i></i></div></div></div></div><div class="card-body"><em class="badge">${p.badge}</em><h3>${productTitle(p)}</h3><div class="price-row price-row--large"><span><del>${money(p.oldPrice)}</del> ${money(p.price)}</span><b>${t('view')}</b></div></div></a>`;
+    return `<a class="product-card shop-card" href="./theme.html?slug=${p.slug}" style="--accent:${c.color}"><div class="mockup"><div class="mock-browser"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-body"><b></b><span style="width:86%"></span><span style="width:58%"></span><div class="mock-cards"><i></i><i></i><i></i></div></div></div></div><div class="card-body"><em class="badge">${productBadge(p)}</em><h3>${productTitle(p)}</h3><div class="price-row price-row--large"><span><del>${money(p.oldPrice)}</del> ${money(p.price)}</span><b>${t('view')}</b></div></div></a>`;
   }
 
   function renderHeaderDropdown(){
