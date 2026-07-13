@@ -1968,3 +1968,30 @@ body.is-ar .footer-catalog {
     height: calc(100vh - 118px);
   }
 }
+/* Cleaner preview bar */
+.preview-price {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(166,255,0,.34);
+  color: #a6ff00;
+  font-weight: 1000;
+  white-space: nowrap;
+}
+.preview-bar .preview-brand {
+  margin-right: clamp(18px, 4vw, 48px);
+}
+.preview-bar .preview-actions {
+  margin-left: auto;
+}
+@media (max-width: 900px) {
+  .preview-price {
+    flex: 1;
+    order: -1;
+    width: 100%;
+  }
+}
