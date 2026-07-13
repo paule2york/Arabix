@@ -93,12 +93,12 @@
   ],
   "products": [
     {
-      "id": "799698",
-      "slug": "new-website-template-799698",
-      "demoUrl": "https://arabixweb.github.io/al-mizan-law/",
-      "category": "legal",
+      "id": "080392",
+      "slug": "new-website-template-080392",
+      "demoUrl": "",
+      "category": "ecommerce",
       "badge": "New",
-      "title": "Al Mizan Law Firm",
+      "title": "New Website Template",
       "titleAr": "",
       "price": 149,
       "oldPrice": 249,
@@ -1128,6 +1128,43 @@
       ],
       "compatibleAr": [],
       "commercialPrice": 3050
+    },
+    {
+      "id": "799698",
+      "slug": "new-website-template-799698",
+      "demoUrl": "https://arabixweb.github.io/al-mizan-law/",
+      "category": "legal",
+      "badge": "New",
+      "title": "Al Mizan Law Firm",
+      "titleAr": "",
+      "price": 149,
+      "oldPrice": 249,
+      "singleLicensePrice": 149,
+      "exclusiveBuyoutPrice": 1499,
+      "summary": "A polished ready-made website template for fast launch.",
+      "summaryAr": "",
+      "details": "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
+      "detailsAr": "",
+      "updated": "July 2026",
+      "currency": "SAR",
+      "features": [
+        "Responsive sections",
+        "Clean layout",
+        "Fast launch"
+      ],
+      "featuresAr": [],
+      "includes": [
+        "Editable sections",
+        "Launch notes"
+      ],
+      "includesAr": [],
+      "compatible": [
+        "HTML/CSS",
+        "Static hosting",
+        "CMS adaptation ready"
+      ],
+      "compatibleAr": [],
+      "commercialPrice": 1499
     },
     {
       "id": "026",
