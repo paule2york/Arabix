@@ -15,31 +15,6 @@ const files = {
       timeframe: { en: "7 days", ar: "" },
       budget: { en: "SAR 1,000", ar: "" }
     })
-  },
-  shop: {
-    path: "data/shop.json",
-    label: "Shop",
-    itemKey: "products",
-    blankItem: () => ({
-      category: "business",
-      image: "",
-      title: { en: "New theme", ar: "" },
-      price: { en: "SAR 499", ar: "" },
-      timeframe: { en: "Instant delivery", ar: "" },
-      description: { en: "", ar: "" },
-      slug: "",
-      badge: { en: "", ar: "" },
-      platform: { en: "HTML / CMS-ready", ar: "" },
-      liveDemo: "#",
-      license: {
-        personal: { en: "Personal license", ar: "", price: 499, oldPrice: 799 },
-        commercial: { en: "Commercial license", ar: "", price: 899, oldPrice: 1299 }
-      },
-      addons: [],
-      isNew: true,
-      isPopular: false,
-      isFeatured: false
-    })
   }
 };
 
