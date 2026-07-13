@@ -1945,3 +1945,26 @@ body.is-ar .footer-catalog {
     align-items: flex-start;
   }
 }
+/* External live demo wrapper */
+.demo-stage--frame {
+  min-height: calc(100vh - 78px);
+  padding: 0;
+  background: #f4f7fb;
+}
+.demo-frame {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 78px);
+  min-height: 720px;
+  border: 0;
+  background: #fff;
+}
+@media (max-width: 900px) {
+  .demo-stage--frame,
+  .demo-frame {
+    min-height: calc(100vh - 118px);
+  }
+  .demo-frame {
+    height: calc(100vh - 118px);
+  }
+}
