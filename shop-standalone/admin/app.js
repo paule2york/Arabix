@@ -68,7 +68,7 @@ function blankProduct() {
   const next = String((state.data.products || []).length + 1).padStart(3, "0");
   return {
     id: next,
-    slug: `new-template-${next}`,
+    slug: "",
     title: "New Website Template",
     demoUrl: "",
     titleAr: "",
@@ -255,7 +255,6 @@ function addProduct() {
   const product = blankProduct();
   product.category = firstCategory?.id || product.category || "ecommerce";
   product.id = String(Date.now()).slice(-6);
-  product.slug = slugify(`${product.title}-${product.id}`);
   state.data.products.unshift(product);
   resetProductFilters();
   renderAll();
