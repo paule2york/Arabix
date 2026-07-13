@@ -232,6 +232,35 @@ function applyFilters() {
     if (category !== "all" && group.dataset.categoryGroup === category) group.open = true;
   });
 }
+function resetProductFilters() {
+  const search = qs("[data-product-search]");
+  const category = qs("[data-category-filter]");
+  if (search) search.value = "";
+  if (category) category.value = "all";
+}
+function revealProduct(id) {
+  const card = qsa("[data-product-index]").find((item) => qs('[data-field="id"]', item)?.value === id);
+  if (!card) return;
+  const group = card.closest("[data-category-group]");
+  if (group) group.open = true;
+  card.open = true;
+  card.scrollIntoView({ behavior: "smooth", block: "center" });
+  qs('[data-field="title"]', card)?.focus();
+}
+function addProduct() {
+  syncAll();
+  const firstCategory = (state.data.categories || []).find((cat) => cat.id !== "all");
+  const product = blankProduct();
+  product.category = firstCategory?.id || product.category || "ecommerce";
+  product.id = String(Date.now()).slice(-6);
+  product.slug = slugify(`${product.title}-${product.id}`);
+  state.data.products.unshift(product);
+  resetProductFilters();
+  renderAll();
+  showTab("products");
+  revealProduct(product.id);
+  setStatus("[data-app-status]", "New theme added. Fill the details, then click Save changes.");
+}
 function showTab(tab) {
   state.tab = tab;
   qsa("[data-tab]").forEach((button) => button.classList.toggle("is-active", button.dataset.tab === tab));
@@ -272,7 +301,7 @@ document.addEventListener("click", async (event) => {
     if (target.matches("[data-logout]")) { sessionStorage.removeItem(TOKEN_KEY); location.reload(); }
     if (target.matches("[data-save]")) await saveData();
     if (target.matches("[data-fill-arabic]")) fillArabicDraft();
-    if (target.matches("[data-add-product]")) { syncAll(); state.data.products.unshift(blankProduct()); renderAll(); }
+    if (target.matches("[data-add-product]")) addProduct();
     if (target.matches("[data-add-category]")) { syncAll(); state.data.categories.push(blankCategory()); renderAll(); showTab("categories"); }
     if (target.matches("[data-remove-product]")) { const card = target.closest("[data-product-index]"); const index = qsa("[data-product-index]").indexOf(card); syncAll(); state.data.products.splice(index, 1); renderAll(); }
     if (target.matches("[data-duplicate-product]")) { const card = target.closest("[data-product-index]"); const index = qsa("[data-product-index]").indexOf(card); syncAll(); const copy = structuredClone(state.data.products[index]); copy.id = String(Date.now()).slice(-6); copy.slug = slugify(copy.slug + " copy"); copy.title += " Copy"; state.data.products.splice(index + 1, 0, copy); renderAll(); }
