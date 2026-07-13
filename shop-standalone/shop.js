@@ -176,14 +176,35 @@
 
   function renderRows(){
     const el = qs('[data-home-rows]'); if (!el) return;
-    const rows = [
-      { title: t('newAdded'), blurb: t('newAddedBlurb'), items: shopData.products.slice(-4).reverse(), link: './category.html?cat=all' },
-      { title: t('popular'), blurb: t('popularBlurb'), items: shopData.products.filter((_,i) => i % 3 === 1).slice(0,4), link: './category.html?cat=all' }
-    ];
-    shopData.categories.filter(c => c.id !== 'all').forEach(c => rows.push({ title: t('latestIn') + ' ' + catName(c.id), blurb: catBlurb(c.id), items: shopData.products.filter(p => p.category === c.id).slice(0,4), link: './category.html?cat=' + c.id }));
-    el.innerHTML = rows.map(r => `<section class="product-row"><div class="row-head"><div><h2>${r.title}</h2><p>${r.blurb}</p></div><a href="${r.link}">${t('viewAll')} ${chevronIcon}</a></div><div class="row-grid">${r.items.map(card).join('')}</div></section>`).join('');
+    const cats = shopData.categories.filter(c => c.id !== 'all');
+    const products = shopData.products || [];
+    const recent = products.slice(-4).reverse();
+    const popular = products.filter((p, i) => /popular|best/i.test(p.badge || '') || i % 3 === 1).slice(0,4);
+    const day = products.find(p => /best|popular|new/i.test(p.badge || '')) || products[0];
+    const section = (title, blurb, items, link, cls = '') => items.length ? `<section class="product-row ${cls}"><div class="row-head"><div><h2>${title}</h2><p>${blurb}</p></div><a href="${link}">${t('viewAll')} ${chevronIcon}</a></div><div class="row-grid">${items.map(card).join('')}</div></section>` : '';
+    const categoryRows = cats.slice(0, 5).map(c => section(`${t('latestIn')} ${catName(c.id)}`, catBlurb(c.id), products.filter(p => p.category === c.id).slice(0,4), './category.html?cat=' + c.id, 'product-row--compact'));
+    const moreRecent = products.slice(Math.max(0, products.length - 8), products.length - 4).reverse();
+    const dayBlock = day ? `<section class="product-day" style="--accent:${catById(day.category).color}"><div><p class="eyebrow">Product of the day</p><h2>${productTitle(day)}</h2><p>${productDetails(day)}</p><div class="price-row price-row--large"><span><del>${money(day.oldPrice)}</del> ${money(day.price)}</span><a href="./theme.html?slug=${day.slug}">${t('view')} ${chevronIcon}</a></div></div><div class="day-preview">${card(day)}</div></section>` : '';
+    const stats = `<section class="market-stats"><article><b>7,000+</b><span>ready sections across the library</span></article><article><b>10+</b><span>business categories</span></article><article><b>SAR</b><span>GCC-friendly pricing</span></article><article><b>Fast</b><span>static pages for Vercel hosting</span></article></section>`;
+    const catalog = `<section class="mini-catalog"><div class="row-head"><div><h2>Explore by category</h2><p>Quick links for the most requested website template types.</p></div></div><div class="catalog-pills">${cats.map(c => `<a href="./category.html?cat=${c.id}" style="--cat:${c.color}">${icon(c.icon)}<span>${catName(c.id)}</span></a>`).join('')}</div></section>`;
+    el.innerHTML = [
+      section('Recently viewed style picks', 'Templates with clear layouts, strong spacing and fast launch structure.', recent, './category.html?cat=all', 'product-row--compact'),
+      dayBlock,
+      section('Popular templates', 'The layouts most useful for stores, service brands and local businesses.', popular, './category.html?cat=all', 'product-row--compact'),
+      ...categoryRows,
+      stats,
+      section('Bestsellers', 'Polished templates that feel easy to understand and simple to adapt.', products.slice(0,4), './category.html?cat=all', 'product-row--compact'),
+      section('Recently added', 'Fresh designs added to the Arabix shop.', moreRecent.length ? moreRecent : recent, './category.html?cat=all', 'product-row--compact'),
+      catalog
+    ].join('');
   }
 
+  function renderFooterCatalog(){
+    const el = qs('[data-footer-catalog]'); if (!el || !shopData) return;
+    const cats = shopData.categories.filter(c => c.id !== 'all');
+    const chunks = [cats.slice(0,3), cats.slice(3,6), cats.slice(6,9)];
+    el.innerHTML = chunks.map((group, i) => `<section><h3>${['Templates','Business Types','Shop'][i]}</h3>${group.map(c => `<a href="./category.html?cat=${c.id}">${catName(c.id)}</a>`).join('')}</section>`).join('') + `<section><h3>Support</h3><a href="./license.html">License</a><a href="./terms.html">Terms</a><a href="./privacy.html">Privacy</a><a href="./refund-policy.html">Refunds</a></section>`;
+  }
   function filterCards(){
     const input = qs('[data-search]'); if (!input) return;
     input.addEventListener('input', () => { const term = input.value.trim().toLowerCase(); qsa('.shop-card').forEach(a => { a.style.display = a.textContent.toLowerCase().includes(term) ? 'flex' : 'none'; }); });
@@ -226,7 +247,7 @@
   }
 
   function rerender(){
-    updateCurrencyLabel(); applyLanguage(); renderHeaderDropdown(); renderCategories(); renderRows(); renderCategory(); renderDetail(); renderDemo(); filterCards();
+    updateCurrencyLabel(); applyLanguage(); renderHeaderDropdown(); renderCategories(); renderRows(); renderFooterCatalog(); renderCategory(); renderDetail(); renderDemo(); filterCards();
   }
 
   load().then(() => { setupHeaderControls(); rerender(); });
