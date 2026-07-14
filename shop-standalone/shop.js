@@ -194,10 +194,10 @@
       section('Recently viewed style picks', 'Templates with clear layouts, strong spacing and fast launch structure.', recent, './category.html?cat=all', 'product-row--compact'),
       dayBlock,
       section('Popular templates', 'The layouts most useful for stores, service brands and local businesses.', popular, './category.html?cat=all', 'product-row--compact'),
+      section('Recently added', 'Fresh designs added to the Arabix shop.', moreRecent.length ? moreRecent : recent, './category.html?cat=all', 'product-row--compact'),
       ...categoryRows,
       stats,
       section('Bestsellers', 'Polished templates that feel easy to understand and simple to adapt.', products.slice(0,4), './category.html?cat=all', 'product-row--compact'),
-      section('Recently added', 'Fresh designs added to the Arabix shop.', moreRecent.length ? moreRecent : recent, './category.html?cat=all', 'product-row--compact'),
       catalog
     ].join('');
   }
@@ -206,7 +206,7 @@
     const el = qs('[data-footer-catalog]'); if (!el || !shopData) return;
     const cats = shopData.categories.filter(c => c.id !== 'all');
     const chunks = [cats.slice(0,3), cats.slice(3,6), cats.slice(6,9)];
-    el.innerHTML = chunks.map((group, i) => `<section><h3>${['Templates','Business Types','Shop'][i]}</h3>${group.map(c => `<a href="./category.html?cat=${c.id}">${catName(c.id)}</a>`).join('')}</section>`).join('') + `<section><h3>Support</h3><a href="./license.html">License</a><a href="./terms.html">Terms</a><a href="./privacy.html">Privacy</a><a href="./refund-policy.html">Refunds</a></section>`;
+    el.innerHTML = chunks.map((group, i) => `<section><h3>${['Templates','Business Types','Shop'][i]}</h3>${group.map(c => `<a href="./category.html?cat=${c.id}">${catName(c.id)}</a>`).join('')}</section>`).join('') + `<section class="footer-support"><h3>Support</h3><a href="./license.html">License</a><a href="./terms.html">Terms</a><a href="./privacy.html">Privacy</a><a href="./refund-policy.html">Refunds</a></section><section class="footer-social"><h3>Social</h3><div><a href="https://www.facebook.com/arabixweb" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.2h2V5h-2.4C10.9 5 9.8 6.7 9.8 8.8V11H8v3.2h1.8V20H13v-5.8h2.4L16 11h-3V9c0-.5.4-.8 1-.8Z"/></svg></a><a href="https://www.instagram.com/arabixweb" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="4"/><circle cx="12" cy="12" r="3.2"/><circle cx="16.2" cy="7.8" r=".8"/></svg></a><a href="https://www.linkedin.com/company/arabixweb" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 10.2V19M6.5 7.2v.1M10.5 19v-8.8M10.5 14.1c0-2.4 1.4-4 3.5-4 2 0 3.5 1.4 3.5 4V19"/></svg></a><a href="https://www.tiktok.com/@arabixweb" aria-label="TikTok" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.2a4.2 4.2 0 1 1-4.2-4.2c.4 0 .8.1 1.2.2V7.1m3-3.1c.8 2.3 2.5 3.8 5 4"/></svg></a></div></section>`;
   }
   function filterCards(){
     const input = qs('[data-search]'); if (!input) return;

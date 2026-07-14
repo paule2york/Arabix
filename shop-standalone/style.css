@@ -1995,3 +1995,94 @@ body.is-ar .footer-catalog {
     width: 100%;
   }
 }
+/* Homepage row and footer refinements */
+.product-row--compact .row-head {
+  text-align: left;
+}
+.product-row--compact .row-head > div {
+  justify-self: start;
+}
+body.is-ar .product-row--compact .row-head {
+  text-align: right;
+  direction: rtl;
+}
+body.is-ar .product-row--compact .row-head > div {
+  justify-self: end;
+}
+body[data-page="home"] .market-footer > nav {
+  display: none !important;
+}
+body[data-page="home"] .market-footer {
+  grid-template-columns: minmax(220px, 310px) minmax(0, 1fr) !important;
+}
+body[data-page="home"] .footer-catalog {
+  grid-column: 2;
+  grid-template-columns: repeat(5, minmax(120px, 1fr)) !important;
+  align-items: start;
+}
+.footer-catalog h3 {
+  margin-bottom: 14px;
+  font-size: 1.06rem;
+  letter-spacing: -.01em;
+}
+.footer-catalog a {
+  margin: 9px 0;
+  font-size: 1rem;
+  font-weight: 850;
+}
+.footer-support a {
+  color: rgba(255,255,255,.78);
+}
+.footer-social div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  color: #fff;
+}
+.footer-social a:hover {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: #07100d;
+  transform: translateY(-2px);
+}
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.footer-social a:first-child svg {
+  fill: currentColor;
+  stroke: none;
+}
+@media (max-width: 1180px) {
+  body[data-page="home"] .footer-catalog {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 680px) {
+  .product-row--compact .row-head,
+  body.is-ar .product-row--compact .row-head {
+    text-align: start;
+  }
+  .product-row--compact .row-head > div,
+  body.is-ar .product-row--compact .row-head > div {
+    justify-self: start;
+  }
+  body[data-page="home"] .footer-catalog {
+    grid-column: 1;
+    grid-template-columns: 1fr !important;
+  }
+}
