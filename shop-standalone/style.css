@@ -2241,3 +2241,90 @@ body[data-page="home"] .footer-catalog {
 body.is-ar .lang-select .shop-select-btn {
   min-width: 112px !important;
 }
+
+.image-mockup {
+  padding: 0;
+  background: #eef7fb;
+}
+.image-mockup img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.detail-gallery {
+  padding: 18px;
+  border-top: 1px solid #dce4eb;
+  border-bottom: 1px solid #dce4eb;
+  background: linear-gradient(135deg,color-mix(in srgb,var(--accent,#a6ff00) 12%,#fff),#f8fbfc);
+}
+.detail-featured-image {
+  min-height: 430px;
+  overflow: hidden;
+  border: 1px solid rgba(17,24,39,.1);
+  border-radius: 20px;
+  background: #101827;
+  box-shadow: 0 20px 55px rgba(46,59,78,.12);
+}
+.detail-featured-image img {
+  width: 100%;
+  min-height: 430px;
+  display: block;
+  object-fit: cover;
+}
+.detail-thumbs {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.detail-thumbs img {
+  width: 100%;
+  height: 96px;
+  border: 1px solid rgba(17,24,39,.1);
+  border-radius: 14px;
+  background: #fff;
+  object-fit: cover;
+}
+.summary-html {
+  color: #4b5565;
+  font-size: 1.03rem;
+  font-weight: 650;
+  line-height: 1.72;
+}
+.summary-html > :first-child { margin-top: 0; }
+.summary-html > :last-child { margin-bottom: 0; }
+.summary-html h2,
+.summary-html h3,
+.summary-html h4 {
+  color: #101827;
+  line-height: 1.1;
+  letter-spacing: -.025em;
+}
+.summary-html h2 { font-size: clamp(1.8rem,3vw,2.8rem); }
+.summary-html h3 { font-size: 1.45rem; }
+.summary-html p { margin: 0 0 16px; }
+.summary-html ul,
+.summary-html ol {
+  display: grid;
+  gap: 8px;
+  padding-inline-start: 24px;
+}
+.summary-html img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 18px 0;
+  border-radius: 18px;
+  box-shadow: 0 18px 46px rgba(46,59,78,.12);
+}
+.summary-html a {
+  color: #08796f;
+  font-weight: 900;
+}
+@media(max-width:680px){
+  .detail-featured-image,
+  .detail-featured-image img { min-height: 260px; }
+  .detail-thumbs { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .detail-thumbs img { height: 82px; }
+}

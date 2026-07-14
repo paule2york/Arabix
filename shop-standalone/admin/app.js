@@ -1,7 +1,8 @@
-const REPO_OWNER = "paule2york";
+﻿const REPO_OWNER = "paule2york";
 const REPO_NAME = "Arabix";
 const BRANCH = "main";
 const DATA_PATH = "shop-standalone/data/products.json";
+const UPLOAD_ROOT = "shop-standalone/uploads";
 const TOKEN_KEY = "arabix_shop_cms_token";
 
 const qs = (selector, root = document) => root.querySelector(selector);
@@ -16,6 +17,24 @@ const decodeBase64Utf8 = (value) => new TextDecoder().decode(Uint8Array.from(ato
 const encodeBase64Utf8 = (value) => { const bytes = new TextEncoder().encode(value); let binary = ""; bytes.forEach((byte) => binary += String.fromCharCode(byte)); return btoa(binary); };
 const setStatus = (selector, message, error = false) => { const el = qs(selector); if (!el) return; el.textContent = message || ""; el.classList.toggle("is-error", error); };
 
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(String(reader.result).split(",")[1] || "");
+    reader.onerror = () => reject(reader.error || new Error("Could not read image file"));
+    reader.readAsDataURL(file);
+  });
+}
+function adminAssetSrc(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  if (/^(https?:|data:)/i.test(raw)) return raw;
+  if (raw.startsWith("./")) return "../" + raw.slice(2);
+  return raw;
+}
+function uploadFolderFor(product) {
+  return slugify(product.slug || product.title || product.id || "theme");
+}
 async function github(path, options = {}) {
   const response = await fetch(apiUrl(path), {
     ...options,
@@ -44,21 +63,29 @@ function listField(label, name, values = []) {
   const rows = (Array.isArray(values) && values.length ? values : [""]).map((value) => `<div class="list-row"><input type="text" data-list-item value="${escapeAttr(value)}" /><button class="danger" type="button" data-remove-list-row>Remove</button></div>`).join("");
   return `<div class="field field-half list-field" data-list-field="${name}"><span>${label}</span><div class="list-box">${rows}</div><button class="ghost" type="button" data-add-list-row>Add line</button></div>`;
 }
+function imageUrlField(label, name, value = "") {
+  const src = adminAssetSrc(value);
+  return `<div class="field field-full media-field"><span>${label}</span><div class="media-upload-row"><input type="text" data-field="${name}" value="${escapeAttr(value)}" placeholder="Upload image or paste image URL" /><label class="upload-button">Upload<input type="file" accept="image/*" data-upload-image="${name}" /></label></div><div class="media-preview" data-image-preview="${name}">${src ? `<img src="${escapeAttr(src)}" alt="${escapeAttr(label)} preview" />` : `<em>No image selected</em>`}</div></div>`;
+}
+function imageListField(label, name, values = []) {
+  const rows = (Array.isArray(values) && values.length ? values : [""]).map((value) => `<div class="list-row image-row"><input type="text" data-list-item value="${escapeAttr(value)}" placeholder="./uploads/theme/image.jpg" /><button class="danger" type="button" data-remove-list-row>Remove</button>${value ? `<img src="${escapeAttr(adminAssetSrc(value))}" alt="Gallery preview" />` : ""}</div>`).join("");
+  return `<div class="field field-full list-field image-list-field" data-list-field="${name}"><span>${label}</span><div class="media-upload-row"><div class="auto-note">Upload 3-4 screenshots. They will show under the featured image.</div><label class="upload-button">Upload gallery<input type="file" accept="image/*" multiple data-upload-gallery="${name}" /></label></div><div class="list-box">${rows}</div><button class="ghost" type="button" data-add-list-row>Add image URL</button></div>`;
+}
 
 function autoArabicText(value) {
   const raw = String(value || "").trim();
   if (!raw) return "";
   const replacements = [
-    [/website template/gi, "قالب موقع"], [/template/gi, "قالب"], [/ecommerce/gi, "متجر إلكتروني"], [/restaurant/gi, "مطعم"], [/hotel/gi, "فندق"], [/travel/gi, "سفر"], [/clinic/gi, "عيادة"], [/law/gi, "محاماة"], [/business/gi, "أعمال"], [/portfolio/gi, "بورتفوليو"], [/education/gi, "تعليم"], [/premium/gi, "احترافي"], [/ready/gi, "جاهز"], [/new/gi, "جديد"], [/popular/gi, "الأكثر طلباً"], [/best seller/gi, "الأكثر مبيعاً"]
+    [/website template/gi, "Ù‚Ø§Ù„Ø¨ Ù…ÙˆÙ‚Ø¹"], [/template/gi, "Ù‚Ø§Ù„Ø¨"], [/ecommerce/gi, "Ù…ØªØ¬Ø± Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ"], [/restaurant/gi, "Ù…Ø·Ø¹Ù…"], [/hotel/gi, "ÙÙ†Ø¯Ù‚"], [/travel/gi, "Ø³ÙØ±"], [/clinic/gi, "Ø¹ÙŠØ§Ø¯Ø©"], [/law/gi, "Ù…Ø­Ø§Ù…Ø§Ø©"], [/business/gi, "Ø£Ø¹Ù…Ø§Ù„"], [/portfolio/gi, "Ø¨ÙˆØ±ØªÙÙˆÙ„ÙŠÙˆ"], [/education/gi, "ØªØ¹Ù„ÙŠÙ…"], [/premium/gi, "Ø§Ø­ØªØ±Ø§ÙÙŠ"], [/ready/gi, "Ø¬Ø§Ù‡Ø²"], [/new/gi, "Ø¬Ø¯ÙŠØ¯"], [/popular/gi, "Ø§Ù„Ø£ÙƒØ«Ø± Ø·Ù„Ø¨Ø§Ù‹"], [/best seller/gi, "Ø§Ù„Ø£ÙƒØ«Ø± Ù…Ø¨ÙŠØ¹Ø§Ù‹"]
   ];
   let text = raw;
   replacements.forEach(([pattern, replacement]) => text = text.replace(pattern, replacement));
-  if (/^[\x00-\x7F\s.,&+-]+$/.test(text)) return `نسخة عربية لـ ${raw}`;
+  if (/^[\x00-\x7F\s.,&+-]+$/.test(text)) return `Ù†Ø³Ø®Ø© Ø¹Ø±Ø¨ÙŠØ© Ù„Ù€ ${raw}`;
   return text;
 }
 function autoArabicLong(product) {
-  const title = autoArabicText(product.title || "القالب");
-  return `قالب جاهز لـ ${title} بتصميم متجاوب وأقسام منظمة يمكن تعديلها بسرعة لتناسب العلامة والمحتوى.`;
+  const title = autoArabicText(product.title || "Ø§Ù„Ù‚Ø§Ù„Ø¨");
+  return `Ù‚Ø§Ù„Ø¨ Ø¬Ø§Ù‡Ø² Ù„Ù€ ${title} Ø¨ØªØµÙ…ÙŠÙ… Ù…ØªØ¬Ø§ÙˆØ¨ ÙˆØ£Ù‚Ø³Ø§Ù… Ù…Ù†Ø¸Ù…Ø© ÙŠÙ…ÙƒÙ† ØªØ¹Ø¯ÙŠÙ„Ù‡Ø§ Ø¨Ø³Ø±Ø¹Ø© Ù„ØªÙ†Ø§Ø³Ø¨ Ø§Ù„Ø¹Ù„Ø§Ù…Ø© ÙˆØ§Ù„Ù…Ø­ØªÙˆÙ‰.`;
 }
 
 function blankCategory() {
@@ -80,16 +107,10 @@ function blankProduct() {
     commercialPrice: 1499,
     singleLicensePrice: 149,
     exclusiveBuyoutPrice: 1499,
+    featuredImage: "",
+    galleryImages: [],
     summary: "A polished ready-made website template for fast launch.",
     summaryAr: "",
-    details: "Built with responsive sections, clean spacing and a structure you can adapt for your brand.",
-    detailsAr: "",
-    features: ["Responsive sections", "Clean layout", "Fast launch"],
-    featuresAr: [],
-    includes: ["Editable sections", "Launch notes"],
-    includesAr: [],
-    compatible: ["HTML/CSS", "Static hosting", "CMS adaptation ready"],
-    compatibleAr: [],
     updated: "July 2026",
     currency: "SAR"
   };
@@ -133,8 +154,9 @@ function productEditorHtml(product, index) {
         <div class="row-actions product-actions"><button type="button" class="ghost" data-duplicate-product="${index}">Duplicate</button><button type="button" class="danger" data-remove-product="${index}">Remove</button></div>
         <div class="field-grid">
           ${textField("ID", "id", product.id)}
-          ${textField("Slug", "slug", product.slug)}
-          ${textField("Demo URL", "demoUrl", product.demoUrl || "")}
+          ${textField("Slug", "slug", product.slug)}          ${textField("Demo URL", "demoUrl", product.demoUrl || "")}
+          ${imageUrlField("Featured image", "featuredImage", product.featuredImage || "")}
+          ${imageListField("Gallery images", "galleryImages", product.galleryImages || [])}
           ${selectField("Category", "category", product.category)}
           ${textField("Badge EN", "badge", product.badge)}
           ${textField("Title EN", "title", product.title, "field-half")}
@@ -143,16 +165,8 @@ function productEditorHtml(product, index) {
           ${numberField("Old price SAR", "oldPrice", product.oldPrice)}
           ${numberField("Single license SAR", "singleLicensePrice", product.singleLicensePrice ?? product.price)}
           ${numberField("Exclusive buyout SAR", "exclusiveBuyoutPrice", product.exclusiveBuyoutPrice ?? product.commercialPrice ?? 1499)}
-          ${textArea("Summary EN", "summary", product.summary, "field-half")}
-          ${textArea("Summary AR", "summaryAr", product.summaryAr, "field-half")}
-          ${textArea("Details EN", "details", product.details, "field-half")}
-          ${textArea("Details AR", "detailsAr", product.detailsAr, "field-half")}
-          ${listField("Features EN", "features", product.features)}
-          ${listField("Features AR", "featuresAr", product.featuresAr)}
-          ${listField("Includes EN", "includes", product.includes)}
-          ${listField("Includes AR", "includesAr", product.includesAr)}
-          ${listField("Compatible EN", "compatible", product.compatible)}
-          ${listField("Compatible AR", "compatibleAr", product.compatibleAr)}
+          ${textArea("Summary EN - HTML allowed", "summary", product.summary, "field-half rich-field")}
+          ${textArea("Summary AR - HTML allowed", "summaryAr", product.summaryAr, "field-half rich-field")}
           ${textField("Updated", "updated", product.updated)}
           ${textField("Currency", "currency", product.currency || "SAR")}
         </div>
@@ -200,6 +214,7 @@ function syncAll() {
   state.data.products = qsa("[data-product-index]").map(readFields);
   state.data.products.forEach((p) => {
     if (!p.slug) p.slug = slugify(p.title);
+    if (!Array.isArray(p.galleryImages)) p.galleryImages = [];
     if (!p.singleLicensePrice) p.singleLicensePrice = p.price;
     p.commercialPrice = p.exclusiveBuyoutPrice || p.commercialPrice || 1499;
   });
@@ -212,10 +227,6 @@ function fillArabicDraft() {
     if (!p.titleAr) p.titleAr = autoArabicText(p.title);
     if (!p.badgeAr) p.badgeAr = autoArabicText(p.badge);
     if (!p.summaryAr) p.summaryAr = autoArabicLong(p);
-    if (!p.detailsAr) p.detailsAr = autoArabicLong(p);
-    if (!p.featuresAr?.length) p.featuresAr = (p.features || []).map(autoArabicText);
-    if (!p.includesAr?.length) p.includesAr = (p.includes || []).map(autoArabicText);
-    if (!p.compatibleAr?.length) p.compatibleAr = (p.compatible || []).map(autoArabicText);
   });
   renderAll();
   setStatus("[data-app-status]", "Arabic draft filled. Please review before saving.");
@@ -248,6 +259,47 @@ function revealProduct(id) {
   card.open = true;
   card.scrollIntoView({ behavior: "smooth", block: "center" });
   qs('[data-field="title"]', card)?.focus();
+}
+async function uploadAsset(file, product) {
+  const folder = uploadFolderFor(product);
+  const extension = (file.name.split(".").pop() || "jpg").toLowerCase().replace(/[^a-z0-9]/g, "") || "jpg";
+  const base = slugify(file.name.replace(/\.[^.]+$/, ""));
+  const filename = `${Date.now()}-${base}.${extension}`;
+  const repoPath = `${UPLOAD_ROOT}/${folder}/${filename}`;
+  const content = await fileToBase64(file);
+  await github(`/contents/${repoPath}`, {
+    method: "PUT",
+    body: JSON.stringify({ message: `Upload ${file.name} from Arabix Shop CMS`, content, branch: BRANCH })
+  });
+  return `./uploads/${folder}/${filename}`;
+}
+async function handleFeaturedUpload(input) {
+  const card = input.closest("[data-product-index]");
+  const file = input.files && input.files[0];
+  if (!card || !file) return;
+  const product = readFields(card);
+  setStatus("[data-app-status]", "Uploading featured image...");
+  const url = await uploadAsset(file, product);
+  const field = qs(`[data-field="${input.dataset.uploadImage}"]`, card);
+  if (field) field.value = url;
+  const preview = qs(`[data-image-preview="${input.dataset.uploadImage}"]`, card);
+  if (preview) preview.innerHTML = `<img src="${escapeAttr(adminAssetSrc(url))}" alt="Image preview" />`;
+  input.value = "";
+  setStatus("[data-app-status]", "Featured image uploaded. Click Save changes to publish it.");
+}
+async function handleGalleryUpload(input) {
+  const card = input.closest("[data-product-index]");
+  const files = Array.from(input.files || []);
+  if (!card || !files.length) return;
+  const product = readFields(card);
+  const box = qs(`[data-list-field="${input.dataset.uploadGallery}"] .list-box`, card);
+  setStatus("[data-app-status]", `Uploading ${files.length} gallery image${files.length > 1 ? "s" : ""}...`);
+  for (const file of files) {
+    const url = await uploadAsset(file, product);
+    box?.insertAdjacentHTML("beforeend", `<div class="list-row image-row"><input type="text" data-list-item value="${escapeAttr(url)}" /><button class="danger" type="button" data-remove-list-row>Remove</button><img src="${escapeAttr(adminAssetSrc(url))}" alt="Gallery preview" /></div>`);
+  }
+  input.value = "";
+  setStatus("[data-app-status]", "Gallery images uploaded. Click Save changes to publish them.");
 }
 function addProduct() {
   syncAll();
@@ -292,7 +344,13 @@ document.addEventListener("input", (event) => {
     if (slug && !slug.value.trim()) slug.value = slugify(event.target.value);
   }
 });
-document.addEventListener("change", (event) => { if (event.target.matches("[data-category-filter]")) applyFilters(); });
+document.addEventListener("change", async (event) => {
+  try {
+    if (event.target.matches("[data-category-filter]")) applyFilters();
+    if (event.target.matches("[data-upload-image]")) await handleFeaturedUpload(event.target);
+    if (event.target.matches("[data-upload-gallery]")) await handleGalleryUpload(event.target);
+  } catch (error) { setStatus("[data-app-status]", error.message, true); }
+});
 document.addEventListener("click", async (event) => {
   const target = event.target.closest("button, a");
   if (!target) return;

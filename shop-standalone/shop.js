@@ -1,4 +1,4 @@
-(function clientCode(){
+﻿(function clientCode(){
   const SHOP_DATA_URL = './data/products.json';
   const qs = (s, r = document) => r.querySelector(s);
   const qsa = (s, r = document) => [...r.querySelectorAll(s)];
@@ -8,26 +8,26 @@
   let currentLang = localStorage.getItem('arabixShopLang') || 'en';
 
   const currencies = [
-    { code: 'SAR', flag: '🇸🇦', name: 'Saudi Riyal', rate: 1 },
-    { code: 'USD', flag: '🇺🇸', name: 'US Dollar', rate: 0.27 },
-    { code: 'AED', flag: '🇦🇪', name: 'UAE Dirham', rate: 0.98 },
-    { code: 'QAR', flag: '🇶🇦', name: 'Qatari Riyal', rate: 0.97 },
-    { code: 'KWD', flag: '🇰🇼', name: 'Kuwaiti Dinar', rate: 0.081 },
-    { code: 'BHD', flag: '🇧🇭', name: 'Bahraini Dinar', rate: 0.10 },
-    { code: 'OMR', flag: '🇴🇲', name: 'Omani Rial', rate: 0.10 }
+    { code: 'SAR', flag: 'ðŸ‡¸ðŸ‡¦', name: 'Saudi Riyal', rate: 1 },
+    { code: 'USD', flag: 'ðŸ‡ºðŸ‡¸', name: 'US Dollar', rate: 0.27 },
+    { code: 'AED', flag: 'ðŸ‡¦ðŸ‡ª', name: 'UAE Dirham', rate: 0.98 },
+    { code: 'QAR', flag: 'ðŸ‡¶ðŸ‡¦', name: 'Qatari Riyal', rate: 0.97 },
+    { code: 'KWD', flag: 'ðŸ‡°ðŸ‡¼', name: 'Kuwaiti Dinar', rate: 0.081 },
+    { code: 'BHD', flag: 'ðŸ‡§ðŸ‡­', name: 'Bahraini Dinar', rate: 0.10 },
+    { code: 'OMR', flag: 'ðŸ‡´ðŸ‡²', name: 'Omani Rial', rate: 0.10 }
   ];
 
   const arCategories = {
-    all: ['كل القوالب', 'كل قوالب أرابيكس الجاهزة في مكان واحد.'],
-    ecommerce: ['المتاجر الإلكترونية', 'قوالب متاجر للكتالوجات والإطلاقات وعروض المنتجات.'],
-    restaurant: ['المطاعم', 'قوالب للمطاعم والقوائم والحجوزات والعلامات الغذائية.'],
-    hotel: ['الفنادق والسفر', 'قوالب للفنادق والرحلات والحجوزات والوجهات.'],
-    clinic: ['العيادات', 'قوالب للرعاية الصحية والعيادات والتجميل والويلنس.'],
-    realestate: ['العقارات', 'قوالب للعقارات والإيجارات والعروض الفاخرة.'],
-    legal: ['المحاماة', 'قوالب احترافية لمكاتب المحاماة والخدمات القانونية.'],
-    business: ['الأعمال', 'قوالب للشركات والفرق والملفات التعريفية.'],
-    education: ['التعليم', 'قوالب للدورات والمعاهد ومنصات التعلم.'],
-    portfolio: ['الأعمال الإبداعية', 'قوالب بورتفوليو للمصممين والمبدعين والاستوديوهات.']
+    all: ['ÙƒÙ„ Ø§Ù„Ù‚ÙˆØ§Ù„Ø¨', 'ÙƒÙ„ Ù‚ÙˆØ§Ù„Ø¨ Ø£Ø±Ø§Ø¨ÙŠÙƒØ³ Ø§Ù„Ø¬Ø§Ù‡Ø²Ø© ÙÙŠ Ù…ÙƒØ§Ù† ÙˆØ§Ø­Ø¯.'],
+    ecommerce: ['Ø§Ù„Ù…ØªØ§Ø¬Ø± Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠØ©', 'Ù‚ÙˆØ§Ù„Ø¨ Ù…ØªØ§Ø¬Ø± Ù„Ù„ÙƒØªØ§Ù„ÙˆØ¬Ø§Øª ÙˆØ§Ù„Ø¥Ø·Ù„Ø§Ù‚Ø§Øª ÙˆØ¹Ø±ÙˆØ¶ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª.'],
+    restaurant: ['Ø§Ù„Ù…Ø·Ø§Ø¹Ù…', 'Ù‚ÙˆØ§Ù„Ø¨ Ù„Ù„Ù…Ø·Ø§Ø¹Ù… ÙˆØ§Ù„Ù‚ÙˆØ§Ø¦Ù… ÙˆØ§Ù„Ø­Ø¬ÙˆØ²Ø§Øª ÙˆØ§Ù„Ø¹Ù„Ø§Ù…Ø§Øª Ø§Ù„ØºØ°Ø§Ø¦ÙŠØ©.'],
+    hotel: ['Ø§Ù„ÙÙ†Ø§Ø¯Ù‚ ÙˆØ§Ù„Ø³ÙØ±', 'Ù‚ÙˆØ§Ù„Ø¨ Ù„Ù„ÙÙ†Ø§Ø¯Ù‚ ÙˆØ§Ù„Ø±Ø­Ù„Ø§Øª ÙˆØ§Ù„Ø­Ø¬ÙˆØ²Ø§Øª ÙˆØ§Ù„ÙˆØ¬Ù‡Ø§Øª.'],
+    clinic: ['Ø§Ù„Ø¹ÙŠØ§Ø¯Ø§Øª', 'Ù‚ÙˆØ§Ù„Ø¨ Ù„Ù„Ø±Ø¹Ø§ÙŠØ© Ø§Ù„ØµØ­ÙŠØ© ÙˆØ§Ù„Ø¹ÙŠØ§Ø¯Ø§Øª ÙˆØ§Ù„ØªØ¬Ù…ÙŠÙ„ ÙˆØ§Ù„ÙˆÙŠÙ„Ù†Ø³.'],
+    realestate: ['Ø§Ù„Ø¹Ù‚Ø§Ø±Ø§Øª', 'Ù‚ÙˆØ§Ù„Ø¨ Ù„Ù„Ø¹Ù‚Ø§Ø±Ø§Øª ÙˆØ§Ù„Ø¥ÙŠØ¬Ø§Ø±Ø§Øª ÙˆØ§Ù„Ø¹Ø±ÙˆØ¶ Ø§Ù„ÙØ§Ø®Ø±Ø©.'],
+    legal: ['Ø§Ù„Ù…Ø­Ø§Ù…Ø§Ø©', 'Ù‚ÙˆØ§Ù„Ø¨ Ø§Ø­ØªØ±Ø§ÙÙŠØ© Ù„Ù…ÙƒØ§ØªØ¨ Ø§Ù„Ù…Ø­Ø§Ù…Ø§Ø© ÙˆØ§Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ù‚Ø§Ù†ÙˆÙ†ÙŠØ©.'],
+    business: ['Ø§Ù„Ø£Ø¹Ù…Ø§Ù„', 'Ù‚ÙˆØ§Ù„Ø¨ Ù„Ù„Ø´Ø±ÙƒØ§Øª ÙˆØ§Ù„ÙØ±Ù‚ ÙˆØ§Ù„Ù…Ù„ÙØ§Øª Ø§Ù„ØªØ¹Ø±ÙŠÙÙŠØ©.'],
+    education: ['Ø§Ù„ØªØ¹Ù„ÙŠÙ…', 'Ù‚ÙˆØ§Ù„Ø¨ Ù„Ù„Ø¯ÙˆØ±Ø§Øª ÙˆØ§Ù„Ù…Ø¹Ø§Ù‡Ø¯ ÙˆÙ…Ù†ØµØ§Øª Ø§Ù„ØªØ¹Ù„Ù….'],
+    portfolio: ['Ø§Ù„Ø£Ø¹Ù…Ø§Ù„ Ø§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ÙŠØ©', 'Ù‚ÙˆØ§Ù„Ø¨ Ø¨ÙˆØ±ØªÙÙˆÙ„ÙŠÙˆ Ù„Ù„Ù…ØµÙ…Ù…ÙŠÙ† ÙˆØ§Ù„Ù…Ø¨Ø¯Ø¹ÙŠÙ† ÙˆØ§Ù„Ø§Ø³ØªÙˆØ¯ÙŠÙˆÙ‡Ø§Øª.']
   };
 
   const i18n = {
@@ -52,24 +52,24 @@
       terms: 'Terms', privacy: 'Privacy', refunds: 'Refunds', license: 'License', contact: 'Contact'
     },
     ar: {
-      categories: 'التصنيفات', wishlist: 'المفضلة', cart: 'السلة', homeHeroTitle: 'قوالب مواقع احترافية لإطلاق أسرع.',
-      homeHeroCopy: 'تصفح قوالب متجاوبة للمتاجر والعيادات والفنادق والمطاعم ومكاتب المحاماة والبورتفوليو.',
-      searchPlaceholder: 'ابحث عن قالب، مثال: عيادة', searchTemplates: 'ابحث في القوالب', searchInCategory: 'ابحث داخل التصنيف',
-      viewAllTemplates: 'عرض كل القوالب', newAdded: 'أضيف حديثاً', newAddedBlurb: 'قوالب جديدة تمت إضافتها إلى مكتبة أرابيكس.',
-      popular: 'الأكثر طلباً', popularBlurb: 'قوالب واضحة وسهلة الفهم ومناسبة للبيع بسرعة.', latestIn: 'الأحدث في',
-      viewAll: 'عرض الكل', templateCategory: 'تصنيف القالب', view: 'عرض', liveDemo: 'معاينة مباشرة', details: 'التفاصيل', buyNow: 'اشتر الآن',
-      description: 'الوصف', chooseLicense: 'اختر الترخيص', singleLicense: 'ترخيص موقع واحد', exclusiveLicense: 'ترخيص شراء حصري',
-      singleTip: 'استخدم هذا القالب لموقع واحد فقط. يمكنك تعديله لعلامتك، لكن لا يمكنك إعادة بيعه أو استخدامه لأكثر من موقع.',
-      exclusiveTip: 'يصبح القالب حصرياً لك. بعد الشراء، تقوم أرابيكس بإزالته من المتجر ولا تبيعه مرة أخرى.',
-      addons: 'إضافات اختيارية', multilingual: 'إضافة لغة ثانية', multilingualTip: 'نضيف نسخة بلغة ثانية. إذا كان القالب إنجليزياً نجهز العربية، وإذا كان عربياً نجهز الإنجليزية.',
-      seo: 'تهيئة SEO', seoTip: 'تهيئة أساسية لمحركات البحث تشمل العناوين والوصف وترتيب العناوين وإرشادات الصور والفهرسة.',
-      allInOne: 'باقة الإعداد الكاملة', allInOneTip: 'تشمل إرشاد التثبيت، تهيئة SEO، نسخة لغة ثانية، وشهر دعم للقالب المشترى.',
-      support: 'دعم شهر', save: 'وفر 400 ريال', hosting: 'استضافة + دومين', hostingTip: 'دعم إعداد استضافة ودومين لمدة سنة. يخضع الدومين للتوفر ونوع الامتداد.',
-      total: 'الإجمالي', requestPurchase: 'طلب الشراء', paymentNote: 'الدفع يتم عبر فاتورة أو رابط دفع آمن. نرسل الملفات بعد تأكيد الدفع.',
-      demoTag: 'معاينة مباشرة للقالب', demoHero: 'أطلق موقع {category} احترافي بسرعة أكبر.', requestTemplate: 'اطلب هذا القالب',
-      demoBandTitle: 'مصمم للوضوح والسرعة وتحويل الزوار إلى عملاء.', demoBandCopy: 'يتضمن أقساماً متجاوبة ومسافات نظيفة وهيكلاً يمكنك تعديله لعلامتك.',
-      builtClear: 'مصمم ليكون واضحاً ومتجاوباً وجاهزاً لإطلاق حقيقي.', footerCopy: 'قوالب مواقع جاهزة وواجهات رقمية من أرابيكس.',
-      terms: 'الشروط', privacy: 'الخصوصية', refunds: 'الاسترجاع', license: 'الترخيص', contact: 'تواصل معنا'
+      categories: 'Ø§Ù„ØªØµÙ†ÙŠÙØ§Øª', wishlist: 'Ø§Ù„Ù…ÙØ¶Ù„Ø©', cart: 'Ø§Ù„Ø³Ù„Ø©', homeHeroTitle: 'Ù‚ÙˆØ§Ù„Ø¨ Ù…ÙˆØ§Ù‚Ø¹ Ø§Ø­ØªØ±Ø§ÙÙŠØ© Ù„Ø¥Ø·Ù„Ø§Ù‚ Ø£Ø³Ø±Ø¹.',
+      homeHeroCopy: 'ØªØµÙØ­ Ù‚ÙˆØ§Ù„Ø¨ Ù…ØªØ¬Ø§ÙˆØ¨Ø© Ù„Ù„Ù…ØªØ§Ø¬Ø± ÙˆØ§Ù„Ø¹ÙŠØ§Ø¯Ø§Øª ÙˆØ§Ù„ÙÙ†Ø§Ø¯Ù‚ ÙˆØ§Ù„Ù…Ø·Ø§Ø¹Ù… ÙˆÙ…ÙƒØ§ØªØ¨ Ø§Ù„Ù…Ø­Ø§Ù…Ø§Ø© ÙˆØ§Ù„Ø¨ÙˆØ±ØªÙÙˆÙ„ÙŠÙˆ.',
+      searchPlaceholder: 'Ø§Ø¨Ø­Ø« Ø¹Ù† Ù‚Ø§Ù„Ø¨ØŒ Ù…Ø«Ø§Ù„: Ø¹ÙŠØ§Ø¯Ø©', searchTemplates: 'Ø§Ø¨Ø­Ø« ÙÙŠ Ø§Ù„Ù‚ÙˆØ§Ù„Ø¨', searchInCategory: 'Ø§Ø¨Ø­Ø« Ø¯Ø§Ø®Ù„ Ø§Ù„ØªØµÙ†ÙŠÙ',
+      viewAllTemplates: 'Ø¹Ø±Ø¶ ÙƒÙ„ Ø§Ù„Ù‚ÙˆØ§Ù„Ø¨', newAdded: 'Ø£Ø¶ÙŠÙ Ø­Ø¯ÙŠØ«Ø§Ù‹', newAddedBlurb: 'Ù‚ÙˆØ§Ù„Ø¨ Ø¬Ø¯ÙŠØ¯Ø© ØªÙ…Øª Ø¥Ø¶Ø§ÙØªÙ‡Ø§ Ø¥Ù„Ù‰ Ù…ÙƒØªØ¨Ø© Ø£Ø±Ø§Ø¨ÙŠÙƒØ³.',
+      popular: 'Ø§Ù„Ø£ÙƒØ«Ø± Ø·Ù„Ø¨Ø§Ù‹', popularBlurb: 'Ù‚ÙˆØ§Ù„Ø¨ ÙˆØ§Ø¶Ø­Ø© ÙˆØ³Ù‡Ù„Ø© Ø§Ù„ÙÙ‡Ù… ÙˆÙ…Ù†Ø§Ø³Ø¨Ø© Ù„Ù„Ø¨ÙŠØ¹ Ø¨Ø³Ø±Ø¹Ø©.', latestIn: 'Ø§Ù„Ø£Ø­Ø¯Ø« ÙÙŠ',
+      viewAll: 'Ø¹Ø±Ø¶ Ø§Ù„ÙƒÙ„', templateCategory: 'ØªØµÙ†ÙŠÙ Ø§Ù„Ù‚Ø§Ù„Ø¨', view: 'Ø¹Ø±Ø¶', liveDemo: 'Ù…Ø¹Ø§ÙŠÙ†Ø© Ù…Ø¨Ø§Ø´Ø±Ø©', details: 'Ø§Ù„ØªÙØ§ØµÙŠÙ„', buyNow: 'Ø§Ø´ØªØ± Ø§Ù„Ø¢Ù†',
+      description: 'Ø§Ù„ÙˆØµÙ', chooseLicense: 'Ø§Ø®ØªØ± Ø§Ù„ØªØ±Ø®ÙŠØµ', singleLicense: 'ØªØ±Ø®ÙŠØµ Ù…ÙˆÙ‚Ø¹ ÙˆØ§Ø­Ø¯', exclusiveLicense: 'ØªØ±Ø®ÙŠØµ Ø´Ø±Ø§Ø¡ Ø­ØµØ±ÙŠ',
+      singleTip: 'Ø§Ø³ØªØ®Ø¯Ù… Ù‡Ø°Ø§ Ø§Ù„Ù‚Ø§Ù„Ø¨ Ù„Ù…ÙˆÙ‚Ø¹ ÙˆØ§Ø­Ø¯ ÙÙ‚Ø·. ÙŠÙ…ÙƒÙ†Ùƒ ØªØ¹Ø¯ÙŠÙ„Ù‡ Ù„Ø¹Ù„Ø§Ù…ØªÙƒØŒ Ù„ÙƒÙ† Ù„Ø§ ÙŠÙ…ÙƒÙ†Ùƒ Ø¥Ø¹Ø§Ø¯Ø© Ø¨ÙŠØ¹Ù‡ Ø£Ùˆ Ø§Ø³ØªØ®Ø¯Ø§Ù…Ù‡ Ù„Ø£ÙƒØ«Ø± Ù…Ù† Ù…ÙˆÙ‚Ø¹.',
+      exclusiveTip: 'ÙŠØµØ¨Ø­ Ø§Ù„Ù‚Ø§Ù„Ø¨ Ø­ØµØ±ÙŠØ§Ù‹ Ù„Ùƒ. Ø¨Ø¹Ø¯ Ø§Ù„Ø´Ø±Ø§Ø¡ØŒ ØªÙ‚ÙˆÙ… Ø£Ø±Ø§Ø¨ÙŠÙƒØ³ Ø¨Ø¥Ø²Ø§Ù„ØªÙ‡ Ù…Ù† Ø§Ù„Ù…ØªØ¬Ø± ÙˆÙ„Ø§ ØªØ¨ÙŠØ¹Ù‡ Ù…Ø±Ø© Ø£Ø®Ø±Ù‰.',
+      addons: 'Ø¥Ø¶Ø§ÙØ§Øª Ø§Ø®ØªÙŠØ§Ø±ÙŠØ©', multilingual: 'Ø¥Ø¶Ø§ÙØ© Ù„ØºØ© Ø«Ø§Ù†ÙŠØ©', multilingualTip: 'Ù†Ø¶ÙŠÙ Ù†Ø³Ø®Ø© Ø¨Ù„ØºØ© Ø«Ø§Ù†ÙŠØ©. Ø¥Ø°Ø§ ÙƒØ§Ù† Ø§Ù„Ù‚Ø§Ù„Ø¨ Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ§Ù‹ Ù†Ø¬Ù‡Ø² Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©ØŒ ÙˆØ¥Ø°Ø§ ÙƒØ§Ù† Ø¹Ø±Ø¨ÙŠØ§Ù‹ Ù†Ø¬Ù‡Ø² Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ©.',
+      seo: 'ØªÙ‡ÙŠØ¦Ø© SEO', seoTip: 'ØªÙ‡ÙŠØ¦Ø© Ø£Ø³Ø§Ø³ÙŠØ© Ù„Ù…Ø­Ø±ÙƒØ§Øª Ø§Ù„Ø¨Ø­Ø« ØªØ´Ù…Ù„ Ø§Ù„Ø¹Ù†Ø§ÙˆÙŠÙ† ÙˆØ§Ù„ÙˆØµÙ ÙˆØªØ±ØªÙŠØ¨ Ø§Ù„Ø¹Ù†Ø§ÙˆÙŠÙ† ÙˆØ¥Ø±Ø´Ø§Ø¯Ø§Øª Ø§Ù„ØµÙˆØ± ÙˆØ§Ù„ÙÙ‡Ø±Ø³Ø©.',
+      allInOne: 'Ø¨Ø§Ù‚Ø© Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯ Ø§Ù„ÙƒØ§Ù…Ù„Ø©', allInOneTip: 'ØªØ´Ù…Ù„ Ø¥Ø±Ø´Ø§Ø¯ Ø§Ù„ØªØ«Ø¨ÙŠØªØŒ ØªÙ‡ÙŠØ¦Ø© SEOØŒ Ù†Ø³Ø®Ø© Ù„ØºØ© Ø«Ø§Ù†ÙŠØ©ØŒ ÙˆØ´Ù‡Ø± Ø¯Ø¹Ù… Ù„Ù„Ù‚Ø§Ù„Ø¨ Ø§Ù„Ù…Ø´ØªØ±Ù‰.',
+      support: 'Ø¯Ø¹Ù… Ø´Ù‡Ø±', save: 'ÙˆÙØ± 400 Ø±ÙŠØ§Ù„', hosting: 'Ø§Ø³ØªØ¶Ø§ÙØ© + Ø¯ÙˆÙ…ÙŠÙ†', hostingTip: 'Ø¯Ø¹Ù… Ø¥Ø¹Ø¯Ø§Ø¯ Ø§Ø³ØªØ¶Ø§ÙØ© ÙˆØ¯ÙˆÙ…ÙŠÙ† Ù„Ù…Ø¯Ø© Ø³Ù†Ø©. ÙŠØ®Ø¶Ø¹ Ø§Ù„Ø¯ÙˆÙ…ÙŠÙ† Ù„Ù„ØªÙˆÙØ± ÙˆÙ†ÙˆØ¹ Ø§Ù„Ø§Ù…ØªØ¯Ø§Ø¯.',
+      total: 'Ø§Ù„Ø¥Ø¬Ù…Ø§Ù„ÙŠ', requestPurchase: 'Ø·Ù„Ø¨ Ø§Ù„Ø´Ø±Ø§Ø¡', paymentNote: 'Ø§Ù„Ø¯ÙØ¹ ÙŠØªÙ… Ø¹Ø¨Ø± ÙØ§ØªÙˆØ±Ø© Ø£Ùˆ Ø±Ø§Ø¨Ø· Ø¯ÙØ¹ Ø¢Ù…Ù†. Ù†Ø±Ø³Ù„ Ø§Ù„Ù…Ù„ÙØ§Øª Ø¨Ø¹Ø¯ ØªØ£ÙƒÙŠØ¯ Ø§Ù„Ø¯ÙØ¹.',
+      demoTag: 'Ù…Ø¹Ø§ÙŠÙ†Ø© Ù…Ø¨Ø§Ø´Ø±Ø© Ù„Ù„Ù‚Ø§Ù„Ø¨', demoHero: 'Ø£Ø·Ù„Ù‚ Ù…ÙˆÙ‚Ø¹ {category} Ø§Ø­ØªØ±Ø§ÙÙŠ Ø¨Ø³Ø±Ø¹Ø© Ø£ÙƒØ¨Ø±.', requestTemplate: 'Ø§Ø·Ù„Ø¨ Ù‡Ø°Ø§ Ø§Ù„Ù‚Ø§Ù„Ø¨',
+      demoBandTitle: 'Ù…ØµÙ…Ù… Ù„Ù„ÙˆØ¶ÙˆØ­ ÙˆØ§Ù„Ø³Ø±Ø¹Ø© ÙˆØªØ­ÙˆÙŠÙ„ Ø§Ù„Ø²ÙˆØ§Ø± Ø¥Ù„Ù‰ Ø¹Ù…Ù„Ø§Ø¡.', demoBandCopy: 'ÙŠØªØ¶Ù…Ù† Ø£Ù‚Ø³Ø§Ù…Ø§Ù‹ Ù…ØªØ¬Ø§ÙˆØ¨Ø© ÙˆÙ…Ø³Ø§ÙØ§Øª Ù†Ø¸ÙŠÙØ© ÙˆÙ‡ÙŠÙƒÙ„Ø§Ù‹ ÙŠÙ…ÙƒÙ†Ùƒ ØªØ¹Ø¯ÙŠÙ„Ù‡ Ù„Ø¹Ù„Ø§Ù…ØªÙƒ.',
+      builtClear: 'Ù…ØµÙ…Ù… Ù„ÙŠÙƒÙˆÙ† ÙˆØ§Ø¶Ø­Ø§Ù‹ ÙˆÙ…ØªØ¬Ø§ÙˆØ¨Ø§Ù‹ ÙˆØ¬Ø§Ù‡Ø²Ø§Ù‹ Ù„Ø¥Ø·Ù„Ø§Ù‚ Ø­Ù‚ÙŠÙ‚ÙŠ.', footerCopy: 'Ù‚ÙˆØ§Ù„Ø¨ Ù…ÙˆØ§Ù‚Ø¹ Ø¬Ø§Ù‡Ø²Ø© ÙˆÙˆØ§Ø¬Ù‡Ø§Øª Ø±Ù‚Ù…ÙŠØ© Ù…Ù† Ø£Ø±Ø§Ø¨ÙŠÙƒØ³.',
+      terms: 'Ø§Ù„Ø´Ø±ÙˆØ·', privacy: 'Ø§Ù„Ø®ØµÙˆØµÙŠØ©', refunds: 'Ø§Ù„Ø§Ø³ØªØ±Ø¬Ø§Ø¹', license: 'Ø§Ù„ØªØ±Ø®ÙŠØµ', contact: 'ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§'
     }
   };
 
@@ -98,10 +98,41 @@
   const catById = (id) => shopData.categories.find(c => c.id === id) || shopData.categories[0];
   const catName = (id) => { const c = catById(id); return currentLang === 'ar' ? (c.nameAr || (arCategories[id] && arCategories[id][0]) || c.name) : c.name; };
   const catBlurb = (id) => { const c = catById(id); return currentLang === 'ar' ? (c.blurbAr || (arCategories[id] && arCategories[id][1]) || c.blurb) : c.blurb; };
-  const productTitle = (p) => currentLang === 'ar' ? (p.titleAr || ('قالب ' + String(p.title || '').replace(' Website Template', ''))) : p.title;
-  const productBadge = (p) => currentLang === 'ar' ? (p.badgeAr || p.badge || 'جاهز') : (p.badge || 'Ready');
-  const productDetails = (p) => currentLang === 'ar' ? (p.detailsAr || p.summaryAr || 'قالب جاهز بتصميم متجاوب وأقسام منظمة يمكنك تعديلها لعلامتك وإطلاقها بسرعة. مناسب للعرض الاحترافي وتجربة مستخدم واضحة.') : p.details;
+  const productTitle = (p) => currentLang === 'ar' ? (p.titleAr || ('Ù‚Ø§Ù„Ø¨ ' + String(p.title || '').replace(' Website Template', ''))) : p.title;
+  const productBadge = (p) => currentLang === 'ar' ? (p.badgeAr || p.badge || 'Ø¬Ø§Ù‡Ø²') : (p.badge || 'Ready');
+  const productDetails = (p) => currentLang === 'ar' ? (p.summaryAr || p.detailsAr || p.summary || p.details || '\u0642\u0627\u0644\u0628 \u062c\u0627\u0647\u0632 \u0628\u0623\u0642\u0633\u0627\u0645 \u0645\u0646\u0638\u0645\u0629 \u0648\u062a\u0641\u0627\u0635\u064a\u0644 \u0648\u0627\u0636\u062d\u0629 \u0644\u0625\u0637\u0644\u0627\u0642 \u0623\u0633\u0631\u0639.') : (p.summary || p.details || 'A polished ready-made website template with clean sections and a fast launch structure.');
   const safeAttr = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+  const stripHtml = (value) => {
+    const node = document.createElement('div');
+    node.innerHTML = String(value || '');
+    return (node.textContent || node.innerText || '').trim();
+  };
+  const cleanHtml = (value) => {
+    const template = document.createElement('template');
+    template.innerHTML = String(value || '');
+    template.content.querySelectorAll('script,style,iframe,object,embed').forEach((node) => node.remove());
+    template.content.querySelectorAll('*').forEach((node) => {
+      [...node.attributes].forEach((attr) => {
+        const name = attr.name.toLowerCase();
+        if (name.startsWith('on') || ((name === 'href' || name === 'src') && /^\s*javascript:/i.test(attr.value))) node.removeAttribute(attr.name);
+      });
+    });
+    return template.innerHTML;
+  };
+  const productImages = (p) => [p.featuredImage, ...(Array.isArray(p.galleryImages) ? p.galleryImages : [])].map((img) => String(img || '').trim()).filter(Boolean);
+  function placeholderMockup() {
+    return `<div class="mockup"><div class="mock-browser"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-body"><b></b><span style="width:86%"></span><span style="width:58%"></span><div class="mock-cards"><i></i><i></i><i></i></div></div></div></div>`;
+  }
+  function mockupMarkup(p) {
+    const src = String(p.featuredImage || '').trim();
+    if (!src) return placeholderMockup();
+    return `<div class="mockup image-mockup"><img src="${safeAttr(src)}" alt="${safeAttr(productTitle(p))}" loading="lazy" /></div>`;
+  }
+  function productMediaMarkup(p) {
+    const images = productImages(p);
+    if (!images.length) return placeholderMockup();
+    return `<div class="detail-gallery"><div class="detail-featured-image"><img src="${safeAttr(images[0])}" alt="${safeAttr(productTitle(p))}" loading="eager" /></div>${images.length > 1 ? `<div class="detail-thumbs">${images.slice(1, 5).map((img, index) => `<img src="${safeAttr(img)}" alt="${safeAttr(productTitle(p))} screenshot ${index + 1}" loading="lazy" />`).join('')}</div>` : ''}</div>`;
+  }
   const demoPageHref = (p) => './demo.html?slug=' + encodeURIComponent(p.slug);
   const demoEmbedUrl = (p) => String(p.demoUrl || '').trim();
   const money = (amount) => {
@@ -158,7 +189,7 @@
 
   function card(p){
     const c = catById(p.category);
-    return `<a class="product-card shop-card" href="./theme.html?slug=${p.slug}" style="--accent:${c.color}"><div class="mockup"><div class="mock-browser"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-body"><b></b><span style="width:86%"></span><span style="width:58%"></span><div class="mock-cards"><i></i><i></i><i></i></div></div></div></div><div class="card-body"><em class="badge">${productBadge(p)}</em><h3>${productTitle(p)}</h3><div class="price-row price-row--large"><span><del>${money(p.oldPrice)}</del> ${money(p.price)}</span><b>${t('view')}</b></div></div></a>`;
+    return `<a class="product-card shop-card" href="./theme.html?slug=${p.slug}" style="--accent:${c.color}">${mockupMarkup(p)}<div class="card-body"><em class="badge">${productBadge(p)}</em><h3>${productTitle(p)}</h3><div class="price-row price-row--large"><span><del>${money(p.oldPrice)}</del> ${money(p.price)}</span><b>${t('view')}</b></div></div></a>`;
   }
 
   function renderHeaderDropdown(){
@@ -234,21 +265,25 @@
 
   function renderDetail(){
     const root = qs('[data-detail-page]'); if (!root) return;
-    const slug = params.get('slug') || shopData.products[0].slug; const p = shopData.products.find(x => x.slug === slug) || shopData.products[0]; const c = catById(p.category);
+    const slug = params.get('slug') || shopData.products[0].slug;
+    const p = shopData.products.find(x => x.slug === slug) || shopData.products[0];
+    const c = catById(p.category);
+    const summaryHtml = cleanHtml(productDetails(p));
     root.style.setProperty('--accent', c.color);
-    root.innerHTML = `<nav class="breadcrumb"><a href="./index.html">Templates</a><span>/</span><a href="./category.html?cat=${c.id}">${catName(c.id)}</a><span>/</span><span>${productTitle(p)}</span></nav><section class="detail-layout"><article class="detail-main"><div class="detail-content-head"><p class="eyebrow">${catName(c.id)}</p><h1>${productTitle(p)}</h1><div class="detail-content-actions"><div class="detail-platform share-only">${shareMarkup()}</div><a class="live-demo-button detail-demo-content" href="${demoPageHref(p)}" target="_blank" rel="noopener">${t('liveDemo')}</a></div></div><div class="mockup"><div class="mock-browser"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-body"><b></b><span style="width:86%"></span><span style="width:62%"></span><div class="mock-cards"><i></i><i></i><i></i></div></div></div></div><div class="detail-copy" id="preview"><h2>${t('description')}</h2><p>${productDetails(p)}</p><div class="feature-grid">${p.features.concat(p.includes).map(f => `<span>${currentLang === 'ar' ? 'ميزة جاهزة وقابلة للتعديل' : f}</span>`).join('')}</div></div></article><aside class="buy-panel"><h2>${t('chooseLicense')}</h2><div class="option-list license-list"><label><input type="radio" name="license" value="single website" data-price="${p.singleLicensePrice || p.price}" checked><span><b>${t('singleLicense')} <i class="license-help" tabindex="0">i<small>${t('singleTip')}</small></i></b><em>${money(p.singleLicensePrice || p.price)}</em></span></label><label><input type="radio" name="license" value="exclusive buyout" data-price="1499"><span><b>${t('exclusiveLicense')} <i class="license-help" tabindex="0">i<small>${t('exclusiveTip')}</small></i></b><em>${money(1499)}</em></span></label></div><h2>${t('addons')}</h2><div class="option-list addon-list"><label><input type="checkbox" data-addon="Multilingual Add-on" data-price="200"><span><b>${t('multilingual')} <i class="license-help" tabindex="0">i<small>${t('multilingualTip')}</small></i></b><em>${money(200)}</em></span></label><label><input type="checkbox" data-addon="SEO Setup" data-price="150"><span><b>${t('seo')} <i class="license-help" tabindex="0">i<small>${t('seoTip')}</small></i></b><em>${money(150)}</em></span></label><label class="featured-addon"><input type="checkbox" data-addon="All-in-One Setup Pack" data-price="800"><span><b>${t('allInOne')} <i class="license-help" tabindex="0">i<small>${t('allInOneTip')}</small></i><small class="support-pill">${t('support')}</small><small class="support-pill discount-pill">${t('save')}</small></b><em class="sale-price"><del>${money(1200)}</del>${money(800)}</em></span></label><label><input type="checkbox" data-addon="Hosting + Domain" data-price="250"><span><b>${t('hosting')} <i class="license-help" tabindex="0">i<small>${t('hostingTip')}</small></i></b><em>${money(250)}</em></span></label></div><div class="total"><span>${t('total')}</span><strong class="total-price" data-total>${money(p.singleLicensePrice || p.price)}</strong></div><button class="buy-button" data-buy>${t('requestPurchase')}</button><p class="manual-note">${t('paymentNote')}</p></aside></section>`;
+    root.innerHTML = `<nav class="breadcrumb"><a href="./index.html">Templates</a><span>/</span><a href="./category.html?cat=${c.id}">${catName(c.id)}</a><span>/</span><span>${productTitle(p)}</span></nav><section class="detail-layout"><article class="detail-main"><div class="detail-content-head"><p class="eyebrow">${catName(c.id)}</p><h1>${productTitle(p)}</h1><div class="detail-content-actions"><div class="detail-platform share-only">${shareMarkup()}</div><a class="live-demo-button detail-demo-content" href="${demoPageHref(p)}" target="_blank" rel="noopener">${t('liveDemo')}</a></div></div>${productMediaMarkup(p)}<div class="detail-copy rich-summary" id="preview"><h2>${t('description')}</h2><div class="summary-html">${summaryHtml}</div></div></article><aside class="buy-panel"><h2>${t('chooseLicense')}</h2><div class="option-list license-list"><label><input type="radio" name="license" value="single website" data-price="${p.singleLicensePrice || p.price}" checked><span><b>${t('singleLicense')} <i class="license-help" tabindex="0">i<small>${t('singleTip')}</small></i></b><em>${money(p.singleLicensePrice || p.price)}</em></span></label><label><input type="radio" name="license" value="exclusive buyout" data-price="1499"><span><b>${t('exclusiveLicense')} <i class="license-help" tabindex="0">i<small>${t('exclusiveTip')}</small></i></b><em>${money(1499)}</em></span></label></div><h2>${t('addons')}</h2><div class="option-list addon-list"><label><input type="checkbox" data-addon="Multilingual Add-on" data-price="200"><span><b>${t('multilingual')} <i class="license-help" tabindex="0">i<small>${t('multilingualTip')}</small></i></b><em>${money(200)}</em></span></label><label><input type="checkbox" data-addon="SEO Setup" data-price="150"><span><b>${t('seo')} <i class="license-help" tabindex="0">i<small>${t('seoTip')}</small></i></b><em>${money(150)}</em></span></label><label class="featured-addon"><input type="checkbox" data-addon="All-in-One Setup Pack" data-price="800"><span><b>${t('allInOne')} <i class="license-help" tabindex="0">i<small>${t('allInOneTip')}</small></i><small class="support-pill">${t('support')}</small><small class="support-pill discount-pill">${t('save')}</small></b><em class="sale-price"><del>${money(1200)}</del>${money(800)}</em></span></label><label><input type="checkbox" data-addon="Hosting + Domain" data-price="250"><span><b>${t('hosting')} <i class="license-help" tabindex="0">i<small>${t('hostingTip')}</small></i></b><em>${money(250)}</em></span></label></div><div class="total"><span>${t('total')}</span><strong class="total-price" data-total>${money(p.singleLicensePrice || p.price)}</strong></div><button class="buy-button" data-buy>${t('requestPurchase')}</button><p class="manual-note">${t('paymentNote')}</p></aside></section>`;
     const selectedAddons = () => qsa('[data-addon]:checked', root).map(i => i.dataset.addon);
     const update = () => { let total = Number(qs('input[name="license"]:checked', root).dataset.price); qsa('[data-addon]:checked', root).forEach(i => { total += Number(i.dataset.price); }); qs('[data-total]', root).textContent = money(total); };
     qsa('input', root).forEach(i => i.addEventListener('change', update));
     qs('[data-buy]', root).addEventListener('click', () => { const license = qs('input[name="license"]:checked', root).value; const total = qs('[data-total]', root).textContent; const subject = encodeURIComponent('Purchase request: ' + p.title); const body = encodeURIComponent(`Hello Arabix,\n\nI want to purchase:\nProduct: ${p.title}\nLicense: ${license}\nAdd-ons: ${selectedAddons().join(', ') || 'None'}\nTotal: ${total}\n\nPlease send payment instructions and delivery details.`); location.href = `mailto:hello@arabixweb.com?subject=${subject}&body=${body}`; });
     setupShare(root, p.title);
   }
-
   function renderDemo(){
     const root = qs('[data-demo-page]'); if (!root) return;
     const slug = params.get('slug') || shopData.products[0].slug; const p = shopData.products.find(x => x.slug === slug) || shopData.products[0]; const c = catById(p.category);
     const externalUrl = demoEmbedUrl(p);
-    const internalPreview = `<div class="demo-site"><nav class="demo-nav"><b>${productTitle(p).split(' ')[0]}</b><span>Home</span><span>Services</span><span>Work</span><span>Contact</span></nav><main class="demo-hero"><div><em>${catName(c.id)}</em><h1>${t('demoHero').replace('{category}', catName(c.id).toLowerCase())}</h1><p>${productDetails(p)}</p><a href="./theme.html?slug=${p.slug}">${t('requestTemplate')}</a></div><aside><i></i><b></b><span></span><span></span><div><small></small><small></small><small></small></div></aside></main><section class="demo-grid">${p.features.slice(0,3).map((f,i) => `<article><small>0${i+1}</small><h2>${currentLang === 'ar' ? 'قسم جاهز' : f}</h2><p>${t('builtClear')}</p></article>`).join('')}</section><section class="demo-band"><h2>${t('demoBandTitle')}</h2><p>${t('demoBandCopy')}</p></section></div>`;
+    const demoCopy = stripHtml(productDetails(p));
+    const demoFeatures = (Array.isArray(p.features) && p.features.length ? p.features : ['Responsive layout','Clean sections','Fast launch']).slice(0, 3);
+    const internalPreview = `<div class="demo-site"><nav class="demo-nav"><b>${productTitle(p).split(' ')[0]}</b><span>Home</span><span>Services</span><span>Work</span><span>Contact</span></nav><main class="demo-hero"><div><em>${catName(c.id)}</em><h1>${t('demoHero').replace('{category}', catName(c.id).toLowerCase())}</h1><p>${demoCopy}</p><a href="./theme.html?slug=${p.slug}">${t('requestTemplate')}</a></div><aside><i></i><b></b><span></span><span></span><div><small></small><small></small><small></small></div></aside></main><section class="demo-grid">${demoFeatures.map((f,i) => `<article><small>0${i+1}</small><h2>${currentLang === 'ar' ? '\u0642\u0633\u0645 \u062c\u0627\u0647\u0632' : f}</h2><p>${t('builtClear')}</p></article>`).join('')}</section><section class="demo-band"><h2>${t('demoBandTitle')}</h2><p>${t('demoBandCopy')}</p></section></div>`;
     const previewBody = externalUrl ? `<iframe class="demo-frame" src="${safeAttr(externalUrl)}" title="${safeAttr(productTitle(p))} live demo" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>` : internalPreview;
     document.title = productTitle(p) + ' Live Demo | Arabix'; root.style.setProperty('--accent', c.color);
     root.innerHTML = `<header class="preview-bar"><a class="preview-brand" href="./index.html" aria-label="Arabix shop"><img src="./assets/logo-white.png" alt="Arabix" /></a><nav class="preview-actions" aria-label="Preview actions"><span class="preview-price">${money(p.singleLicensePrice || p.price)}</span><a class="preview-details" href="./theme.html?slug=${p.slug}">${t('details')}</a><a class="preview-buy" href="./theme.html?slug=${p.slug}">${t('buyNow')}</a></nav></header><section class="demo-stage ${externalUrl ? 'demo-stage--frame' : ''}">${previewBody}</section>`;
