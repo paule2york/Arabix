@@ -118,7 +118,7 @@
     qsa('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
     qsa('[data-i18n-placeholder]').forEach(el => { el.placeholder = t(el.dataset.i18nPlaceholder); });
     const langLabel = qs('[data-lang-label]'); const langFlag = qs('[data-lang-flag]');
-    if (langLabel) langLabel.textContent = currentLang === 'ar' ? 'AR' : 'EN';
+    if (langLabel) langLabel.textContent = currentLang === 'ar' ? 'English' : '\u0627\u0644\u0639\u0631\u0628\u064a\u0629';
     if (langFlag) { langFlag.textContent = ''; langFlag.removeAttribute('class'); }
     qsa('.market-footer p').forEach(p => p.textContent = t('footerCopy'));
     const footerKeys = ['terms','privacy','refunds','license','contact'];

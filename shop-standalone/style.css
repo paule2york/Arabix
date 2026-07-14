@@ -2228,3 +2228,16 @@ body[data-page="home"] .footer-catalog {
     grid-template-columns: 1fr;
   }
 }
+
+/* Readable language switch labels */
+.lang-select .shop-select-btn {
+  min-width: 116px !important;
+  padding-inline: 18px !important;
+}
+.lang-select .shop-select-btn b {
+  font-size: .95rem !important;
+  white-space: nowrap;
+}
+body.is-ar .lang-select .shop-select-btn {
+  min-width: 112px !important;
+}
